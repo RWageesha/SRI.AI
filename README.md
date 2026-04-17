@@ -1,19 +1,26 @@
 # SRI.AI - Sinhala Offline Chatbot (Ollama + Streamlit)
 
-This project is a Sinhala chatbot that runs fully offline using:
-- Python
-- Ollama (local LLM inference)
-- Streamlit (web UI)
+SRI.AI is a simple Sinhala chatbot that runs fully offline using Ollama and a Streamlit web UI. It uses local UTF-8 text files for conversation examples and knowledge.
 
 ## Features
 
-- Sinhala input and output
-- Fully offline execution (no cloud API)
+- 100% offline execution (no internet API calls)
+- Local LLM inference with Ollama (any local model)
+- Streamlit chat UI
+- Sinhala Unicode input/output (UTF-8)
 - Session-based chat history
-- Clear Chat button
-- Unicode Sinhala text support
-- Streaming response effect
-- Basic error handling for Ollama/model issues
+- Clean and focused prompt design
+
+## Project Structure
+
+```
+SRI-AI/
+├── app.py
+├── knowledge.txt
+├── conversations.txt
+├── requirements.txt
+└── README.md
+```
 
 ## 1. Prerequisites
 
@@ -23,20 +30,19 @@ This project is a Sinhala chatbot that runs fully offline using:
 
 ## 2. Install Ollama
 
-### Windows
-1. Download and install from: https://ollama.com/download
-2. Open a terminal and verify:
+1. Download from: https://ollama.com/download
+2. Verify:
    - `ollama --version`
 
-## 3. Download a local model
+## 3. Download an Ollama Model
 
-Use one of these:
-- `ollama pull llama3.2:3b`
-- `ollama pull mistral:7b`
+```powershell
+ollama pull llama3.2:3b
+```
 
-Tip: For lower latency on low-spec devices, use smaller models (for example 3B).
+You can use any model you have locally. Update the model name in the sidebar.
 
-## 4. Setup Python environment
+## 4. Setup Python Environment
 
 ```powershell
 cd d:\Repos\SRI.AI
@@ -45,51 +51,48 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## 5. Run Ollama (if not already running)
-
-Ollama usually runs in the background service mode after installation.
-If needed, start it with:
+## 5. Run Offline
 
 ```powershell
 ollama serve
-```
-
-## 6. Run Streamlit app
-
-```powershell
 streamlit run app.py
 ```
 
-Open the local URL shown in terminal, usually:
+Open the local URL shown in the terminal, usually:
 - http://localhost:8501
 
-## 7. Offline verification checklist
+## 6. Local Data Files
+
+### conversations.txt
+Example human-like Sinhala conversations:
+
+```
+User: ඔබ කොහොමද?
+Assistant: මම හොඳින් ඉන්නවා! ඔබට කොහොමද?
+```
+
+### knowledge.txt
+Short Sinhala knowledge facts (IT, Maths, general):
+
+```
+Python යනු ප්‍රෝග්‍රැමින් භාෂාවකි.
+Algorithm යනු ගැටළුවක් විසඳන පියවර මාලාවකි.
+```
+
+Both files are loaded using UTF-8 encoding.
+
+## 7. Offline Verification Checklist
 
 1. Turn off Wi-Fi or disconnect internet.
-2. Ensure model is already pulled locally.
+2. Ensure the model is already pulled.
 3. Run:
    - `ollama serve`
    - `streamlit run app.py`
-4. Chat in Sinhala and verify responses continue working.
+4. Chat in Sinhala and verify responses.
 
-## 8. Example Sinhala prompts
+## 8. Important Constraints Satisfied
 
-See:
-- `test_prompts.md`
-
-## 9. Troubleshooting
-
-- Error: Cannot connect to Ollama
-  - Fix: Start Ollama service (`ollama serve`) and retry.
-- Error: model not found
-  - Fix: Pull the model:
-    - `ollama pull llama3.2:3b`
-- Slow response
-  - Fix: Use a smaller model, close heavy apps, lower temperature.
-
-## 10. Important constraints satisfied
-
-- No OpenAI API
-- No Hugging Face online API
-- No internet dependency during runtime
-- Sinhala-first prompt behavior
+- No internet APIs
+- No translation pipelines
+- No external databases
+- Sinhala-only output enforced by prompt
