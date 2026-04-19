@@ -1,0 +1,7 @@
+මාතෘකාව: Compiler
+
+Compiler යනු high-level source code එක machine language හෝ bytecode බවට පරිවර්තනය කරන program එකකි. පරිවර්තනය සාමාන්‍යයෙන් run කිරීමට පෙර සිදු වේ.
+
+Compilation process එකේදී lexical analysis, syntax analysis සහ code generation වැනි අදියර ඇත. Errors තිබේ නම් compile stage එකේදී දැනුම් දේ.
+
+Compiled languages උදාහරණ ලෙස C/C++ සඳහන් කළ හැක. Compiler optimization මඟින් performance වැඩි executable code ලබාගත හැක.

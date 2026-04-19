@@ -1,0 +1,7 @@
+මාතෘකාව: IP Address
+
+IP Address යනු network එකක එක් device එකක් අනෙකාගෙන් වෙන්කර හඳුනාගැනීමට භාවිතා කරන අංකීය ලිපිනයකි. Data packets නිවැරදි destination එකට යොමු වීමට මෙය උපකාරී වේ.
+
+IPv4 සහ IPv6 යන වර්ග දෙක ප්‍රධාන වේ. IPv4 ලිපිනයන් සීමිත වන අතර IPv6 වැඩි ලිපින අවකාශයක් ලබා දේ.
+
+Network troubleshooting කිරීමේදී IP, subnet, gateway වැනි සංකල්ප වැදගත් වේ. IP තේරුම් ගැනීම network administration සඳහා මූලික දැනුමකි.

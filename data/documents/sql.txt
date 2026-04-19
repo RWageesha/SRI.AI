@@ -1,0 +1,7 @@
+මාතෘකාව: SQL
+
+SQL (Structured Query Language) යනු relational databases සමඟ කටයුතු කිරීමට භාවිතා කරන භාෂාවකි. එය data query කිරීම සහ table management සඳහා ප්‍රධාන මෙවලමකි.
+
+SQL හි SELECT, INSERT, UPDATE, DELETE වැනි නියෝග භාවිතා කර data operations සිදු කරයි. CREATE සහ ALTER වැනි නියෝග schema management සඳහා භාවිතා වේ.
+
+Reports, filtering, sorting සහ joins වැනි කාර්යයන් SQL මඟින් කාර්යක්ෂමව කරගත හැක. Data-driven applications සඳහා SQL දැනුම වැදගත් වේ.

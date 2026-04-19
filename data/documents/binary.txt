@@ -1,0 +1,7 @@
+මාතෘකාව: Binary
+
+Binary system යනු 0 සහ 1 යන අංක දෙක පමණක් භාවිතා කරන ගණිත පද්ධතියකි. පරිගණක hardware logic states (on/off) සමඟ ගැලපෙන නිසා binary මූලික වේ.
+
+Decimal numbers binary බවට පරිවර්තනය කිරීම computation වලදී වැදගත් වේ. Bits සහ bytes යනු binary data මිනුම් ඒකක වේ.
+
+Text, images, audio සහ programs සියල්ල අවසානයේ binary ආකාරයෙන් පරිගණකයේ ගබඩා කර සකසයි. එබැවින් binary සංකල්පය computing හි පදනමක් වේ.

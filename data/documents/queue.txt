@@ -1,0 +1,7 @@
+මාතෘකාව: Queue
+
+Queue යනු FIFO (First In First Out) ආකෘතියෙන් ක්‍රියා කරන data structure එකකි. මුලින් ඇතුල් කළ අයිතමය මුලින්ම ඉවත් වේ.
+
+ප්‍රධාන operations ලෙස enqueue (අගට එකතු කිරීම), dequeue (ඉදිරියෙන් ඉවත් කිරීම) සහ front/rear access ඇත. Task scheduling, print queues සහ messaging systems වල queue සංකල්පය වැදගත් වේ.
+
+Circular queue, priority queue සහ deque වැනි විවිධ ආකෘතිද භාවිතා වේ. Throughput සහ fairness අවශ්‍ය අවස්ථාවල queue structures ප්‍රයෝජනවත් වේ.

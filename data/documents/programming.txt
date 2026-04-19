@@ -1,0 +1,7 @@
+මාතෘකාව: Programming
+
+Programming යනු පරිගණකයට කාර්යයන් ඉටු කිරීමට නියෝග ලිවීමේ ක්‍රියාවලියකි. එය problem solving කුසලතා සමඟ බැඳී ඇත.
+
+Programming කිරීමේදී variables, conditions, loops, functions වැනි මූලික සංකල්ප භාවිතා කරයි. code logic නිවැරදි වීම ප්‍රතිඵලයේ ගුණාත්මකතාවයට බලපායි.
+
+හොඳ programming පුරුදු ලෙස readable code, comments, testing සහ version control භාවිතා කිරීම වැදගත් වේ. මේවා teamwork සහ maintenance පහසු කරයි.

@@ -1,0 +1,7 @@
+මාතෘකාව: Flowchart
+
+Flowchart යනු algorithm එකක් සංකේත භාවිතා කර දෘශ්‍යමය ලෙස පෙන්වන ආකෘතියකි. එය program logic පැහැදිලිව අවබෝධ කරගැනීමට උපකාරී වේ.
+
+සාමාන්‍ය symbols ලෙස start/end, process, decision, input/output භාවිතා කරයි. Arrow භාවිතයෙන් පියවර අතර ගමන් මාර්ගය පෙන්වයි.
+
+Flowchart භාවිතයෙන් debugging සහ planning පහසු වේ. Team discussions තුළ solution flow පැහැදිලිව පැවසීමටද මෙය ප්‍රයෝජනවත් වේ.

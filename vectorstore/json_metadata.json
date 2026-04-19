@@ -1,0 +1,857 @@
+[
+  {
+    "topic": "හිසරදය",
+    "view_type": "topic",
+    "text": "හිසරදය"
+  },
+  {
+    "topic": "හිසරදය",
+    "view_type": "keyword",
+    "text": "හිසරදය"
+  },
+  {
+    "topic": "හිසරදය",
+    "view_type": "keyword",
+    "text": "headache"
+  },
+  {
+    "topic": "හිසරදය",
+    "view_type": "keyword",
+    "text": "හිස වේදනාව"
+  },
+  {
+    "topic": "හිසරදය",
+    "view_type": "question",
+    "text": "මට හිසරදයක් තියෙනවා"
+  },
+  {
+    "topic": "හිසරදය",
+    "view_type": "question",
+    "text": "හිසරදය අඩු කරගන්න කොහොමද"
+  },
+  {
+    "topic": "හිසරදය",
+    "view_type": "question",
+    "text": "හිස වේදනාවට මොකද කරන්නෙ"
+  },
+  {
+    "topic": "හිසරදය",
+    "view_type": "question",
+    "text": "හිසරදයක් තියෙනවා මොකද කරන්නෙ"
+  },
+  {
+    "topic": "හිසරදය",
+    "view_type": "content",
+    "text": "හිසරදය ඇති වන විට මුලින්ම විවේක ගන්න. ශබ්දය සහ වැඩි ආලෝකය අඩු පරිසරයක කෙටි වේලාවක් නිශ්ශබ්දව සිටීමෙන් වේදනාව අඩුවිය හැක. ප්‍රමාණවත් ජලය පානය කරන්න, බඩගිනි සහ නින්ද අඩු වීම වළක්වන්න. හිසරදය දිගටම පවතිනවා නම් හෝ නිතර නැවත ඇතිවේ නම් වෛද්‍ය උපදෙස් ලබා ගන්න."
+  },
+  {
+    "topic": "සතුට",
+    "view_type": "topic",
+    "text": "සතුට"
+  },
+  {
+    "topic": "සතුට",
+    "view_type": "keyword",
+    "text": "සතුට"
+  },
+  {
+    "topic": "සතුට",
+    "view_type": "keyword",
+    "text": "happy"
+  },
+  {
+    "topic": "සතුට",
+    "view_type": "keyword",
+    "text": "ආනන්දය"
+  },
+  {
+    "topic": "සතුට",
+    "view_type": "question",
+    "text": "මට සතුටුයි"
+  },
+  {
+    "topic": "සතුට",
+    "view_type": "question",
+    "text": "මම සතුටින් ඉන්නේ"
+  },
+  {
+    "topic": "සතුට",
+    "view_type": "question",
+    "text": "මට හරිම හොඳට දැනෙනවා"
+  },
+  {
+    "topic": "සතුට",
+    "view_type": "content",
+    "text": "සතුටක් දැනෙන විට එය පවත්වා ගැනීමට ඔබ කැමති දේවල් කරන්න, ඔබට වැදගත් පුද්ගලයන් සමඟ කාලය ගත කරන්න."
+  },
+  {
+    "topic": "දුක",
+    "view_type": "topic",
+    "text": "දුක"
+  },
+  {
+    "topic": "දුක",
+    "view_type": "keyword",
+    "text": "දුක"
+  },
+  {
+    "topic": "දුක",
+    "view_type": "keyword",
+    "text": "sad"
+  },
+  {
+    "topic": "දුක",
+    "view_type": "keyword",
+    "text": "කනස්සල්ල"
+  },
+  {
+    "topic": "දුක",
+    "view_type": "question",
+    "text": "මට දුකයි"
+  },
+  {
+    "topic": "දුක",
+    "view_type": "question",
+    "text": "මට හරිම කනස්සල්ලක් තියෙනවා"
+  },
+  {
+    "topic": "දුක",
+    "view_type": "question",
+    "text": "මම දුකින් ඉන්නේ"
+  },
+  {
+    "topic": "දුක",
+    "view_type": "question",
+    "text": "මට ගොඩක් දුක හිතෙනවා"
+  },
+  {
+    "topic": "දුක",
+    "view_type": "content",
+    "text": "දුක හෝ කනස්සල්ල දැනෙන විට එය සඟවා නොගෙන පිළිගැනීම වැදගත්ය. ඔබේ හැඟීම් විශ්වාසවන්ත මිතුරෙකු හෝ පවුලේ කෙනෙකු සමඟ බෙදාගන්න. දිනචරියාව කෙටි ලෙස පවත්වාගෙන යාම, කෙටි ඇවිදීමක් හෝ සරල විවේක ක්‍රියාකාරකමක් කිරීම සහනයක් ලබා දිය හැක. දුක දිගු කාලයක් පවතින්නේ නම් වෘත්තීය උපදෙස් ගැනීම ප්‍රයෝජනවත් වේ."
+  },
+  {
+    "topic": "කෝපය",
+    "view_type": "topic",
+    "text": "කෝපය"
+  },
+  {
+    "topic": "කෝපය",
+    "view_type": "keyword",
+    "text": "කෝපය"
+  },
+  {
+    "topic": "කෝපය",
+    "view_type": "keyword",
+    "text": "anger"
+  },
+  {
+    "topic": "කෝපය",
+    "view_type": "keyword",
+    "text": "කොපය"
+  },
+  {
+    "topic": "කෝපය",
+    "view_type": "question",
+    "text": "මට කෝපයක් තියෙනවා"
+  },
+  {
+    "topic": "කෝපය",
+    "view_type": "question",
+    "text": "මම හරිම කෝපයෙන් ඉන්නේ"
+  },
+  {
+    "topic": "කෝපය",
+    "view_type": "content",
+    "text": "කෝපය පාලනය සඳහා ගැඹුරු හුස්ම ගන්න, කාලයක් ගන්න සහ ප්‍රතිචාර දීමට පෙර සිතන්න."
+  },
+  {
+    "topic": "භය",
+    "view_type": "topic",
+    "text": "භය"
+  },
+  {
+    "topic": "භය",
+    "view_type": "keyword",
+    "text": "භය"
+  },
+  {
+    "topic": "භය",
+    "view_type": "keyword",
+    "text": "fear"
+  },
+  {
+    "topic": "භය",
+    "view_type": "keyword",
+    "text": "බිය"
+  },
+  {
+    "topic": "භය",
+    "view_type": "keyword",
+    "text": "බයෙන්"
+  },
+  {
+    "topic": "භය",
+    "view_type": "question",
+    "text": "මට බයයි"
+  },
+  {
+    "topic": "භය",
+    "view_type": "question",
+    "text": "මම බයෙන් ඉන්නේ"
+  },
+  {
+    "topic": "භය",
+    "view_type": "question",
+    "text": "මට හරි බය හිතෙනවා"
+  },
+  {
+    "topic": "භය",
+    "view_type": "content",
+    "text": "භය දැනෙන විට මුලින්ම ඔබ ආරක්ෂිත ස්ථානයක සිටින බව තහවුරු කර ගන්න. සෙමින් ගැඹුරු හුස්ම ගැනීමෙන් ශරීරය සහ මනස සන්සුන් කරගත හැක. ඔබට බය ඇති කරන සිතුවිලි සරලව ලියා තාර්කිකව බලන්න. අවශ්‍ය නම් විශ්වාසවන්ත කෙනෙකු සමඟ කතා කිරීම භය අඩු කරගැනීමට උපකාරී වේ."
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "view_type": "topic",
+    "text": "අතුරුදන් වීම"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "view_type": "keyword",
+    "text": "තනිවීම"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "view_type": "keyword",
+    "text": "lonely"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "view_type": "keyword",
+    "text": "loneliness"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "view_type": "keyword",
+    "text": "අතුරුදන්"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "view_type": "keyword",
+    "text": "තනි"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "view_type": "question",
+    "text": "මට තනිවම දැනෙනවා"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "view_type": "question",
+    "text": "මට කෙනෙක් නැතිව වගේ දැනෙනවා"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "view_type": "question",
+    "text": "මට එකලාව දැනෙනවා"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "view_type": "content",
+    "text": "තනිවීමක් දැනෙන විට එය සාමාන්‍ය හැඟීමක් බව මුලින් පිළිගන්න. පවුලේ අය, මිතුරන් හෝ විශ්වාසවන්ත කෙනෙකු සමඟ කෙටි සම්බන්ධතාවයක් ආරම්භ කරන්න. ඔබ කැමති ක්‍රියාකාරකමකට දිනපතා කෙටි කාලයක් වෙන් කිරීම මානසික සහනය වැඩි කරයි. සමාජ කණ්ඩායම් හෝ අධ්‍යාපනික/විනෝදාත්මක කටයුතු සමඟ සම්බන්ධ වීම තනිවීම අඩු කිරීමට උපකාරී වේ."
+  },
+  {
+    "topic": "ආදරය",
+    "view_type": "topic",
+    "text": "ආදරය"
+  },
+  {
+    "topic": "ආදරය",
+    "view_type": "keyword",
+    "text": "ආදරය"
+  },
+  {
+    "topic": "ආදරය",
+    "view_type": "keyword",
+    "text": "love"
+  },
+  {
+    "topic": "ආදරය",
+    "view_type": "keyword",
+    "text": "ආදර"
+  },
+  {
+    "topic": "ආදරය",
+    "view_type": "question",
+    "text": "මම කෙනෙකුට ආදරෙයි"
+  },
+  {
+    "topic": "ආදරය",
+    "view_type": "question",
+    "text": "ආදරය කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "ආදරය",
+    "view_type": "content",
+    "text": "ආදරය යනු ගෞරවය, අවධානය සහ අන් අය පිළිබඳ සැලකිල්ලක් දක්වන හැඟීමකි."
+  },
+  {
+    "topic": "විශ්වාසය",
+    "view_type": "topic",
+    "text": "විශ්වාසය"
+  },
+  {
+    "topic": "විශ්වාසය",
+    "view_type": "keyword",
+    "text": "විශ්වාසය"
+  },
+  {
+    "topic": "විශ්වාසය",
+    "view_type": "keyword",
+    "text": "trust"
+  },
+  {
+    "topic": "විශ්වාසය",
+    "view_type": "question",
+    "text": "විශ්වාසය කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "විශ්වාසය",
+    "view_type": "question",
+    "text": "කෙනෙකුට විශ්වාස කරන්න කොහොමද"
+  },
+  {
+    "topic": "විශ්වාසය",
+    "view_type": "content",
+    "text": "විශ්වාසය කාලයත් සමඟ ගොඩනැගෙයි. සත්‍යවන්ත වීම සහ වගකීම පවත්වා ගැනීම වැදගත්ය."
+  },
+  {
+    "topic": "මිත්‍රත්වය",
+    "view_type": "topic",
+    "text": "මිත්‍රත්වය"
+  },
+  {
+    "topic": "මිත්‍රත්වය",
+    "view_type": "keyword",
+    "text": "මිතුරන්"
+  },
+  {
+    "topic": "මිත්‍රත්වය",
+    "view_type": "keyword",
+    "text": "friendship"
+  },
+  {
+    "topic": "මිත්‍රත්වය",
+    "view_type": "question",
+    "text": "හොඳ මිතුරෙක් වෙන්න කොහොමද"
+  },
+  {
+    "topic": "මිත්‍රත්වය",
+    "view_type": "question",
+    "text": "මට මිතුරන් නැහැ"
+  },
+  {
+    "topic": "මිත්‍රත්වය",
+    "view_type": "content",
+    "text": "හොඳ මිතුරෙක් වීමට අවංක වන්න, අන් අයව සවන් දෙන්න සහ සහයෝගය ලබා දෙන්න."
+  },
+  {
+    "topic": "සංවාදය",
+    "view_type": "topic",
+    "text": "සංවාදය"
+  },
+  {
+    "topic": "සංවාදය",
+    "view_type": "keyword",
+    "text": "කතා කිරීම"
+  },
+  {
+    "topic": "සංවාදය",
+    "view_type": "keyword",
+    "text": "communication"
+  },
+  {
+    "topic": "සංවාදය",
+    "view_type": "question",
+    "text": "හොඳට කතා කරන්න කොහොමද"
+  },
+  {
+    "topic": "සංවාදය",
+    "view_type": "question",
+    "text": "සංවාදය දියුණු කරන්න"
+  },
+  {
+    "topic": "සංවාදය",
+    "view_type": "content",
+    "text": "සංවාදය සඳහා පැහැදිලිව කතා කරන්න, සවන් දෙන්න සහ ගෞරවයෙන් ප්‍රතිචාර දක්වන්න."
+  },
+  {
+    "topic": "කාල කළමනාකරණය",
+    "view_type": "topic",
+    "text": "කාල කළමනාකරණය"
+  },
+  {
+    "topic": "කාල කළමනාකරණය",
+    "view_type": "keyword",
+    "text": "time management"
+  },
+  {
+    "topic": "කාල කළමනාකරණය",
+    "view_type": "keyword",
+    "text": "කාලය"
+  },
+  {
+    "topic": "කාල කළමනාකරණය",
+    "view_type": "question",
+    "text": "කාලය කළමනාකරණය කරන්න කොහොමද"
+  },
+  {
+    "topic": "කාල කළමනාකරණය",
+    "view_type": "content",
+    "text": "කාර්යයන් ප්‍රමුඛතාවය අනුව සැලසුම් කරන්න සහ වැඩ කොටස්වලට බෙදන්න."
+  },
+  {
+    "topic": "ඉගෙනීම",
+    "view_type": "topic",
+    "text": "ඉගෙනීම"
+  },
+  {
+    "topic": "ඉගෙනීම",
+    "view_type": "keyword",
+    "text": "study"
+  },
+  {
+    "topic": "ඉගෙනීම",
+    "view_type": "keyword",
+    "text": "ඉගෙනීම"
+  },
+  {
+    "topic": "ඉගෙනීම",
+    "view_type": "question",
+    "text": "හොඳට ඉගෙන ගන්න කොහොමද"
+  },
+  {
+    "topic": "ඉගෙනීම",
+    "view_type": "question",
+    "text": "මට ඉගෙනීමට සැලැස්මක් දෙන්න"
+  },
+  {
+    "topic": "ඉගෙනීම",
+    "view_type": "content",
+    "text": "නිතිපතා පුහුණුව, සැලසුම් සහ විවේක අතර සම්බන්ධතාවය තබා ගැනීම ඉගෙනීමට උපකාරී වේ."
+  },
+  {
+    "topic": "උදෑසන පුරුදු",
+    "view_type": "topic",
+    "text": "උදෑසන පුරුදු"
+  },
+  {
+    "topic": "උදෑසන පුරුදු",
+    "view_type": "keyword",
+    "text": "morning routine"
+  },
+  {
+    "topic": "උදෑසන පුරුදු",
+    "view_type": "question",
+    "text": "හොඳ උදෑසන පුරුදු මොනවද"
+  },
+  {
+    "topic": "උදෑසන පුරුදු",
+    "view_type": "content",
+    "text": "උදෑසන ඉක්මනින් නැගිට, ජලය පානය කර, සැලසුම් කිරීම හොඳ පුරුදු වේ."
+  },
+  {
+    "topic": "ව්‍යායාම",
+    "view_type": "topic",
+    "text": "ව්‍යායාම"
+  },
+  {
+    "topic": "ව්‍යායාම",
+    "view_type": "keyword",
+    "text": "exercise"
+  },
+  {
+    "topic": "ව්‍යායාම",
+    "view_type": "keyword",
+    "text": "ව්‍යායාම"
+  },
+  {
+    "topic": "ව්‍යායාම",
+    "view_type": "question",
+    "text": "ව්‍යායාම කරන්න ඕනෙද"
+  },
+  {
+    "topic": "ව්‍යායාම",
+    "view_type": "content",
+    "text": "නිතිපතා ව්‍යායාම කිරීම ශරීර සෞඛ්‍යය සහ මානසික සුවයට උපකාරී වේ."
+  },
+  {
+    "topic": "ආහාර පුරුදු",
+    "view_type": "topic",
+    "text": "ආහාර පුරුදු"
+  },
+  {
+    "topic": "ආහාර පුරුදු",
+    "view_type": "keyword",
+    "text": "diet"
+  },
+  {
+    "topic": "ආහාර පුරුදු",
+    "view_type": "keyword",
+    "text": "ආහාර"
+  },
+  {
+    "topic": "ආහාර පුරුදු",
+    "view_type": "question",
+    "text": "හොඳ ආහාර පුරුදු මොනවද"
+  },
+  {
+    "topic": "ආහාර පුරුදු",
+    "view_type": "content",
+    "text": "සමබර ආහාර රටාවක් පවත්වාගෙන යාම සෞඛ්‍යයට වැදගත්ය."
+  },
+  {
+    "topic": "නින්ද",
+    "view_type": "topic",
+    "text": "නින්ද"
+  },
+  {
+    "topic": "නින්ද",
+    "view_type": "keyword",
+    "text": "sleep"
+  },
+  {
+    "topic": "නින්ද",
+    "view_type": "keyword",
+    "text": "නින්ද"
+  },
+  {
+    "topic": "නින්ද",
+    "view_type": "question",
+    "text": "හොඳට නිදාගන්න කොහොමද"
+  },
+  {
+    "topic": "නින්ද",
+    "view_type": "content",
+    "text": "සෑම දිනකම එකම වේලාවට නිදා ගැනීම සහ screen භාවිතය අඩු කිරීම උපකාරී වේ."
+  },
+  {
+    "topic": "සංස්කෘතිය",
+    "view_type": "topic",
+    "text": "සංස්කෘතිය"
+  },
+  {
+    "topic": "සංස්කෘතිය",
+    "view_type": "keyword",
+    "text": "culture"
+  },
+  {
+    "topic": "සංස්කෘතිය",
+    "view_type": "keyword",
+    "text": "සංස්කෘතිය"
+  },
+  {
+    "topic": "සංස්කෘතිය",
+    "view_type": "question",
+    "text": "සංස්කෘතිය කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "සංස්කෘතිය",
+    "view_type": "content",
+    "text": "සංස්කෘතිය යනු ජනතාවගේ ජීවන රටාව, ආචාර සහ විශ්වාස එකතුවකි."
+  },
+  {
+    "topic": "ගෞරවය",
+    "view_type": "topic",
+    "text": "ගෞරවය"
+  },
+  {
+    "topic": "ගෞරවය",
+    "view_type": "keyword",
+    "text": "respect"
+  },
+  {
+    "topic": "ගෞරවය",
+    "view_type": "keyword",
+    "text": "ගෞරවය"
+  },
+  {
+    "topic": "ගෞරවය",
+    "view_type": "question",
+    "text": "අන් අයව ගෞරව කරන්න කොහොමද"
+  },
+  {
+    "topic": "ගෞරවය",
+    "view_type": "content",
+    "text": "අන් අයගේ අදහස් පිළිගැනීම සහ සවන් දීම ගෞරවය පෙන්වයි."
+  },
+  {
+    "topic": "තීරණ ගැනීම",
+    "view_type": "topic",
+    "text": "තීරණ ගැනීම"
+  },
+  {
+    "topic": "තීරණ ගැනීම",
+    "view_type": "keyword",
+    "text": "decision"
+  },
+  {
+    "topic": "තීරණ ගැනීම",
+    "view_type": "keyword",
+    "text": "තීරණ"
+  },
+  {
+    "topic": "තීරණ ගැනීම",
+    "view_type": "question",
+    "text": "හොඳ තීරණ ගන්න කොහොමද"
+  },
+  {
+    "topic": "තීරණ ගැනීම",
+    "view_type": "content",
+    "text": "තොරතුරු විශ්ලේෂණය කර, වාසි හා අවාසි සලකා තීරණ ගන්න."
+  },
+  {
+    "topic": "අභියෝග",
+    "view_type": "topic",
+    "text": "අභියෝග"
+  },
+  {
+    "topic": "අභියෝග",
+    "view_type": "keyword",
+    "text": "challenge"
+  },
+  {
+    "topic": "අභියෝග",
+    "view_type": "question",
+    "text": "අභියෝග මුහුණ දෙන කොහොමද"
+  },
+  {
+    "topic": "අභියෝග",
+    "view_type": "content",
+    "text": "අභියෝග හමුවේ සන්සුන්ව සිට, විසඳුම් සොයා ගැනීමට උත්සාහ කරන්න."
+  },
+  {
+    "topic": "අභිප්‍රේරණය",
+    "view_type": "topic",
+    "text": "අභිප්‍රේරණය"
+  },
+  {
+    "topic": "අභිප්‍රේරණය",
+    "view_type": "keyword",
+    "text": "motivation"
+  },
+  {
+    "topic": "අභිප්‍රේරණය",
+    "view_type": "question",
+    "text": "මට motivation නැහැ"
+  },
+  {
+    "topic": "අභිප්‍රේරණය",
+    "view_type": "content",
+    "text": "කුඩා இலක්ක සකස් කර ඒවා සම්පූර්ණ කිරීමෙන් උද්යෝගය වැඩි කර ගන්න."
+  },
+  {
+    "topic": "සමාජ මාධ්‍ය",
+    "view_type": "topic",
+    "text": "සමාජ මාධ්‍ය"
+  },
+  {
+    "topic": "සමාජ මාධ්‍ය",
+    "view_type": "keyword",
+    "text": "social media"
+  },
+  {
+    "topic": "සමාජ මාධ්‍ය",
+    "view_type": "question",
+    "text": "සමාජ මාධ්‍ය භාවිතය හොඳද"
+  },
+  {
+    "topic": "සමාජ මාධ්‍ය",
+    "view_type": "content",
+    "text": "සීමිතව සහ වගකීමෙන් සමාජ මාධ්‍ය භාවිතා කිරීම වැදගත්ය."
+  },
+  {
+    "topic": "ආතතිය",
+    "view_type": "topic",
+    "text": "ආතතිය"
+  },
+  {
+    "topic": "ආතතිය",
+    "view_type": "keyword",
+    "text": "stress"
+  },
+  {
+    "topic": "ආතතිය",
+    "view_type": "keyword",
+    "text": "ආතතිය"
+  },
+  {
+    "topic": "ආතතිය",
+    "view_type": "question",
+    "text": "මට stress එකක් තියෙනවා"
+  },
+  {
+    "topic": "ආතතිය",
+    "view_type": "content",
+    "text": "ආතතිය අඩු කිරීමට විවේක ගන්න, හුස්ම ගැනීමේ ක්‍රම භාවිතා කරන්න."
+  },
+  {
+    "topic": "ආත්ම විශ්වාසය",
+    "view_type": "topic",
+    "text": "ආත්ම විශ්වාසය"
+  },
+  {
+    "topic": "ආත්ම විශ්වාසය",
+    "view_type": "keyword",
+    "text": "confidence"
+  },
+  {
+    "topic": "ආත්ම විශ්වාසය",
+    "view_type": "question",
+    "text": "මට confidence නැහැ"
+  },
+  {
+    "topic": "ආත්ම විශ්වාසය",
+    "view_type": "content",
+    "text": "ඔබේ ශක්තිමත් පැති හඳුනාගෙන කුඩා இலක්ක සපුරා ගන්න."
+  },
+  {
+    "topic": "සංවේදනය",
+    "view_type": "topic",
+    "text": "සංවේදනය"
+  },
+  {
+    "topic": "සංවේදනය",
+    "view_type": "keyword",
+    "text": "empathy"
+  },
+  {
+    "topic": "සංවේදනය",
+    "view_type": "question",
+    "text": "අන් අයව තේරුම් ගන්න කොහොමද"
+  },
+  {
+    "topic": "සංවේදනය",
+    "view_type": "content",
+    "text": "අන් අයගේ හැඟීම් සවන් දීම සහ ඔවුන්ගේ දෘෂ්ටිකෝණය තේරුම් ගැනීම වැදගත්ය."
+  },
+  {
+    "topic": "ආචාර",
+    "view_type": "topic",
+    "text": "ආචාර"
+  },
+  {
+    "topic": "ආචාර",
+    "view_type": "keyword",
+    "text": "manners"
+  },
+  {
+    "topic": "ආචාර",
+    "view_type": "question",
+    "text": "හොඳ ආචාර මොනවද"
+  },
+  {
+    "topic": "ආචාර",
+    "view_type": "content",
+    "text": "ගෞරවයෙන් කතා කිරීම සහ අන් අයට සලකන ආකාරය හොඳ ආචාර වේ."
+  },
+  {
+    "topic": "පවුල",
+    "view_type": "topic",
+    "text": "පවුල"
+  },
+  {
+    "topic": "පවුල",
+    "view_type": "keyword",
+    "text": "family"
+  },
+  {
+    "topic": "පවුල",
+    "view_type": "question",
+    "text": "පවුල වැදගත්ද"
+  },
+  {
+    "topic": "පවුල",
+    "view_type": "content",
+    "text": "පවුල ඔබට ආරක්ෂාව සහ සහයෝගය ලබා දෙන වැදගත් කණ්ඩායමකි."
+  },
+  {
+    "topic": "වගකීම",
+    "view_type": "topic",
+    "text": "වගකීම"
+  },
+  {
+    "topic": "වගකීම",
+    "view_type": "keyword",
+    "text": "responsibility"
+  },
+  {
+    "topic": "වගකීම",
+    "view_type": "question",
+    "text": "වගකීම කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "වගකීම",
+    "view_type": "content",
+    "text": "ඔබගේ කාර්යයන් නිවැරදිව ඉටු කිරීම සහ ප්‍රතිඵල පිළිගැනීම වගකීම වේ."
+  },
+  {
+    "topic": "පරිසරය",
+    "view_type": "topic",
+    "text": "පරිසරය"
+  },
+  {
+    "topic": "පරිසරය",
+    "view_type": "keyword",
+    "text": "environment"
+  },
+  {
+    "topic": "පරිසරය",
+    "view_type": "question",
+    "text": "පරිසරය රැකගන්න කොහොමද"
+  },
+  {
+    "topic": "පරිසරය",
+    "view_type": "content",
+    "text": "පරිසරය රැකගැනීමට අපද්‍රව්‍ය අඩු කරන්න සහ වගකීමෙන් භාවිතා කරන්න."
+  },
+  {
+    "topic": "සතුටු ජීවිතය",
+    "view_type": "topic",
+    "text": "සතුටු ජීවිතය"
+  },
+  {
+    "topic": "සතුටු ජීවිතය",
+    "view_type": "keyword",
+    "text": "happy life"
+  },
+  {
+    "topic": "සතුටු ජීවිතය",
+    "view_type": "keyword",
+    "text": "සතුටු ජීවිතය"
+  },
+  {
+    "topic": "සතුටු ජීවිතය",
+    "view_type": "keyword",
+    "text": "සමබර ජීවිතය"
+  },
+  {
+    "topic": "සතුටු ජීවිතය",
+    "view_type": "question",
+    "text": "සතුටු ජීවිතයක් ගත කරන්න කොහොමද"
+  },
+  {
+    "topic": "සතුටු ජීවිතය",
+    "view_type": "question",
+    "text": "සතුටින් ජීවත් වෙන්නේ කොහොමද"
+  },
+  {
+    "topic": "සතුටු ජීවිතය",
+    "view_type": "question",
+    "text": "ජීවිතය හොඳ කරගන්න මොනවා කරන්නද"
+  },
+  {
+    "topic": "සතුටු ජීවිතය",
+    "view_type": "content",
+    "text": "සතුටු ජීවිතයක් සඳහා සෞඛ්‍යය, සම්බන්ධතා සහ දෛනික අරමුණු අතර සමබරතාවය වැදගත්ය. දිනපතා කුඩා අරමුණු සකස් කර ඒවා සම්පූර්ණ කිරීමෙන් ප්‍රගතියක් දැනේ. විශ්වාසවන්ත අය සමඟ කාලය ගත කිරීම සහ කෘතඥතාවය පුහුණු කිරීම මනසට හොඳ බලපෑමක් ලබා දේ. ප්‍රමාණවත් නින්ද, සරල ව්‍යායාම සහ විවේක වේලාවක් තබා ගැනීම දිගුකාලීන සතුටට උපකාරී වේ."
+  }
+]

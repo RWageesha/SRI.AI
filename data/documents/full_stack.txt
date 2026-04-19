@@ -1,0 +1,7 @@
+මාතෘකාව: Full Stack
+
+Full Stack development යනු frontend සහ backend දෙකම සංවර්ධනය කිරීමයි. Full stack developer කෙනෙකු UI සිට database logic දක්වා ක්‍රියාකරයි.
+
+Frontend තාක්ෂණයන් සහ backend APIs දෙකම තේරුම් ගැනීම Full stack වැඩ වල මූලික කොටසකි. මේ දැනුම end-to-end systems හොඳින් ගොඩනගා ගැනීමට උපකාරී වේ.
+
+Project planning, deployment සහ debugging සියල්ල දැනුවත්ව කළ හැකි බැවින් small to medium teams වල full stack skills ඉතා ප්‍රයෝජනවත් වේ.

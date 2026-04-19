@@ -1,0 +1,7 @@
+මාතෘකාව: Database
+
+Database යනු දත්ත සංවිධානය කර ගබඩා කරන පද්ධතියකි. එය structured ලෙස data තබා ගැනීමට සහ ඉක්මනින් ලබා ගැනීමට උපකාරී වේ.
+
+Database භාවිතයෙන් data redundancy අඩු කර consistency වැඩි කරයි. Tables, rows, columns වැනි ආකෘතියක් relational databases හි භාවිතා කරයි.
+
+පාසල්, බැංකු, ව්‍යාපාර සහ web systems වැනි බොහෝ ක්ෂේත්‍රවල database වැදගත් වේ. නිවැරදි database design එක performance සහ scalability වැඩි කරයි.

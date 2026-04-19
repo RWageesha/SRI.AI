@@ -1,0 +1,7 @@
+මාතෘකාව: Version Control
+
+Version Control යනු code වෙනස්කම් කාලය අනුව නිරීක්ෂණය, පාලනය සහ සම්බන්ධීකරණය කිරීමේ ක්‍රමයකි. Team development සඳහා මෙය අත්‍යවශ්‍ය වේ.
+
+Git වැනි tools භාවිතයෙන් commits, branches සහ merges කළමනාකරණය කරයි. අවශ්‍ය විට පැරණි version එකකට ආපසු යාම පහසු වේ.
+
+Clear commit messages, branch strategy සහ pull request reviews භාවිතයෙන් collaboration quality වැඩි කරයි. Version control භාවිතය production errors අවම කිරීමටද උපකාරී වේ.

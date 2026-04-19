@@ -1,0 +1,392 @@
+[
+  {
+    "topic": "Algorithm",
+    "source": "algorithm.txt",
+    "content": "Algorithm යනු ගැටලුවක් විසඳීම සඳහා සකස් කරන ලද පියවර මාලාවකි. එය තාර්කිකව, අනුපිළිවෙලින් සහ නිශ්චිතව ලියා තිබිය යුතුය.\nහොඳ algorithm එකකට clarity, correctness සහ efficiency වැදගත් වේ. complexity අඩු algorithm එකක් සාමාන්‍යයෙන් වේගවත් ක්‍රියාකාරීත්වයක් ලබා දේ.\nProgramming ආරම්භ කිරීමට පෙර algorithm එක සකස් කිරීමෙන් code errors අඩු කර solution quality වැඩි කරගත හැක."
+  },
+  {
+    "topic": "කෝපය",
+    "source": "anger.txt",
+    "content": "කෝපය එන මොහොතේම ප්‍රතිචාර දීමේ වෙනුවට කෙටි විරාමයක් ගන්න. තත්පර කිහිපයක් ගැඹුරු හුස්ම ගන්නා විට සිතිවිලි පැහැදිලි වේ.\nකෝපයේ හේතුව පැහැදිලි කරගැනීම වැදගත්ය. ගැටලුව සහ පුද්ගලයා වෙන් කර බලන විට සාමකාමී විසඳුමකට යාම පහසු වේ.\nගෞරවයෙන් සහ පැහැදිලිව කතා කිරීම, හඬ උස් නොකර අදහස කියා දීම, සම්බන්ධතාවය රැකගන්නා හොඳ ක්‍රමයකි."
+  },
+  {
+    "topic": "API",
+    "source": "api.txt",
+    "content": "API (Application Programming Interface) යනු software පද්ධති දෙකක් අතර සන්නිවේදනය සඳහා භාවිතා කරන interface එකකි. එය එක් පද්ධතියක සේවාවන් අනෙකුත් පද්ධතිවලට භාවිතා කිරීමට අවසර දෙයි.\nREST APIs වැනි මාර්ගයන් HTTP methods (GET, POST, PUT, DELETE) භාවිතා කර දත්ත හුවමාරු කරයි. සාමාන්‍යයෙන් JSON format භාවිතා වේ.\nAPI design හොඳ වීමට clear endpoints, authentication, error handling සහ documentation වැදගත් වේ. Secure APIs සඳහා"
+  },
+  {
+    "topic": "API",
+    "source": "api.txt",
+    "content": "ts, authentication, error handling සහ documentation වැදගත් වේ. Secure APIs සඳහා tokens සහ access control ක්‍රියාත්මක කළ යුතුය."
+  },
+  {
+    "topic": "Artificial Intelligence",
+    "source": "artificial_intelligence.txt",
+    "content": "Artificial Intelligence (AI) යනු යන්ත්‍රවලට මිනිස් බුද්ධියට සමාන තීරණ, හඳුනාගැනීම් සහ ඉගෙනීම් හැකියාවන් ලබා දීමයි. AI systems දත්ත විශ්ලේෂණය කර patterns හඳුනා ගනී.\nAI භාවිතා වන ක්ෂේත්‍ර ලෙස chatbots, recommendation systems, image recognition, voice assistants, healthcare diagnostics වැනි උදාහරණ ඇත.\nAI නිවැරදිව භාවිතා කිරීමට data quality, fairness, transparency සහ ethics ගැන සැලකිලිමත් විය යුතුය. Responsible AI approa"
+  },
+  {
+    "topic": "Artificial Intelligence",
+    "source": "artificial_intelligence.txt",
+    "content": "fairness, transparency සහ ethics ගැන සැලකිලිමත් විය යුතුය. Responsible AI approaches භාවිතයෙන් විශ්වාසදායක පද්ධති ගොඩනගා ගත හැක."
+  },
+  {
+    "topic": "Backend",
+    "source": "backend.txt",
+    "content": "Backend යනු application එකේ server-side logic, database interaction සහ business rules ක්‍රියාත්මක වන කොටසයි. User requests සැකසීම backend තුළ සිදු වේ.\nBackend frameworks සහ languages භාවිතා කර APIs, authentication, validation සහ data processing ක්‍රියාත්මක කරයි. Database සමඟ සම්බන්ධ වෙමින් නිවැරදි දත්ත ගනුදෙනු පවත්වා ගනී.\nPerformance, security සහ scalability backend design එකේ ප්‍රධාන අංග වේ. Logging, monitoring සහ e"
+  },
+  {
+    "topic": "Backend",
+    "source": "backend.txt",
+    "content": "urity සහ scalability backend design එකේ ප්‍රධාන අංග වේ. Logging, monitoring සහ error handling නිවැරදිව තිබීම production reliability වැඩි කරයි."
+  },
+  {
+    "topic": "Binary",
+    "source": "binary.txt",
+    "content": "Binary system යනු 0 සහ 1 යන අංක දෙක පමණක් භාවිතා කරන ගණිත පද්ධතියකි. පරිගණක hardware logic states (on/off) සමඟ ගැලපෙන නිසා binary මූලික වේ.\nDecimal numbers binary බවට පරිවර්තනය කිරීම computation වලදී වැදගත් වේ. Bits සහ bytes යනු binary data මිනුම් ඒකක වේ.\nText, images, audio සහ programs සියල්ල අවසානයේ binary ආකාරයෙන් පරිගණකයේ ගබඩා කර සකසයි. එබැවින් binary සංකල්පය computing හි පදනමක් වේ."
+  },
+  {
+    "topic": "Bug",
+    "source": "bug.txt",
+    "content": "Bug යනු software එකක දෝෂයක් හෝ අනපේක්ෂිත හැසිරීමකි. Bug එකක් හේතුවෙන් application crash වීම, wrong output ලැබීම හෝ performance අඩුවීම සිදු විය හැක.\nBugs ඇතිවීමට common හේතු ලෙස logic errors, incorrect assumptions, input validation issues සහ integration conflicts සඳහන් කළ හැක. Testing අඩු වීමෙන් bugs production වෙත යා හැක.\nEarly detection සඳහා unit tests, integration tests සහ code reviews වැදගත් වේ. Bug reports පැහැදි"
+  },
+  {
+    "topic": "Bug",
+    "source": "bug.txt",
+    "content": "සඳහා unit tests, integration tests සහ code reviews වැදගත් වේ. Bug reports පැහැදිලිව ලිවීම fix process එක ඉක්මන් කරයි."
+  },
+  {
+    "topic": "Cloud Computing",
+    "source": "cloud_computing.txt",
+    "content": "Cloud Computing යනු internet හරහා servers, storage, databases සහ software සේවා ලෙස ලබා දීමයි. Local infrastructure අවශ්‍යතාවය අඩු කිරීමට මෙය උපකාරී වේ.\nCloud සේවාවන්ගේ ප්‍රධාන වාසි ලෙස scalability, flexibility සහ pay-as-you-use model එක සඳහන් කළ හැක. අවශ්‍යතාවය අනුව resources වැඩි/අඩු කළ හැක.\nIaaS, PaaS, SaaS වැනි cloud service models පවතී. Data security, backup සහ access control නිවැරදිව සැලසුම් කිරීම cloud භාවිතයේද"
+  },
+  {
+    "topic": "Cloud Computing",
+    "source": "cloud_computing.txt",
+    "content": "ී. Data security, backup සහ access control නිවැරදිව සැලසුම් කිරීම cloud භාවිතයේදී වැදගත් වේ."
+  },
+  {
+    "topic": "සංවාදය",
+    "source": "communication.txt",
+    "content": "හොඳ සංවාදයක මූලික කරුණක් වන්නේ සවන් දීමයි. අනිත් අය කතා කරන විට අවධානයෙන් අසා පසුව ප්‍රතිචාර දීමෙන් අවබෝධය වැඩි වේ.\nකෙටි, පැහැදිලි වාක්‍ය භාවිතා කරන්න. අදහස පැහැදිලිව කියා පසුව අවශ්‍ය නම් උදාහරණයක් දෙන්න.\nවිරුද්ධ අදහස් තිබුණත් ගෞරවයෙන් කතා කිරීම සහ ප්‍රශ්න කර පැහැදිලි කරගැනීම සංවාද ගුණාත්මකතාව වැඩි කරයි."
+  },
+  {
+    "topic": "Compiler",
+    "source": "compiler.txt",
+    "content": "Compiler යනු high-level source code එක machine language හෝ bytecode බවට පරිවර්තනය කරන program එකකි. පරිවර්තනය සාමාන්‍යයෙන් run කිරීමට පෙර සිදු වේ.\nCompilation process එකේදී lexical analysis, syntax analysis සහ code generation වැනි අදියර ඇත. Errors තිබේ නම් compile stage එකේදී දැනුම් දේ.\nCompiled languages උදාහරණ ලෙස C/C++ සඳහන් කළ හැක. Compiler optimization මඟින් performance වැඩි executable code ලබාගත හැක."
+  },
+  {
+    "topic": "පරිගණකය",
+    "source": "computer.txt",
+    "content": "පරිගණකය යනු දත්ත ලබාගෙන ඒවා සැකසීමෙන් තොරතුරු නිපදවන ඉලෙක්ට්‍රොනික යන්ත්‍රයකි. පරිගණකයක මූලික කාර්යයන් ලෙස input, processing, output සහ storage සලකයි.\nInput යනු යතුරුපුවරුව, mouse, scanner වැනි උපකරණ හරහා දත්ත ලබා දීමයි. Processing යනු CPU මඟින් එම දත්ත සැකසීමයි.\nOutput ලෙස monitor, printer හෝ speaker හරහා ප්‍රතිඵල ලැබේ. Storage ලෙස hard disk, SSD, cloud වැනි මාධ්‍ය භාවිතා කර දත්ත තබා ගනී."
+  },
+  {
+    "topic": "ආත්ම විශ්වාසය",
+    "source": "confidence.txt",
+    "content": "ආත්ම විශ්වාසය එක දිනකින් නොඑයි. දිනපතා කුඩා කාර්යයන් සාර්ථකව කිරීමෙන් සහ ඔබේ ශක්තිමත් පැති හඳුනා ගැනීමෙන් එය මන්දගාමීව වර්ධනය වේ.\nඔබ අසාර්ථක වූ අවස්ථා ගැන අතිශයින්ම දැඩිව නොව, ඒවායේ පාඩම් සොයා බලන්න. මේ ආකාරයෙන් ඔබේ හැකියාවන් යාවත්කාලීන කර ගත හැක.\nතමන් ගැන ගෞරවයෙන් සිතීම, නිරන්තර පුහුණුව සහ සකස් කළ இலක්ක සපුරා ගැනීම ආත්ම විශ්වාසය තිරසාර කරයි."
+  },
+  {
+    "topic": "CPU",
+    "source": "cpu.txt",
+    "content": "CPU (Central Processing Unit) යනු පරිගණකයේ මූලික සැකසුම් ඒකකය වන අතර බොහෝ විට “පරිගණකයේ මොළය” ලෙස හඳුන්වයි. එය නියෝග කියවා ඒවා ක්‍රියාත්මක කරයි.\nALU (Arithmetic Logic Unit) කොටස ගණිත හා තර්ක ක්‍රියා සිදු කරයි. Control Unit කොටස නියෝග පාලනය කර අනෙකුත් කොටස් සම්බන්ධීකරණය කරයි.\nRegisters යනු ඉතා කෙටි කාලයක් සඳහා තාවකාලික දත්ත තබා ගන්නා වේගවත් මතක කොටස් වේ. CPU වේගය වැඩි වීමෙන් processing කාර්යක්ෂමතාව වැඩි වේ."
+  },
+  {
+    "topic": "Cyber Security",
+    "source": "cyber_security.txt",
+    "content": "Cyber Security යනු පද්ධති, ජාල සහ දත්ත අනවසර ප්‍රවේශයෙන්, ප්‍රහාරවලින් සහ දූෂණයෙන් ආරක්ෂා කිරීමයි. Digital systems භාවිතා කරන සෑම සංවිධානයකටම මෙය අත්‍යවශ්‍ය වේ.\nසාමාන්‍ය තර්ජන ලෙස malware, phishing, ransomware සහ hacking සඳහන් කළ හැක. මේවා පාලනය සඳහා secure configuration සහ user awareness දෙකම වැදගත් වේ.\nStrong passwords, multi-factor authentication, software updates සහ regular backups ආරක්ෂාව වැඩි කරයි. Incident res"
+  },
+  {
+    "topic": "Cyber Security",
+    "source": "cyber_security.txt",
+    "content": "hentication, software updates සහ regular backups ආරක්ෂාව වැඩි කරයි. Incident response plan එකක් තිබීමද වැදගත් ආරක්ෂක පියවරකි."
+  },
+  {
+    "topic": "දත්ත සහ තොරතුරු",
+    "source": "data_information.txt",
+    "content": "දත්ත (Data) යනු අමු සත්‍යයන් හෝ ලකුණු (raw facts) වේ. එම දත්ත තනිව භාවිතා කරන විට අර්ථය සීමිත විය හැක.\nතොරතුරු (Information) යනු දත්ත සංවිධානය කර විශ්ලේෂණය කිරීමෙන් ලැබෙන අර්ථවත් ප්‍රතිඵලයයි. ඒ නිසා තීරණ ගැනීමට තොරතුරු වැදගත් වේ.\nඋදාහරණයක් ලෙස 35, 40, 45 යන සංඛ්‍යා දත්ත වේ. ඒවා සිසුන්ගේ ලකුණු බව දක්වා සාමාන්‍යය ගණනය කළ විට එය තොරතුරක් වේ."
+  },
+  {
+    "topic": "Data Structure",
+    "source": "data_structure.txt",
+    "content": "Data Structure යනු දත්ත කාර්යක්ෂමව සංවිධානය, ගබඩා සහ ප්‍රවේශය සඳහා භාවිතා කරන ක්‍රමයකි. නිවැරදි data structure තේරීම algorithm performance එකට සෘජු බලපෑමක් දරයි.\nArrays, linked lists, stacks, queues, trees, hash tables වැනි data structures විවිධ ගැටලු සඳහා භාවිතා කරයි. Time complexity සහ space complexity සැලකිල්ලට ගෙන තේරීම වැදගත් වේ.\nReal-world systems තුළ searching, sorting, caching සහ scheduling වැනි කාර්යයන් data"
+  },
+  {
+    "topic": "Data Structure",
+    "source": "data_structure.txt",
+    "content": "l-world systems තුළ searching, sorting, caching සහ scheduling වැනි කාර්යයන් data structures මත දැඩිව රඳා පවතී."
+  },
+  {
+    "topic": "Database",
+    "source": "database.txt",
+    "content": "Database යනු දත්ත සංවිධානය කර ගබඩා කරන පද්ධතියකි. එය structured ලෙස data තබා ගැනීමට සහ ඉක්මනින් ලබා ගැනීමට උපකාරී වේ.\nDatabase භාවිතයෙන් data redundancy අඩු කර consistency වැඩි කරයි. Tables, rows, columns වැනි ආකෘතියක් relational databases හි භාවිතා කරයි.\nපාසල්, බැංකු, ව්‍යාපාර සහ web systems වැනි බොහෝ ක්ෂේත්‍රවල database වැදගත් වේ. නිවැරදි database design එක performance සහ scalability වැඩි කරයි."
+  },
+  {
+    "topic": "DBMS",
+    "source": "dbms.txt",
+    "content": "DBMS (Database Management System) යනු database එක කළමනාකරණය කරන software එකකි. එය data create, read, update, delete කිරීම පහසු කරයි.\nDBMS මඟින් user access control, backup, recovery සහ security features ලබා දේ. Multiple users එකවර වැඩ කරන විට consistency පවත්වා ගැනීමටද DBMS උපකාරී වේ.\nMySQL, PostgreSQL, Oracle, SQL Server වැනි පද්ධති DBMS උදාහරණ වේ. Application development සඳහා DBMS මූලික වැදගත්කමක් දරයි."
+  },
+  {
+    "topic": "Debugging",
+    "source": "debugging.txt",
+    "content": "Debugging යනු software bugs හඳුනාගෙන ඒවා නිරාකරණය කිරීමේ ක්‍රියාවලියකි. ගැටලුව නිවැරදිව නැවත පෙන්වා root cause හඳුනාගැනීම මෙහි මුල් පියවරයි.\nLogs, breakpoints, stack traces සහ test cases භාවිතා කර issue analysis සිදු කරයි. Hypothesis එකක් තබා step-by-step verify කිරීමෙන් නිවැරදි fix එක ලබාගත හැක.\nFix එකෙන් පසුව regression testing කිරීම වැදගත් වේ. එමඟින් එක ගැටලුවක් විසඳන විට වෙනත් feature එකක් බිඳ වැටීම වැළැක්විය හැක"
+  },
+  {
+    "topic": "Debugging",
+    "source": "debugging.txt",
+    "content": "දගත් වේ. එමඟින් එක ගැටලුවක් විසඳන විට වෙනත් feature එකක් බිඳ වැටීම වැළැක්විය හැක."
+  },
+  {
+    "topic": "Encryption",
+    "source": "encryption.txt",
+    "content": "Encryption යනු දත්ත සංකේතගත කර අනවසර පුද්ගලයින්ට අර්ථය නොපෙනෙන ලෙස ආරක්ෂා කිරීමේ ක්‍රමයකි. Data confidentiality සඳහා මෙය ප්‍රධාන තාක්ෂණයකි.\nPlain text එක encrypted text (cipher text) බවට පරිවර්තනය කරයි. නිවැරදි key එක නොමැතිව මුල් දත්ත නැවත කියවීම අපහසු වේ.\nEncryption internet communication, banking, messaging සහ file protection වැනි ක්ෂේත්‍රවල බහුලව භාවිතා වේ. දත්ත ආරක්ෂාව වැඩි කිරීමට key management නිවැරදිව කළ යුතු"
+  },
+  {
+    "topic": "Encryption",
+    "source": "encryption.txt",
+    "content": "ත්‍රවල බහුලව භාවිතා වේ. දත්ත ආරක්ෂාව වැඩි කිරීමට key management නිවැරදිව කළ යුතුය."
+  },
+  {
+    "topic": "පරිසරය",
+    "source": "environment.txt",
+    "content": "පරිසරය ආරක්ෂා කිරීම සඳහා දෛනික පුරුදු වෙනස් කිරීම වැදගත්ය. අභිබවා පරිභෝජනය අඩු කිරීම සහ නැවත භාවිතා කිරීම පරිසරයට හිතකර පියවර වේ.\nඅපද්‍රව්‍ය වර්ග කර නිසි ලෙස ඉවත් කිරීම, ජලය හා විදුලිය මිතව භාවිතා කිරීම, සහ ගස් රෝපණය වැනි ක්‍රියාකාරකම් මඟින් පරිසර බලපෑම අඩු කළ හැක.\nසමාජ මට්ටමින් වගකීමෙන් ක්‍රියා කිරීමෙන් දිගුකාලීන පාරිසරික සුරක්ෂිතතාව ලබා ගත හැක."
+  },
+  {
+    "topic": "ව්‍යායාම",
+    "source": "exercise.txt",
+    "content": "නිතිපතා ව්‍යායාම කිරීම ශරීර ශක්තිය, හෘද සෞඛ්‍යය සහ මානසික සුවය වැඩි කරයි. සතියකට දින කිහිපයක් නියමිත කාලයක් වෙන් කිරීම හොඳ පුරුද්දකි.\nඇවිදීම, සැහැල්ලු දිවීම, හෝ stretching වැනි සරල ක්‍රියාකාරකම්වලින් ආරම්භ කරන්න. අධික ලෙස ආරම්භ නොකර සෙමින් වැඩි කිරීම ආරක්ෂිතය.\nව්‍යායාමය සමඟ ප්‍රමාණවත් ජලය පානය කිරීම සහ විවේකය තබා ගැනීම ශරීරය ආරක්ෂා කිරීමට වැදගත්ය."
+  },
+  {
+    "topic": "පවුල",
+    "source": "family.txt",
+    "content": "පවුල පුද්ගලයාගේ ආරක්ෂාව, අනුග්‍රහය සහ සංවේදී සහය සපයන මූලික පද්ධතියකි. දෛනික ජීවිතයේ අභියෝග හමුවේ පවුලේ සහය මනස සන්සුන් කරයි.\nපවුල තුළ හොඳ සම්බන්ධතා පවත්වා ගැනීමට විවෘත සංවාදය, ගෞරවය සහ එකිනෙකාගේ අවශ්‍යතා අගය කිරීම වැදගත් වේ.\nකාලය ගත කිරීම, එකිනෙකාට සවන් දීම සහ අභියෝග අවස්ථාවලදී එකට තීරණ ගැනීම පවුල් බැඳීම් ශක්තිමත් කරයි."
+  },
+  {
+    "topic": "භය",
+    "source": "fear.txt",
+    "content": "භය දැනෙන විට මුලින්ම ඔබ ආරක්ෂිත ස්ථානයක සිටින බව තහවුරු කර ගන්න. පසුව හුස්ම ගැනීම පාලනය කරමින් ශරීරය සන්සුන් කර ගන්න.\nභය ඇතිකරන සිතුවිලි ලියන්න සහ ඒවා යථාර්ථයට ගැලපේදැයි විමසන්න. මෙය අනවශ්‍ය බිය අඩු කිරීමට උපකාරී වේ.\nඅවශ්‍ය වේලාවට විශ්වාසවන්ත අයගේ සහය ලබා ගැනීම භය පාලනයට හොඳ උපකාරයකි."
+  },
+  {
+    "topic": "Flowchart",
+    "source": "flowchart.txt",
+    "content": "Flowchart යනු algorithm එකක් සංකේත භාවිතා කර දෘශ්‍යමය ලෙස පෙන්වන ආකෘතියකි. එය program logic පැහැදිලිව අවබෝධ කරගැනීමට උපකාරී වේ.\nසාමාන්‍ය symbols ලෙස start/end, process, decision, input/output භාවිතා කරයි. Arrow භාවිතයෙන් පියවර අතර ගමන් මාර්ගය පෙන්වයි.\nFlowchart භාවිතයෙන් debugging සහ planning පහසු වේ. Team discussions තුළ solution flow පැහැදිලිව පැවසීමටද මෙය ප්‍රයෝජනවත් වේ."
+  },
+  {
+    "topic": "Frontend",
+    "source": "frontend.txt",
+    "content": "Frontend යනු user එකට සෘජුව පෙනෙන software කොටසයි. Web pages, buttons, forms, colors සහ layouts වැනි UI/UX මෙයට අයත් වේ.\nHTML, CSS, JavaScript වැනි තාක්ෂණයන් frontend development සඳහා මූලික වේ. React, Vue, Angular වැනි frameworks භාවිතයෙන් interactive interfaces ගොඩනගා ගත හැක.\nහොඳ frontend එකකට usability, responsiveness සහ accessibility වැදගත් වේ. User experience හොඳ වීමෙන් application භාවිතා කිරීම සාර්ථක වේ."
+  },
+  {
+    "topic": "Full Stack",
+    "source": "full_stack.txt",
+    "content": "Full Stack development යනු frontend සහ backend දෙකම සංවර්ධනය කිරීමයි. Full stack developer කෙනෙකු UI සිට database logic දක්වා ක්‍රියාකරයි.\nFrontend තාක්ෂණයන් සහ backend APIs දෙකම තේරුම් ගැනීම Full stack වැඩ වල මූලික කොටසකි. මේ දැනුම end-to-end systems හොඳින් ගොඩනගා ගැනීමට උපකාරී වේ.\nProject planning, deployment සහ debugging සියල්ල දැනුවත්ව කළ හැකි බැවින් small to medium teams වල full stack skills ඉතා ප්‍රයෝජනවත් වේ."
+  },
+  {
+    "topic": "සතුටු ජීවිතය",
+    "source": "happy_life.txt",
+    "content": "සතුටු ජීවිතයක් ගත කිරීම සඳහා දෛනික ජීවිතයේ සමබරතාවය පවත්වා ගැනීම වැදගත්ය. වැඩ, විවේකය, පවුල, සහ තමන්ට කැමති දේවල් අතර කාලය බෙදා ගන්නා විට මානසික තෘප්තිය වැඩි වේ.\nදිනපතා කුඩා අරමුණු 2-3ක් තබා ඒවා සම්පූර්ණ කිරීමෙන් ප්‍රගතියක් දැනේ. එය ආත්ම විශ්වාසය වැඩි කර දිගුකාලීන සතුටකට පදනමක් සකස් කරයි.\nවිශ්වාසවන්ත සම්බන්ධතා පවත්වා ගැනීම, කෘතඥතාවය පුහුණු කිරීම, සහ සෞඛ්‍ය සම්පන්න පුරුදු (නින්ද, ව්‍යායාම, සමබර ආහාර) තබා ගැනීම සතුටු ජ"
+  },
+  {
+    "topic": "සතුටු ජීවිතය",
+    "source": "happy_life.txt",
+    "content": "ු කිරීම, සහ සෞඛ්‍ය සම්පන්න පුරුදු (නින්ද, ව්‍යායාම, සමබර ආහාර) තබා ගැනීම සතුටු ජීවිතයක ප්‍රධාන කොටස් වේ."
+  },
+  {
+    "topic": "Hardware",
+    "source": "hardware_topic.txt",
+    "content": "Hardware යනු පරිගණකයේ දෘශ්‍යමය සහ ස්පර්ශ කළ හැකි කොටස් වේ. CPU, RAM, motherboard, keyboard, monitor, storage devices වැනි කොටස් hardware ලෙස හැඳින්වේ.\nInput devices (keyboard, mouse), output devices (monitor, printer), සහ storage devices (HDD, SSD) ලෙස hardware වර්ග කළ හැක. සෑම කොටසක්ම පද්ධතියේ ක්‍රියාකාරීත්වයට දායක වේ.\nHardware හොඳ තත්ත්වයේ පවත්වා ගැනීමෙන් system stability සහ lifespan වැඩි කළ හැක. Dust control සහ pr"
+  },
+  {
+    "topic": "Hardware",
+    "source": "hardware_topic.txt",
+    "content": "වයේ පවත්වා ගැනීමෙන් system stability සහ lifespan වැඩි කළ හැක. Dust control සහ proper cooling වැනි පුරුදු වැදගත් වේ."
+  },
+  {
+    "topic": "හිසරදය",
+    "source": "headache.txt",
+    "content": "හිසරදය ඇති වන විට මුලින්ම විවේක ගැනීම වැදගත්ය. ශබ්දය සහ වැඩි ආලෝකය අඩු පරිසරයක විනාඩි කිහිපයක් නිශ්ශබ්දව සිටීමෙන් වේදනාව අඩුවිය හැක.\nදිනපතා ප්‍රමාණවත් ජලය නොබොන විට ද හිසරදය ඇති විය හැකි බැවින් ජලය පානය කරන්න. බඩගිනි සහ නිදාගැනීමේ අඩුවීම ද හිසරදය වැඩි කරන හේතු වේ.\nහිසරදය දිගටම පවතින්නේ නම්, හෝ නිතර නැවත නැවත ඇති වන්නේ නම්, වෛද්‍ය උපදෙස් ලබා ගැනීම වඩාත් ආරක්ෂිත වේ."
+  },
+  {
+    "topic": "Internet",
+    "source": "internet.txt",
+    "content": "Internet යනු ලෝකය පුරා ඇති network එකිනෙකට සම්බන්ධ කරන විශාල ගෝලීය ජාලයකි. එය information sharing සහ communication සඳහා ප්‍රධාන ව්‍යුහයකි.\nWeb browsing, email, cloud services, online learning, video communication වැනි බොහෝ සේවා Internet මත ක්‍රියාත්මක වේ. HTTP/HTTPS වැනි protocols web access සඳහා භාවිතා කරයි.\nInternet භාවිතයේදී security සහ privacy ගැන අවධානයෙන් සිටීම වැදගත් වේ. Strong passwords සහ trusted websites භා"
+  },
+  {
+    "topic": "Internet",
+    "source": "internet.txt",
+    "content": "හ privacy ගැන අවධානයෙන් සිටීම වැදගත් වේ. Strong passwords සහ trusted websites භාවිතා කිරීම ආරක්ෂාව වැඩි කරයි."
+  },
+  {
+    "topic": "Interpreter",
+    "source": "interpreter.txt",
+    "content": "Interpreter යනු source code එක line-by-line ලෙස කියවා වහාම ක්‍රියාත්මක කරන program එකකි. Compile කර වෙනම executable file එකක් සෑදීම අනිවාර්ය නොවේ.\nError එකක් තිබේ නම් එය ඇති line එකටම අදාළව ඉක්මනින් දැනගත හැක. එබැවින් learning සහ rapid prototyping සඳහා interpreters ප්‍රයෝජනවත් වේ.\nPython සහ JavaScript වැනි භාෂා interpreter-based execution වලට උදාහරණ වේ. Runtime performance compiled code වලට වඩා වෙනස් විය හැක."
+  },
+  {
+    "topic": "IP Address",
+    "source": "ip_address.txt",
+    "content": "IP Address යනු network එකක එක් device එකක් අනෙකාගෙන් වෙන්කර හඳුනාගැනීමට භාවිතා කරන අංකීය ලිපිනයකි. Data packets නිවැරදි destination එකට යොමු වීමට මෙය උපකාරී වේ.\nIPv4 සහ IPv6 යන වර්ග දෙක ප්‍රධාන වේ. IPv4 ලිපිනයන් සීමිත වන අතර IPv6 වැඩි ලිපින අවකාශයක් ලබා දේ.\nNetwork troubleshooting කිරීමේදී IP, subnet, gateway වැනි සංකල්ප වැදගත් වේ. IP තේරුම් ගැනීම network administration සඳහා මූලික දැනුමකි."
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "source": "loneliness.txt",
+    "content": "තනිවීම හෝ කෙනෙක් නැතිව වගේ දැනීම බොහෝ දෙනාට අත්විඳිය හැකි සාමාන්‍ය හැඟීමකි. මෙම හැඟීම ඇති වූ විට තමන්ට දොස් නොකියා එය හඳුනා ගැනීම පළමු පියවර වේ.\nකෙටි පණිවිඩයක් හෝ දුරකථන ඇමතුමක් හරහා මිතුරෙකුට, පවුලේ අයෙකුට, හෝ විශ්වාසවන්ත කෙනෙකුට සම්බන්ධ වන්න. සමාජ සම්බන්ධතාවයේ කුඩා පියවරත් තනිවීම අඩු කිරීමට උපකාරී වේ.\nදිනපතා ඇවිදීම, කැමති කුසලතා ක්‍රියාකාරකම්, හෝ කණ්ඩායම් ක්‍රියාකාරකම්වලට එක්වීමෙන් සම්බන්ධතා පුළුල් කළ හැක. නිරන්තරව"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "source": "loneliness.txt",
+    "content": "කාරකම්, හෝ කණ්ඩායම් ක්‍රියාකාරකම්වලට එක්වීමෙන් සම්බන්ධතා පුළුල් කළ හැක. නිරන්තරව තනිවීම පවතින්නේ නම් සහය ඉල්ලීම ප්‍රයෝජනවත් වේ."
+  },
+  {
+    "topic": "Machine Learning",
+    "source": "machine_learning.txt",
+    "content": "Machine Learning (ML) යනු දත්ත මත පදනම්ව patterns ඉගෙනගෙන පුරෝකථන හෝ තීරණ ලබා දෙන AI ශාඛාවකි. Explicit rules සියල්ල ලියන්නේ නැතිව model එක දත්තෙන් ඉගෙන ගනී.\nSupervised, unsupervised සහ reinforcement learning වැනි ප්‍රධාන ක්‍රම ඇත. Training data quality එක model performance එකට විශාල බලපෑමක් දරයි.\nModel evaluation සඳහා accuracy, precision, recall වැනි metrics භාවිතා කරයි. Overfitting සහ data bias වැනි ගැටලු පාලනය කිරී"
+  },
+  {
+    "topic": "Machine Learning",
+    "source": "machine_learning.txt",
+    "content": "recall වැනි metrics භාවිතා කරයි. Overfitting සහ data bias වැනි ගැටලු පාලනය කිරීම ML development හි වැදගත් කොටසකි."
+  },
+  {
+    "topic": "අභිප්‍රේරණය",
+    "source": "motivation.txt",
+    "content": "අභිප්‍රේරණය අඩුවී ඇති විට විශාල இலක්කයකට වඩා කුඩා இலක්ක තැබීමෙන් ආරම්භ කරන්න. කුඩා සාර්ථකත්වයන් එකතු වීමෙන් උද්යෝගය වැඩි වේ.\nදිනපතා කිරීමට අවශ්‍ය වැදගත් කාර්ය තුනක් පමණක් ලියන්න. ඒවා සම්පූර්ණ කළ විට ඔබගේ ප්‍රගතිය දෘශ්‍යමාන වන අතර තවදුරටත් වැඩ කිරීමට ශක්තිය ලැබේ.\nඋදව් අවශ්‍ය විට මිතුරන් හෝ පවුලේ අය සමඟ இலක්ක බෙදාගැනීම වගකීම සහ අධිෂ්ඨානය පවත්වා ගැනීමට උපකාරී වේ."
+  },
+  {
+    "topic": "Networking",
+    "source": "networking.txt",
+    "content": "Networking යනු පරිගණක හා උපකරණ එකිනෙකට සම්බන්ධ කර දත්ත හුවමාරු කිරීමයි. එය resource sharing සහ communication සඳහා මූලික තාක්ෂණයකි.\nLAN (Local Area Network) කුඩා භූගෝලීය ප්‍රදේශයක භාවිතා වන අතර WAN (Wide Area Network) විශාල ප්‍රදේශ ආවරණය කරයි. Office සහ campus වැනි ස්ථානවල LAN බහුලව භාවිතා වේ.\nProtocols භාවිතයෙන් devices අතර සම්මත සන්නිවේදනයක් පවත්වා ගනී. නිවැරදි network configuration මඟින් performance සහ reliability"
+  },
+  {
+    "topic": "Networking",
+    "source": "networking.txt",
+    "content": "නයක් පවත්වා ගනී. නිවැරදි network configuration මඟින් performance සහ reliability වැඩි කරගත හැක."
+  },
+  {
+    "topic": "Open Source",
+    "source": "open_source.txt",
+    "content": "Open Source software යනු source code පොදු ජනතාවට දැකීමට, භාවිතා කිරීමට සහ වෙනස් කිරීමට අවසර දෙන software ආකෘතියකි. මෙය transparency සහ collaboration වැඩි කරයි.\nDevelopers ලෝකය පුරා එකම project එකකට දායක විය හැකි බැවින් innovation වේගවත් වේ. Community support හේතුවෙන් bug fixes සහ feature improvements ඉක්මනින් සිදු වේ.\nOpen source භාවිතයේදී licenses (MIT, GPL, Apache) තේරුම් ගැනීම වැදගත්ය. License conditions අනුගමනය ක"
+  },
+  {
+    "topic": "Open Source",
+    "source": "open_source.txt",
+    "content": "ී licenses (MIT, GPL, Apache) තේරුම් ගැනීම වැදගත්ය. License conditions අනුගමනය කිරීම නීතිමය වශයෙන් අත්‍යවශ්‍ය වේ."
+  },
+  {
+    "topic": "ඔපරේටින් පද්ධතිය",
+    "source": "operating_system.txt",
+    "content": "ඔපරේටින් පද්ධතිය (Operating System) යනු hardware සහ software අතර සම්බන්ධතාවය කළමනාකරණය කරන මූලික පද්ධතියකි. එය computer resources නිවැරදිව බෙදා දෙයි.\nOS කාර්යයන් ලෙස process management, memory management, file management සහ device control ඇතුළත් වේ. User commands සහ applications hardware වෙත යොමු කිරීම OS මඟින් සිදු වේ.\nWindows, Linux, macOS වැනි පද්ධති OS උදාහරණ වේ. හොඳ OS එකක් භාවිතා කිරීමෙන් performance සහ securit"
+  },
+  {
+    "topic": "ඔපරේටින් පද්ධතිය",
+    "source": "operating_system.txt",
+    "content": "cOS වැනි පද්ධති OS උදාහරණ වේ. හොඳ OS එකක් භාවිතා කිරීමෙන් performance සහ security දෙකම වැඩි වේ."
+  },
+  {
+    "topic": "Operating System Types",
+    "source": "operating_system_types.txt",
+    "content": "Operating System වර්ග විවිධ පරිගණක අවශ්‍යතා සඳහා නිර්මාණය කර ඇත. ප්‍රධාන වර්ග ලෙස batch systems, time-sharing systems සහ real-time systems සඳහන් කළ හැක.\nBatch OS එකේ කාර්යයන් කණ්ඩායම් වශයෙන් ක්‍රියාත්මක වේ. Time-sharing OS එකේ multiple users එකවර system resources භාවිතා කරයි.\nReal-time OS එකේ latency අඩු කර නියමිත කාල සීමාව තුළ ප්‍රතිචාර ලබා දීම වැදගත් වේ. Embedded systems සහ industrial control වලදී real-time OS බහුල"
+  },
+  {
+    "topic": "Operating System Types",
+    "source": "operating_system_types.txt",
+    "content": "ලබා දීම වැදගත් වේ. Embedded systems සහ industrial control වලදී real-time OS බහුලව භාවිතා කරයි."
+  },
+  {
+    "topic": "Programming",
+    "source": "programming.txt",
+    "content": "Programming යනු පරිගණකයට කාර්යයන් ඉටු කිරීමට නියෝග ලිවීමේ ක්‍රියාවලියකි. එය problem solving කුසලතා සමඟ බැඳී ඇත.\nProgramming කිරීමේදී variables, conditions, loops, functions වැනි මූලික සංකල්ප භාවිතා කරයි. code logic නිවැරදි වීම ප්‍රතිඵලයේ ගුණාත්මකතාවයට බලපායි.\nහොඳ programming පුරුදු ලෙස readable code, comments, testing සහ version control භාවිතා කිරීම වැදගත් වේ. මේවා teamwork සහ maintenance පහසු කරයි."
+  },
+  {
+    "topic": "Programming Languages",
+    "source": "programming_languages.txt",
+    "content": "Programming languages යනු developer සහ computer අතර සන්නිවේදනයට භාවිතා කරන භාෂා වේ. එක් එක් භාෂාවට තමන්ගේ syntax සහ use cases ඇත.\nPython, Java, C++, JavaScript වැනි භාෂා ප්‍රචලිත උදාහරණ වේ. Python data සහ AI කටයුතු සඳහා, Java enterprise systems සඳහා, JavaScript web development සඳහා බහුලව භාවිතා වේ.\nභාෂාව තේරීම project අවශ්‍යතා, performance, community support සහ ecosystem මත පදනම් විය යුතුය. එකකට වඩා භාෂා දැනගැනීම වෘත"
+  },
+  {
+    "topic": "Programming Languages",
+    "source": "programming_languages.txt",
+    "content": "e, community support සහ ecosystem මත පදනම් විය යුතුය. එකකට වඩා භාෂා දැනගැනීම වෘත්තීය වශයෙන් ප්‍රයෝජනවත් වේ."
+  },
+  {
+    "topic": "Queue",
+    "source": "queue.txt",
+    "content": "Queue යනු FIFO (First In First Out) ආකෘතියෙන් ක්‍රියා කරන data structure එකකි. මුලින් ඇතුල් කළ අයිතමය මුලින්ම ඉවත් වේ.\nප්‍රධාන operations ලෙස enqueue (අගට එකතු කිරීම), dequeue (ඉදිරියෙන් ඉවත් කිරීම) සහ front/rear access ඇත. Task scheduling, print queues සහ messaging systems වල queue සංකල්පය වැදගත් වේ.\nCircular queue, priority queue සහ deque වැනි විවිධ ආකෘතිද භාවිතා වේ. Throughput සහ fairness අවශ්‍ය අවස්ථාවල queue str"
+  },
+  {
+    "topic": "Queue",
+    "source": "queue.txt",
+    "content": "ue වැනි විවිධ ආකෘතිද භාවිතා වේ. Throughput සහ fairness අවශ්‍ය අවස්ථාවල queue structures ප්‍රයෝජනවත් වේ."
+  },
+  {
+    "topic": "RAM",
+    "source": "ram.txt",
+    "content": "RAM (Random Access Memory) යනු පරිගණකයේ තාවකාලික මතකයකි. ක්‍රියාත්මක වන වැඩසටහන් සහ සක්‍රීය දත්ත මෙහි තබා ගනී.\nRAM වල විශේෂත්වය වේගවත් data access එකයි. ඒ නිසා වැඩසටහන් ඉක්මනින් ක්‍රියාත්මක වීමට RAM වැදගත් වේ.\nකෙසේ නමුත් RAM volatile memory එකක් වන නිසා විදුලිය අහිමි වූ විට එහි දත්ත අහිමි වේ. වැඩි RAM ප්‍රමාණයක් තිබීම multi-tasking සඳහා උපකාරී වේ."
+  },
+  {
+    "topic": "ROM",
+    "source": "rom.txt",
+    "content": "ROM (Read Only Memory) යනු ස්ථිර මතකයකි. පද්ධතිය ආරම්භ වීමට අවශ්‍ය මූලික උපදෙස් මෙහි ගබඩා කර ඇත.\nRAM මෙන් නොව ROM හි දත්ත විදුලිය නැති වූ පසුවද අහිමි නොවේ. එබැවින් firmware වැනි මූලික code ROM තුළ තබා ගනී.\nBoot process එකේදී පද්ධතිය අවශ්‍ය ආරම්භක උපදෙස් ROM වෙතින් ලබා ගනී. මෙය system stability සඳහා වැදගත් කොටසකි."
+  },
+  {
+    "topic": "දුක",
+    "source": "sadness.txt",
+    "content": "දුක දැනෙන විට එය සඟවා නොගෙන පිළිගැනීම වැදගත්ය. ඔබේ හැඟීම් විශ්වාසවන්ත මිතුරෙකු හෝ පවුලේ කෙනෙකු සමඟ බෙදා ගැනීමෙන් සහනයක් ලැබේ.\nදිනචරියාව පවත්වා ගැනීම ද උපකාරී වේ. සුළු ව්‍යායාම, කෙටි ඇවිදීම, සහ සංගීතය වැනි සරල ක්‍රියාකාරකම් දුකේ බර අඩු කරයි.\nදුක දිගු කාලයක් තිස්සේ පැවතී දෛනික කටයුතු වලට බලපාන්නේ නම් වෘත්තීය උපදෙස් ලබා ගැනීම ප්‍රයෝජනවත් වේ."
+  },
+  {
+    "topic": "නින්ද",
+    "source": "sleep.txt",
+    "content": "හොඳ නින්දක් සඳහා නිතර එකම වේලාවට නිදාගැනීම සහ නැගිටීම වැදගත් වේ. නින්දට පෙර තිර භාවිතය අඩු කිරීමෙන් මනස නිදාගැනීමට සූදානම් වේ.\nකැෆේන් සහ බර ආහාර නින්දට සමීප වේලාවක වළක්වා ගන්න. නිදාගැනීමේ කාමරය අඳුරු, නිශ්ශබ්ද සහ සුවපහසු ලෙස තබා ගන්න.\nනින්ද නොයෑම දිගුකාලීනව පවතින්නේ නම්, නිදාගැනීමේ පුරුදු සැලසුම් කර නිරීක්ෂණය කිරීම ප්‍රයෝජනවත්ය."
+  },
+  {
+    "topic": "සමාජ මාධ්‍ය",
+    "source": "social_media.txt",
+    "content": "සමාජ මාධ්‍ය භාවිතා කිරීමේදී කාල සීමාවක් තබා ගැනීම ප්‍රයෝජනවත් වේ. අඛණ්ඩ භාවිතය අවධානය අඩු කර මානසික ආතතිය වැඩි කළ හැක.\nතොරතුරු බෙදාගැනීමට පෙර එහි විශ්වාසනීයත්වය පරීක්ෂා කරන්න. පෞද්ගලික තොරතුරු ආරක්ෂිතව තබා ගැනීම සයිබර් ආරක්ෂාව සඳහා වැදගත්ය.\nසමාජ මාධ්‍යය සබඳතා සහ ඉගෙනීම සඳහා භාවිතා කළ හැකි නමුත් වගකීමෙන් සහ සීමිතව භාවිතා කිරීම හොඳම ක්‍රමය වේ."
+  },
+  {
+    "topic": "Software Engineering",
+    "source": "software_engineering.txt",
+    "content": "Software Engineering යනු software සංවර්ධනය සඳහා ක්‍රමවත්, සැලසුම්ගත සහ පරීක්ෂාකාරී ක්‍රියාවලියකි. Quality, maintainability සහ reliability ලබා ගැනීම එහි අරමුණ වේ.\nසාමාන්‍ය software lifecycle පියවර ලෙස requirement analysis, design, implementation, testing සහ maintenance සඳහන් කළ හැක. එක් එක් අදියර නිවැරදිව කළ විට project අවදානම් අඩුවේ.\nDocumentation, code reviews, testing automation සහ collaboration tools භාවිතා කිරීම"
+  },
+  {
+    "topic": "Software Engineering",
+    "source": "software_engineering.txt",
+    "content": "mentation, code reviews, testing automation සහ collaboration tools භාවිතා කිරීම engineering quality වැඩි කරයි. User needs මත පදනම්ව iterative improvements කිරීමද වැදගත් වේ."
+  },
+  {
+    "topic": "Software",
+    "source": "software_topic.txt",
+    "content": "Software යනු පරිගණකයට නියෝග ලබා දෙන වැඩසටහන්, libraries සහ data එකතුවකි. Hardware එක ක්‍රියාශීලී වීමට software අවශ්‍ය වේ.\nSystem software (උදා: OS, drivers) සහ application software (උදා: browser, editor) ලෙස software වර්ග කරයි. එක් එක් software එකකට විශේෂ කාර්යභාරයක් ඇත.\nSoftware update කිරීමෙන් bugs අඩු කර security වැඩි කර performance දියුණු කළ හැක. නිවැරදි software තේරීම user efficiency වැඩි කරයි."
+  },
+  {
+    "topic": "SQL",
+    "source": "sql.txt",
+    "content": "SQL (Structured Query Language) යනු relational databases සමඟ කටයුතු කිරීමට භාවිතා කරන භාෂාවකි. එය data query කිරීම සහ table management සඳහා ප්‍රධාන මෙවලමකි.\nSQL හි SELECT, INSERT, UPDATE, DELETE වැනි නියෝග භාවිතා කර data operations සිදු කරයි. CREATE සහ ALTER වැනි නියෝග schema management සඳහා භාවිතා වේ.\nReports, filtering, sorting සහ joins වැනි කාර්යයන් SQL මඟින් කාර්යක්ෂමව කරගත හැක. Data-driven applications සඳහා SQL"
+  },
+  {
+    "topic": "SQL",
+    "source": "sql.txt",
+    "content": "වැනි කාර්යයන් SQL මඟින් කාර්යක්ෂමව කරගත හැක. Data-driven applications සඳහා SQL දැනුම වැදගත් වේ."
+  },
+  {
+    "topic": "Stack",
+    "source": "stack.txt",
+    "content": "Stack යනු LIFO (Last In First Out) ආකෘතියෙන් ක්‍රියා කරන data structure එකකි. අවසානයේ ඇතුල් කළ අයිතමය මුලින්ම ඉවත් වේ.\nප්‍රධාන operations ලෙස push (ඇතුල් කිරීම), pop (ඉවත් කිරීම) සහ peek/top (ඉහළ අගය බැලීම) ඇත. Function calls සහ undo operations වැනි අවස්ථාවල stack බහුලව භාවිතා කරයි.\nStack overflow සහ underflow වැනි තත්ව දැනුවත්ව handle කිරීම වැදගත් වේ. Algorithm design තුළ recursion සමඟ stack සංකල්පය සම්බන්ධ වේ."
+  },
+  {
+    "topic": "ආතතිය",
+    "source": "stress.txt",
+    "content": "ආතතිය දැනෙන විට ක්ෂණිකව ගැඹුරු හුස්ම ගැනීමේ ක්‍රම භාවිතා කිරීම ප්‍රයෝජනවත්ය. සෙමින් හුස්ම ඇදගෙන සෙමින් පිට කිරීම මඟින් ශරීරය සහ මනස සන්සුන් වේ.\nකාර්යයන් එකවර බරපතළ ලෙස නොගන්න. කාර්යයන් කුඩා කොටස්වලට බෙදා එක් එක් කොටස සම්පූර්ණ කිරීමෙන් ආතතිය අඩු කරගත හැක.\nවිවේක කාලයක් තබා ගන්න, ඇවිදීම, සංගීතය ඇසීම, හෝ විශ්වාසවන්ත අය සමඟ කතා කිරීම මඟින් මානසික බර අඩුවිය හැක."
+  },
+  {
+    "topic": "කාල කළමනාකරණය",
+    "source": "time_management.txt",
+    "content": "කාල කළමනාකරණයේ පළමු පියවර වන්නේ කාර්යයන් ප්‍රමුඛතාව අනුව වෙන් කිරීමයි. වැදගත් සහ හදිසි කාර්යයන් මුලින්ම කරන්න.\nදිනය ආරම්භයේදී කෙටි සැලැස්මක් ලියන්න. විශාල කාර්යයන් කුඩා කොටස්වලට බෙදා එක් කොටසක් නිම කළ පසු ඊළඟ කොටසට යන්න.\nවිවේක කාලය ද සැලැස්මට ඇතුළත් කරන්න. අඛණ්ඩව වැඩ කිරීමේ වෙනුවට කෙටි විරාමවලින් වැඩ කිරීම අවධානය සහ ගුණාත්මකතාව රැකගැනීමට උපකාරී වේ."
+  },
+  {
+    "topic": "Version Control",
+    "source": "version_control.txt",
+    "content": "Version Control යනු code වෙනස්කම් කාලය අනුව නිරීක්ෂණය, පාලනය සහ සම්බන්ධීකරණය කිරීමේ ක්‍රමයකි. Team development සඳහා මෙය අත්‍යවශ්‍ය වේ.\nGit වැනි tools භාවිතයෙන් commits, branches සහ merges කළමනාකරණය කරයි. අවශ්‍ය විට පැරණි version එකකට ආපසු යාම පහසු වේ.\nClear commit messages, branch strategy සහ pull request reviews භාවිතයෙන් collaboration quality වැඩි කරයි. Version control භාවිතය production errors අවම කිරීමටද උපකාරී වේ"
+  },
+  {
+    "topic": "Version Control",
+    "source": "version_control.txt",
+    "content": "uality වැඩි කරයි. Version control භාවිතය production errors අවම කිරීමටද උපකාරී වේ."
+  }
+]

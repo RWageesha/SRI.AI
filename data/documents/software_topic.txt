@@ -1,0 +1,7 @@
+මාතෘකාව: Software
+
+Software යනු පරිගණකයට නියෝග ලබා දෙන වැඩසටහන්, libraries සහ data එකතුවකි. Hardware එක ක්‍රියාශීලී වීමට software අවශ්‍ය වේ.
+
+System software (උදා: OS, drivers) සහ application software (උදා: browser, editor) ලෙස software වර්ග කරයි. එක් එක් software එකකට විශේෂ කාර්යභාරයක් ඇත.
+
+Software update කිරීමෙන් bugs අඩු කර security වැඩි කර performance දියුණු කළ හැක. නිවැරදි software තේරීම user efficiency වැඩි කරයි.

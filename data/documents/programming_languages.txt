@@ -1,0 +1,7 @@
+මාතෘකාව: Programming Languages
+
+Programming languages යනු developer සහ computer අතර සන්නිවේදනයට භාවිතා කරන භාෂා වේ. එක් එක් භාෂාවට තමන්ගේ syntax සහ use cases ඇත.
+
+Python, Java, C++, JavaScript වැනි භාෂා ප්‍රචලිත උදාහරණ වේ. Python data සහ AI කටයුතු සඳහා, Java enterprise systems සඳහා, JavaScript web development සඳහා බහුලව භාවිතා වේ.
+
+භාෂාව තේරීම project අවශ්‍යතා, performance, community support සහ ecosystem මත පදනම් විය යුතුය. එකකට වඩා භාෂා දැනගැනීම වෘත්තීය වශයෙන් ප්‍රයෝජනවත් වේ.

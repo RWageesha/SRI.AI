@@ -1,0 +1,7 @@
+මාතෘකාව: Cyber Security
+
+Cyber Security යනු පද්ධති, ජාල සහ දත්ත අනවසර ප්‍රවේශයෙන්, ප්‍රහාරවලින් සහ දූෂණයෙන් ආරක්ෂා කිරීමයි. Digital systems භාවිතා කරන සෑම සංවිධානයකටම මෙය අත්‍යවශ්‍ය වේ.
+
+සාමාන්‍ය තර්ජන ලෙස malware, phishing, ransomware සහ hacking සඳහන් කළ හැක. මේවා පාලනය සඳහා secure configuration සහ user awareness දෙකම වැදගත් වේ.
+
+Strong passwords, multi-factor authentication, software updates සහ regular backups ආරක්ෂාව වැඩි කරයි. Incident response plan එකක් තිබීමද වැදගත් ආරක්ෂක පියවරකි.

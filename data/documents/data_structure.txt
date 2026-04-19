@@ -1,0 +1,7 @@
+මාතෘකාව: Data Structure
+
+Data Structure යනු දත්ත කාර්යක්ෂමව සංවිධානය, ගබඩා සහ ප්‍රවේශය සඳහා භාවිතා කරන ක්‍රමයකි. නිවැරදි data structure තේරීම algorithm performance එකට සෘජු බලපෑමක් දරයි.
+
+Arrays, linked lists, stacks, queues, trees, hash tables වැනි data structures විවිධ ගැටලු සඳහා භාවිතා කරයි. Time complexity සහ space complexity සැලකිල්ලට ගෙන තේරීම වැදගත් වේ.
+
+Real-world systems තුළ searching, sorting, caching සහ scheduling වැනි කාර්යයන් data structures මත දැඩිව රඳා පවතී.

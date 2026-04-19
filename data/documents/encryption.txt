@@ -1,0 +1,7 @@
+මාතෘකාව: Encryption
+
+Encryption යනු දත්ත සංකේතගත කර අනවසර පුද්ගලයින්ට අර්ථය නොපෙනෙන ලෙස ආරක්ෂා කිරීමේ ක්‍රමයකි. Data confidentiality සඳහා මෙය ප්‍රධාන තාක්ෂණයකි.
+
+Plain text එක encrypted text (cipher text) බවට පරිවර්තනය කරයි. නිවැරදි key එක නොමැතිව මුල් දත්ත නැවත කියවීම අපහසු වේ.
+
+Encryption internet communication, banking, messaging සහ file protection වැනි ක්ෂේත්‍රවල බහුලව භාවිතා වේ. දත්ත ආරක්ෂාව වැඩි කිරීමට key management නිවැරදිව කළ යුතුය.

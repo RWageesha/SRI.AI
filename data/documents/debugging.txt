@@ -1,0 +1,7 @@
+මාතෘකාව: Debugging
+
+Debugging යනු software bugs හඳුනාගෙන ඒවා නිරාකරණය කිරීමේ ක්‍රියාවලියකි. ගැටලුව නිවැරදිව නැවත පෙන්වා root cause හඳුනාගැනීම මෙහි මුල් පියවරයි.
+
+Logs, breakpoints, stack traces සහ test cases භාවිතා කර issue analysis සිදු කරයි. Hypothesis එකක් තබා step-by-step verify කිරීමෙන් නිවැරදි fix එක ලබාගත හැක.
+
+Fix එකෙන් පසුව regression testing කිරීම වැදගත් වේ. එමඟින් එක ගැටලුවක් විසඳන විට වෙනත් feature එකක් බිඳ වැටීම වැළැක්විය හැක.

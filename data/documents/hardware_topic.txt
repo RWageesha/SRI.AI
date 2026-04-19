@@ -1,0 +1,7 @@
+මාතෘකාව: Hardware
+
+Hardware යනු පරිගණකයේ දෘශ්‍යමය සහ ස්පර්ශ කළ හැකි කොටස් වේ. CPU, RAM, motherboard, keyboard, monitor, storage devices වැනි කොටස් hardware ලෙස හැඳින්වේ.
+
+Input devices (keyboard, mouse), output devices (monitor, printer), සහ storage devices (HDD, SSD) ලෙස hardware වර්ග කළ හැක. සෑම කොටසක්ම පද්ධතියේ ක්‍රියාකාරීත්වයට දායක වේ.
+
+Hardware හොඳ තත්ත්වයේ පවත්වා ගැනීමෙන් system stability සහ lifespan වැඩි කළ හැක. Dust control සහ proper cooling වැනි පුරුදු වැදගත් වේ.

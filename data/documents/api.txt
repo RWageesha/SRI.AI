@@ -1,0 +1,7 @@
+මාතෘකාව: API
+
+API (Application Programming Interface) යනු software පද්ධති දෙකක් අතර සන්නිවේදනය සඳහා භාවිතා කරන interface එකකි. එය එක් පද්ධතියක සේවාවන් අනෙකුත් පද්ධතිවලට භාවිතා කිරීමට අවසර දෙයි.
+
+REST APIs වැනි මාර්ගයන් HTTP methods (GET, POST, PUT, DELETE) භාවිතා කර දත්ත හුවමාරු කරයි. සාමාන්‍යයෙන් JSON format භාවිතා වේ.
+
+API design හොඳ වීමට clear endpoints, authentication, error handling සහ documentation වැදගත් වේ. Secure APIs සඳහා tokens සහ access control ක්‍රියාත්මක කළ යුතුය.

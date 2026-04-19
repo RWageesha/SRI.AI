@@ -1,0 +1,7 @@
+මාතෘකාව: Cloud Computing
+
+Cloud Computing යනු internet හරහා servers, storage, databases සහ software සේවා ලෙස ලබා දීමයි. Local infrastructure අවශ්‍යතාවය අඩු කිරීමට මෙය උපකාරී වේ.
+
+Cloud සේවාවන්ගේ ප්‍රධාන වාසි ලෙස scalability, flexibility සහ pay-as-you-use model එක සඳහන් කළ හැක. අවශ්‍යතාවය අනුව resources වැඩි/අඩු කළ හැක.
+
+IaaS, PaaS, SaaS වැනි cloud service models පවතී. Data security, backup සහ access control නිවැරදිව සැලසුම් කිරීම cloud භාවිතයේදී වැදගත් වේ.

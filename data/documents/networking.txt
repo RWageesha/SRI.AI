@@ -1,0 +1,7 @@
+මාතෘකාව: Networking
+
+Networking යනු පරිගණක හා උපකරණ එකිනෙකට සම්බන්ධ කර දත්ත හුවමාරු කිරීමයි. එය resource sharing සහ communication සඳහා මූලික තාක්ෂණයකි.
+
+LAN (Local Area Network) කුඩා භූගෝලීය ප්‍රදේශයක භාවිතා වන අතර WAN (Wide Area Network) විශාල ප්‍රදේශ ආවරණය කරයි. Office සහ campus වැනි ස්ථානවල LAN බහුලව භාවිතා වේ.
+
+Protocols භාවිතයෙන් devices අතර සම්මත සන්නිවේදනයක් පවත්වා ගනී. නිවැරදි network configuration මඟින් performance සහ reliability වැඩි කරගත හැක.

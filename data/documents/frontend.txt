@@ -1,0 +1,7 @@
+මාතෘකාව: Frontend
+
+Frontend යනු user එකට සෘජුව පෙනෙන software කොටසයි. Web pages, buttons, forms, colors සහ layouts වැනි UI/UX මෙයට අයත් වේ.
+
+HTML, CSS, JavaScript වැනි තාක්ෂණයන් frontend development සඳහා මූලික වේ. React, Vue, Angular වැනි frameworks භාවිතයෙන් interactive interfaces ගොඩනගා ගත හැක.
+
+හොඳ frontend එකකට usability, responsiveness සහ accessibility වැදගත් වේ. User experience හොඳ වීමෙන් application භාවිතා කිරීම සාර්ථක වේ.

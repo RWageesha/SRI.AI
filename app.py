@@ -1,381 +1,847 @@
-from pathlib import Path
-import base64
-import json
-import re
-from datetime import datetime
+"""Streamlit app for offline Sinhala Hybrid RAG chatbot."""
 
-import ollama
+from __future__ import annotations
+
+import base64
+import html
+import json
+from datetime import datetime
+from pathlib import Path
+import re
+
 import streamlit as st
 
-
-BASE_DIR = Path(__file__).parent
-KNOWLEDGE_FILE = BASE_DIR / "knowledge.txt"
-CONVERSATIONS_FILE = BASE_DIR / "conversations.txt"
-CHAT_HISTORY_DIR = BASE_DIR / "chat_history"
-ICON_FILE = BASE_DIR / "Images" / "Iconlogo.png"
-HEADER_LOGO_FILE = BASE_DIR / "Images" / "Namelogo.png"
-FULL_LOGO_FILE = BASE_DIR / "Images" / "Fulllogo.png"
-SINHALA_RE = re.compile(r"[\u0D80-\u0DFF]")
+from chatbot.hybrid_retriever import HybridResult, HybridRetriever
+from chatbot.memory import SessionMemory
+from chatbot.ollama import OllamaClient
+from chatbot.prompt import FALLBACK_ANSWER, build_prompt
 
 
-def load_text_file(path: Path) -> str:
-    if not path.exists():
-        return ""
-    return path.read_text(encoding="utf-8").strip()
+PROJECT_ROOT = Path(__file__).resolve().parent
+PAGE_ICON_PATH = PROJECT_ROOT / "Iconlogo.png"
+HEADER_LOGO_PATH = PROJECT_ROOT / "Namelogo.png"
+MAIN_UI_LOGO_PATH = PROJECT_ROOT / "Full logo.png"
+USER_AVATAR_PATH = PROJECT_ROOT / "user.png"
+HEADER_SETTINGS_ICON_PATH = PROJECT_ROOT / "Setting_Icon.png"
+CHAT_SEND_ICON_PATH = PROJECT_ROOT / "Send_Icon.png"
+CHAT_HISTORY_DIR = PROJECT_ROOT / "chat_history"
+
+REFUSAL_PATTERNS: tuple[str, ...] = (
+    "the context does not provide",
+    "context does not provide",
+    "cannot generate an answer",
+    "cannot answer from the provided context",
+    "provided context does not",
+    "insufficient information in the context",
+)
+
+QUERY_NOISE_TOKENS: set[str] = {
+    "කියන්නේ",
+    "මොකක්ද",
+    "මොනවද",
+    "මොනවාද",
+    "කොහොමද",
+    "ද",
+    "ද?",
+    "the",
+    "what",
+    "is",
+    "are",
+}
+
+QUERY_ALIASES: dict[str, str] = {
+    "os": "operating system ඔපරේටින් පද්ධතිය",
+    "ai": "artificial intelligence",
+    "ml": "machine learning",
+}
 
 
-def load_logo_base64(path: Path) -> str:
-    if not path.exists():
-        return ""
-    return base64.b64encode(path.read_bytes()).decode("ascii")
+@st.cache_data(show_spinner=False)
+def load_header_logo_data_uri() -> str | None:
+    """Load header logo PNG and return a data URI."""
+    if HEADER_LOGO_PATH.exists() and HEADER_LOGO_PATH.is_file():
+        data = HEADER_LOGO_PATH.read_bytes()
+        encoded = base64.b64encode(data).decode("ascii")
+        return f"data:image/png;base64,{encoded}"
+
+    # Fallback for alternate folders/names.
+    search_dirs = [
+        PROJECT_ROOT,
+        PROJECT_ROOT / "assets",
+        PROJECT_ROOT / "static",
+        PROJECT_ROOT / "images",
+        PROJECT_ROOT / "Images",
+    ]
+
+    candidates: list[Path] = []
+    seen: set[Path] = set()
+    for directory in search_dirs:
+        if not directory.exists() or not directory.is_dir():
+            continue
+        for pattern in ("*logo*.png", "*sri*.png", "*.png"):
+            for path in sorted(directory.glob(pattern)):
+                resolved = path.resolve()
+                if resolved in seen:
+                    continue
+                seen.add(resolved)
+                candidates.append(path)
+
+    if not candidates:
+        return None
+
+    data = candidates[0].read_bytes()
+    encoded = base64.b64encode(data).decode("ascii")
+    return f"data:image/png;base64,{encoded}"
 
 
-def ensure_chat_history_dir() -> None:
+@st.cache_data(show_spinner=False)
+def load_settings_icon_data_uri() -> str | None:
+    """Load settings icon PNG and return a data URI."""
+    if not HEADER_SETTINGS_ICON_PATH.exists() or not HEADER_SETTINGS_ICON_PATH.is_file():
+        return None
+
+    data = HEADER_SETTINGS_ICON_PATH.read_bytes()
+    encoded = base64.b64encode(data).decode("ascii")
+    return f"data:image/png;base64,{encoded}"
+
+
+@st.cache_data(show_spinner=False)
+def load_main_ui_logo_data_uri() -> str | None:
+    """Load main branding full-logo PNG and return a data URI."""
+    if not MAIN_UI_LOGO_PATH.exists() or not MAIN_UI_LOGO_PATH.is_file():
+        return None
+
+    data = MAIN_UI_LOGO_PATH.read_bytes()
+    encoded = base64.b64encode(data).decode("ascii")
+    return f"data:image/png;base64,{encoded}"
+
+
+@st.cache_data(show_spinner=False)
+def load_user_avatar_data_uri() -> str | None:
+    """Load user avatar PNG and return a data URI."""
+    if not USER_AVATAR_PATH.exists() or not USER_AVATAR_PATH.is_file():
+        return None
+
+    data = USER_AVATAR_PATH.read_bytes()
+    encoded = base64.b64encode(data).decode("ascii")
+    return f"data:image/png;base64,{encoded}"
+
+
+@st.cache_data(show_spinner=False)
+def load_send_icon_data_uri() -> str | None:
+    """Load chat send icon PNG and return a data URI."""
+    if not CHAT_SEND_ICON_PATH.exists() or not CHAT_SEND_ICON_PATH.is_file():
+        return None
+
+    data = CHAT_SEND_ICON_PATH.read_bytes()
+    encoded = base64.b64encode(data).decode("ascii")
+    return f"data:image/png;base64,{encoded}"
+
+
+@st.cache_resource(show_spinner=False)
+def get_retriever(data_signature: tuple[int, int, int]) -> HybridRetriever:
+    """Load hybrid retriever once per Streamlit worker."""
+    _ = data_signature
+    return HybridRetriever(project_root=PROJECT_ROOT, rebuild=False)
+
+
+@st.cache_resource(show_spinner=False)
+def get_ollama() -> OllamaClient:
+    """Load Ollama HTTP client once per Streamlit worker."""
+    return OllamaClient()
+
+
+def build_data_signature() -> tuple[int, int, int]:
+    """Create cache key from knowledge/docs/index file state."""
+    tracked_files: list[Path] = [
+        PROJECT_ROOT / "data" / "knowledge.json",
+        PROJECT_ROOT / "vectorstore" / "json_index.faiss",
+        PROJECT_ROOT / "vectorstore" / "text_index.faiss",
+    ]
+    tracked_files.extend(sorted((PROJECT_ROOT / "data" / "documents").glob("*.txt")))
+
+    existing = [path for path in tracked_files if path.exists()]
+    if not existing:
+        return (0, 0, 0)
+
+    latest_mtime = int(max(path.stat().st_mtime for path in existing))
+    total_size = int(sum(path.stat().st_size for path in existing))
+    return (latest_mtime, len(existing), total_size)
+
+
+def generate_session_id() -> str:
+    """Create a unique session ID for each chat thread."""
+    return datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]
+
+
+def has_user_messages(chat_log: list[dict[str, str]]) -> bool:
+    """Return True if chat contains at least one user message."""
+    return any(item.get("role") == "user" and item.get("content", "").strip() for item in chat_log)
+
+
+def save_session_history(session_id: str, chat_log: list[dict[str, str]]) -> None:
+    """Persist a chat session when at least one user message exists."""
+    if not session_id or not has_user_messages(chat_log):
+        return
+
     CHAT_HISTORY_DIR.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "session_id": session_id,
+        "updated_at": datetime.now().isoformat(timespec="seconds"),
+        "messages": chat_log,
+    }
+    session_path = CHAT_HISTORY_DIR / f"{session_id}.json"
+    session_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def list_chat_files() -> list[Path]:
-    ensure_chat_history_dir()
-    return sorted(CHAT_HISTORY_DIR.glob("*.json"), key=lambda p: p.stat().st_mtime, reverse=True)
-
-
-def create_chat_id() -> str:
-    return datetime.now().strftime("%Y%m%d_%H%M%S")
-
-
-def chat_file_path(chat_id: str) -> Path:
-    return CHAT_HISTORY_DIR / f"{chat_id}.json"
-
-
-def load_chat_history(chat_id: str) -> list[dict]:
-    path = chat_file_path(chat_id)
-    if not path.exists():
+def load_session_history(session_id: str) -> list[dict[str, str]]:
+    """Load chat messages for a previously saved session."""
+    session_path = CHAT_HISTORY_DIR / f"{session_id}.json"
+    if not session_path.exists() or not session_path.is_file():
         return []
+
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except Exception:
+        payload = json.loads(session_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
         return []
 
+    messages = payload.get("messages", [])
+    if not isinstance(messages, list):
+        return []
 
-def save_chat_history(chat_id: str, messages: list[dict]) -> None:
-    ensure_chat_history_dir()
-    path = chat_file_path(chat_id)
-    path.write_text(json.dumps(messages, ensure_ascii=False, indent=2), encoding="utf-8")
-
-
-def build_conversation_examples(raw_text: str, max_pairs: int = 6) -> str:
-    lines = [line.strip() for line in raw_text.splitlines() if line.strip()]
-    examples: list[str] = []
-    current: list[str] = []
-
-    for line in lines:
-        if line.startswith("User:") or line.startswith("Assistant:"):
-            current.append(line)
-            if len(current) == 2:
-                examples.append("\n".join(current))
-                current = []
-                if len(examples) >= max_pairs:
-                    break
-
-    return "\n\n".join(examples)
+    cleaned: list[dict[str, str]] = []
+    for item in messages:
+        if not isinstance(item, dict):
+            continue
+        role = item.get("role")
+        content = str(item.get("content", "")).strip()
+        if role in {"user", "assistant"} and content:
+            cleaned.append({"role": role, "content": content})
+    return cleaned
 
 
-def build_system_prompt(conversation_examples: str, knowledge_text: str) -> str:
-    instructions = (
-        "ඔබ සිංහලයෙන් පමණක් පිළිතුරු දෙන උපකාරක චැට්බොට් කෙනෙකි. "
-        "පිළිතුරු කෙටි, පැහැදිලි, ගෞරවනීය වශයෙන් ලබා දෙන්න. "
-        "පරිශීලකයා වෙනත් භාෂාවකින් ලියුවත් සිංහලෙන්ම පිළිතුරු දෙන්න. "
-        "පහත දැනුම් කට්ටලය හා සංවාද උදාහරණ මත පදනම්ව පිළිතුරු සකස් කරන්න. "
-        "අර්ථ රහිත නැවතීම්, අසම්බන්ධ වාක්‍ය, හෝ වරක් වරක් සමාන වචන නැවත නැවත ලියීමෙන් වළකින්න."
+def rebuild_memory_from_chat(memory: SessionMemory, chat_log: list[dict[str, str]]) -> None:
+    """Rehydrate short-term memory from loaded chat history."""
+    memory.clear()
+    for item in chat_log:
+        role = item.get("role")
+        content = item.get("content", "").strip()
+        if role in {"user", "assistant"} and content:
+            memory.add(role, content)
+
+
+def list_saved_sessions() -> list[dict[str, str]]:
+    """Return saved sessions sorted by most recent update time."""
+    if not CHAT_HISTORY_DIR.exists() or not CHAT_HISTORY_DIR.is_dir():
+        return []
+
+    sessions: list[dict[str, str]] = []
+    for session_path in sorted(CHAT_HISTORY_DIR.glob("*.json"), key=lambda p: p.stat().st_mtime, reverse=True):
+        session_id = session_path.stem
+        preview = ""
+        try:
+            payload = json.loads(session_path.read_text(encoding="utf-8"))
+            messages = payload.get("messages", [])
+            if isinstance(messages, list):
+                for item in messages:
+                    if isinstance(item, dict) and item.get("role") == "user":
+                        preview = str(item.get("content", "")).strip()
+                        break
+        except (json.JSONDecodeError, OSError):
+            preview = ""
+
+        preview_short = (preview[:32] + "...") if len(preview) > 32 else preview
+        label = f"{session_id} | {preview_short}" if preview_short else session_id
+        sessions.append({"session_id": session_id, "label": label})
+
+    return sessions
+
+
+def render_chat_message(role: str, text: str) -> None:
+    """Render a styled chat bubble for user/assistant messages."""
+    safe_text = html.escape(text).replace("\n", "<br>")
+
+    if role == "user":
+        row_class = "sri-chat-row-user"
+        avatar_class = "sri-chat-avatar-user"
+        bubble_class = "sri-chat-bubble-user"
+        avatar_label = "You"
+        avatar_html = (
+            f'<img class="sri-chat-avatar-img" src="{user_avatar_data_uri}" alt="User" />'
+            if user_avatar_data_uri
+            else avatar_label
+        )
+    else:
+        row_class = "sri-chat-row-assistant"
+        avatar_class = "sri-chat-avatar-assistant"
+        bubble_class = "sri-chat-bubble-assistant"
+        avatar_label = "AI"
+        avatar_html = avatar_label
+
+    st.markdown(
+        f"""
+        <div class="sri-chat-row {row_class}">
+            <div class="sri-chat-avatar {avatar_class}">{avatar_html}</div>
+            <div class="sri-chat-bubble {bubble_class}">{safe_text}</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
 
-    sections = ["[System Instructions]", instructions]
 
-    if conversation_examples:
-        sections.extend(["\n[Conversation Examples]", conversation_examples])
+def build_grounded_backup_answer(result: HybridResult) -> str:
+    """Build a context-only Sinhala answer when the model returns fallback."""
+    focused = narrow_result_to_primary_topic(result)
+    parts: list[str] = []
+    fingerprints: list[str] = []
 
-    if knowledge_text:
-        sections.extend(["\n[Knowledge Base]", knowledge_text])
+    if focused.json_hits:
+        top_json = focused.json_hits[0].content.strip()
+        json_key = _fingerprint_text(top_json)
+        if top_json and _is_distinct_piece(json_key, fingerprints):
+            parts.append(top_json)
+            fingerprints.append(json_key)
 
-    return "\n".join(sections)
+    for hit in focused.text_hits[:2]:
+        content = hit.content.strip()
+        content_key = _fingerprint_text(content)
+        if content and _is_distinct_piece(content_key, fingerprints):
+            parts.append(content)
+            fingerprints.append(content_key)
 
+    if not parts:
+        return FALLBACK_ANSWER
 
-def check_ollama_status(client: ollama.Client, model_name: str) -> tuple[bool, str]:
-    try:
-        response = client.list()
-        models = response.get("models", [])
-        model_names = [m.get("model", "") for m in models]
-
-        if model_name in model_names:
-            return True, f"Ollama is ready. Model found: {model_name}"
-        return False, (
-            f"Ollama is running, but model '{model_name}' is not downloaded. "
-            f"Run: ollama pull {model_name}"
-        )
-    except Exception as exc:
-        return False, (
-            "Cannot connect to Ollama on http://127.0.0.1:11434. "
-            "Start Ollama first. Error: " + str(exc)
-        )
+    return clean_answer_text("\n\n".join(parts))
 
 
-def normalize_text(text: str) -> str:
-    return " ".join(text.strip().split())
+def _normalize_text_for_match(text: str) -> str:
+    """Normalize Sinhala/English text for lightweight lexical matching."""
+    normalized = text.lower()
+    for alias, expansion in QUERY_ALIASES.items():
+        normalized = re.sub(rf"\\b{re.escape(alias)}\\b", f" {expansion} ", normalized)
+    normalized = re.sub(r"[^0-9a-z\u0D80-\u0DFF\s]", " ", normalized)
+    return " ".join(normalized.split())
 
 
-def sinhala_ratio(text: str) -> float:
-    letters = [ch for ch in text if ch.isalpha()]
-    if not letters:
-        return 0.0
-    sinhala_count = sum(1 for ch in letters if SINHALA_RE.search(ch))
-    return sinhala_count / len(letters)
+def _query_tokens(question: str) -> list[str]:
+    """Extract useful lexical tokens from the user query."""
+    normalized = _normalize_text_for_match(question)
+    tokens = [token for token in normalized.split() if len(token) >= 2 and token not in QUERY_NOISE_TOKENS]
+    return tokens
 
 
-def is_low_quality_response(text: str) -> bool:
-    normalized = normalize_text(text)
-    if len(normalized) < 8:
+def _compose_context(json_hits: list, text_hits: list) -> str:
+    """Compose prompt context from selected JSON and text hits."""
+    context_parts: list[str] = []
+    if json_hits:
+        context_parts.append("[JSON දත්ත සාරාංශ]")
+        for hit in json_hits:
+            context_parts.append(f"මාතෘකාව: {hit.topic}")
+            context_parts.append(f"තොරතුර: {hit.content}")
+
+    if text_hits:
+        context_parts.append("\n[TEXT දත්ත විස්තර]")
+        for hit in text_hits:
+            context_parts.append(f"මූලාශ්‍රය: {hit.source}")
+            context_parts.append(f"මාතෘකාව: {hit.topic}")
+            context_parts.append(f"අන්තර්ගතය: {hit.content}")
+
+    return "\n".join(context_parts).strip()
+
+
+def narrow_result_to_primary_topic(result: HybridResult) -> HybridResult:
+    """Keep only the dominant topic to avoid mixed-topic responses."""
+    topic_scores: dict[str, float] = {}
+    for hit in result.json_hits:
+        topic_scores[hit.topic] = topic_scores.get(hit.topic, 0.0) + hit.score
+    for hit in result.text_hits:
+        topic_scores[hit.topic] = topic_scores.get(hit.topic, 0.0) + hit.score
+
+    if len(topic_scores) <= 1:
+        return result
+
+    primary_topic = max(topic_scores.items(), key=lambda item: item[1])[0]
+    json_hits = [hit for hit in result.json_hits if hit.topic == primary_topic][:2]
+    text_hits = [hit for hit in result.text_hits if hit.topic == primary_topic][:3]
+
+    context = _compose_context(json_hits, text_hits)
+    return HybridResult(context=context, json_hits=json_hits, text_hits=text_hits)
+
+
+def is_retrieval_relevant(question: str, result: HybridResult) -> bool:
+    """Return True when retrieval evidence is strong enough for answering."""
+    if not result.json_hits and not result.text_hits:
+        return False
+
+    top_json = result.json_hits[0].score if result.json_hits else 0.0
+    top_text = result.text_hits[0].score if result.text_hits else 0.0
+    top_score = max(top_json, top_text)
+
+    if top_score >= 0.82:
         return True
-    if sinhala_ratio(normalized) < 0.6:
-        return True
-    tokens = normalized.split()
+
+    tokens = _query_tokens(question)
     if not tokens:
+        return top_score >= 0.72
+
+    evidence_parts: list[str] = []
+    evidence_parts.extend(hit.topic for hit in result.json_hits)
+    evidence_parts.extend(hit.topic for hit in result.text_hits)
+    evidence_parts.extend(hit.content for hit in result.json_hits[:2])
+    evidence_parts.extend(hit.content for hit in result.text_hits[:2])
+    evidence = _normalize_text_for_match(" ".join(evidence_parts))
+
+    match_count = sum(1 for token in tokens if token in evidence)
+    coverage = match_count / max(1, len(tokens))
+
+    if coverage >= 0.50 and top_score >= 0.35:
         return True
-    max_ratio = max(tokens.count(token) for token in set(tokens)) / len(tokens)
-    return max_ratio > 0.35
+    if coverage >= 0.34 and top_score >= 0.48:
+        return True
+    return False
 
 
-def rule_based_reply(prompt: str) -> str:
-    text = normalize_text(prompt)
-    if "නම" in text and "මොකක්" in text:
-        return "මගේ නම SRI.AI."
-    if "කොහොමද" in text:
-        return "මම හොඳින් ඉන්නවා. ඔබට කොහොමද?"
-    if "උදව්" in text:
-        return "ඔව්, ඔබට අවශ්‍ය දේ පැහැදිලිව කියන්න."
-    if "ස්තුතියි" in text:
-        return "ඔබට ස්තූතියි."
-    if "ඉංග්‍රීසි" in text:
-        return "සමාවන්න, මම සිංහලෙන් පමණක් පිළිතුරු දෙන්නෙමි."
-    return "කරුණාකර ඔබේ ප්‍රශ්නය පැහැදිලිව නැවත කියන්න."
+def _fingerprint_text(text: str) -> str:
+    """Create a compact fingerprint for de-duplication."""
+    normalized = _normalize_text_for_match(text)
+    return re.sub(r"\s+", "", normalized)
+
+
+def _is_distinct_piece(candidate: str, existing: list[str]) -> bool:
+    """Check whether candidate text is sufficiently different from existing pieces."""
+    if not candidate:
+        return False
+    for item in existing:
+        if not item:
+            continue
+        if candidate == item:
+            return False
+        if len(candidate) >= 24 and candidate in item:
+            return False
+        if len(item) >= 24 and item in candidate:
+            return False
+    return True
+
+
+def clean_answer_text(answer: str) -> str:
+    """Remove repeated/overlapping lines from generated Sinhala output."""
+    lines = [line.strip() for line in answer.splitlines()]
+    cleaned_lines: list[str] = []
+    fingerprints: list[str] = []
+
+    for line in lines:
+        if not line:
+            if cleaned_lines and cleaned_lines[-1] != "":
+                cleaned_lines.append("")
+            continue
+
+        key = _fingerprint_text(line)
+        if len(key) >= 10 and not _is_distinct_piece(key, fingerprints):
+            continue
+
+        cleaned_lines.append(line)
+        if len(key) >= 10:
+            fingerprints.append(key)
+
+    cleaned = "\n".join(cleaned_lines).strip()
+    return cleaned or answer.strip()
+
+
+def is_weak_fallback(answer: str) -> bool:
+    """Detect model outputs that effectively collapse to fallback text."""
+    normalized = answer.replace('"', "").strip()
+    lowered = " ".join(re.split(r"\s+", normalized.lower()))
+    if normalized == FALLBACK_ANSWER:
+        return True
+    if FALLBACK_ANSWER in normalized and len(normalized) <= len(FALLBACK_ANSWER) + 50:
+        return True
+    if any(pattern in lowered for pattern in REFUSAL_PATTERNS):
+        return True
+    return False
+
+
+def find_cached_answer(chat_log: list[dict[str, str]], question: str) -> str | None:
+    """Disable cache reuse to avoid repeating previously wrong answers."""
+    _ = chat_log
+    _ = question
+    return None
 
 
 st.set_page_config(
-    page_title="SRI.AI Sinhala Offline Chatbot",
-    page_icon=str(ICON_FILE),
+    page_title="SRI.AI – Offline Sinhala Chatbot",
+    page_icon=str(PAGE_ICON_PATH) if PAGE_ICON_PATH.exists() else "🤖",
     layout="wide",
-    initial_sidebar_state="collapsed",
 )
+
+if "memory" not in st.session_state:
+    st.session_state.memory = SessionMemory(max_messages=10)
+if "chat_log" not in st.session_state:
+    st.session_state.chat_log = []
+if "model_name" not in st.session_state:
+    st.session_state.model_name = "gemma"
+if "active_session_id" not in st.session_state:
+    st.session_state.active_session_id = generate_session_id()
+
+logo_data_uri = load_header_logo_data_uri()
+settings_icon_data_uri = load_settings_icon_data_uri()
+main_ui_logo_data_uri = load_main_ui_logo_data_uri()
+user_avatar_data_uri = load_user_avatar_data_uri()
+send_icon_data_uri = load_send_icon_data_uri()
 
 st.markdown(
     """
     <style>
-    :root {
-        --bg: #f2f6f9;
-        --card: #ffffff;
-        --line: #d9e3eb;
-        --text: #1f2937;
-        --muted: #667085;
-        --accent: #1ea3b1;
-        --accent-dark: #1d4ed8;
-        --accent-soft: #e8f8fb;
+    .main .block-container {
+        position: relative;
+        padding-top: 0.35rem;
     }
 
-    .stApp {
-        background: var(--bg);
+    .sri-header-outer {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: -0.25rem;
+        margin-bottom: 1.05rem;
     }
 
-    .block-container {
-        padding-top: 0.4rem;
-    }
-
-    .topbar-anchor + div[data-testid="stHorizontalBlock"] {
-        align-items: center;
-        background: #ffffff;
-        border-bottom: 1px solid var(--line);
-        border-radius: 0 0 14px 14px;
-        margin-bottom: 0.6rem;
-        padding: 0.2rem 0.7rem;
-        box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
-    }
-
-    .topbar-anchor + div[data-testid="stHorizontalBlock"] > div:last-child {
+    .sri-header-bar {
         display: flex;
-        justify-content: flex-end;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 92px;
+        padding: 0.95rem 4.3rem 0.95rem 1.15rem;
+        border: 1px solid rgba(120, 130, 150, 0.22);
+        border-radius: 0;
+        background: linear-gradient(90deg, #0f172a 0%, #1e293b 55%, #334155 100%);
+        box-shadow: 0 8px 22px rgba(15, 23, 42, 0.18);
     }
 
-    .topbar-logo img {
+    .sri-header-settings-popover-wrap {
+        position: absolute;
+        top: 1.12rem;
+        right: 1.15rem;
+        z-index: 40;
+    }
+
+    div[data-testid="stPopover"] > button {
+        width: 42px;
         height: 42px;
+        border-radius: 12px;
+        border: 0;
+        background: linear-gradient(145deg, #7c5cff 0%, #6958ff 100%);
+        color: transparent;
+        font-size: 0;
+        box-shadow: 0 8px 20px rgba(104, 88, 255, 0.45);
+    }
+
+    div[data-testid="stPopover"] > button:hover {
+        filter: brightness(1.04);
+    }
+
+    div[data-testid="stPopover"] {
+        margin: 0;
+    }
+
+    .sri-header-left {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+    }
+
+    .sri-logo-dot {
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 999px;
+        background: #22d3ee;
+        box-shadow: 0 0 12px rgba(34, 211, 238, 0.8);
+    }
+
+    .sri-logo-img {
+        height: 2.65rem;
         width: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+    .sri-logo-text {
+        color: #f8fafc;
+        font-size: 1.06rem;
+        letter-spacing: 0.08em;
+        font-weight: 700;
+    }
+
+    .sri-settings {
+        position: relative;
+    }
+
+    .sri-settings-btn {
+        width: 42px;
+        height: 42px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border: 0;
+        border-radius: 12px;
+        background: linear-gradient(145deg, #7c5cff 0%, #6958ff 100%);
+        color: #eef2ff;
+        font-size: 1.1rem;
+        cursor: pointer;
+        box-shadow: 0 8px 20px rgba(104, 88, 255, 0.45);
+    }
+
+    .sri-settings-icon {
+        width: 22px;
+        height: 22px;
+        display: block;
+        object-fit: contain;
+    }
+
+    .sri-settings-menu {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        min-width: 210px;
+        background: #0f172a;
+        border: 1px solid rgba(125, 135, 155, 0.32);
+        border-radius: 12px;
+        padding: 0.65rem 0.8rem;
+        color: #e2e8f0;
+        z-index: 20;
+        box-shadow: 0 12px 28px rgba(2, 6, 23, 0.5);
+    }
+
+    .sri-settings summary {
+        list-style: none;
+    }
+
+    .sri-settings summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .sri-settings-menu-title {
+        margin: 0 0 0.35rem 0;
+        font-size: 0.92rem;
+        font-weight: 600;
+        color: #f8fafc;
+    }
+
+    .sri-settings-menu-note {
+        margin: 0;
+        font-size: 0.8rem;
+        line-height: 1.35;
+        color: #cbd5e1;
+    }
+
+    .sri-main-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.35rem;
+        margin: 0.4rem auto 1.15rem auto;
+    }
+
+    .sri-main-logo {
+        width: min(360px, 78vw);
+        height: auto;
+        display: block;
+        object-fit: contain;
+        margin-bottom: 0.1rem;
+    }
+
+    .sri-main-title {
+        margin: 0;
+        font-size: clamp(1.45rem, 2.2vw, 2.2rem);
+        font-weight: 700;
+        letter-spacing: 0.01em;
+    }
+
+    .sri-main-caption {
+        margin: 0;
+        font-size: clamp(0.92rem, 1.1vw, 1.02rem);
+        opacity: 0.88;
+    }
+
+    .sri-chat-row {
+        display: flex;
+        align-items: flex-end;
+        gap: 0.55rem;
+        margin: 0.3rem 0 0.75rem 0;
+        animation: sriChatRise 0.22s ease-out;
+    }
+
+    .sri-chat-row-user {
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+    }
+
+    .sri-chat-row-assistant {
+        justify-content: flex-start;
+    }
+
+    .sri-chat-avatar {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .sri-chat-avatar-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 999px;
+        object-fit: cover;
         display: block;
     }
 
-    .top-right-wrap {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+    .sri-chat-avatar-user {
+        background: #000000;
+        color: #eff6ff;
+        box-shadow: 0 8px 18px rgba(14, 165, 233, 0.35);
     }
 
-    .settings-chip {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 12px;
-        border: 1px solid #bde8ec;
-        background: linear-gradient(135deg, #ddf6f8, #c9ecf1);
-        font-size: 1.05rem;
-        box-shadow: 0 6px 16px rgba(30, 163, 177, 0.14);
+    .sri-chat-avatar-assistant {
+        background: #000000;
+        color: #e2e8f0;
+        box-shadow: 0 8px 18px rgba(15, 23, 42, 0.3);
     }
 
-    div[data-testid="stPopover"] > details > summary {
-        border: 0 !important;
-        background: transparent !important;
-        padding: 0 !important;
-    }
-
-    .page-title {
-        font-size: 0.95rem;
-        color: var(--muted);
-        margin: 0.25rem 0 0.7rem;
-    }
-
-    .panel {
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 20px;
-        padding: 1rem;
-        box-shadow: 0 10px 26px rgba(17, 24, 39, 0.05);
-    }
-
-    .panel-title {
-        font-weight: 600;
-        color: var(--text);
-        margin-bottom: 0.6rem;
-    }
-
-    .start-chat-btn button {
-        background: linear-gradient(120deg, #1ea3b1, #1d4ed8) !important;
-        color: #ffffff !important;
-        border: none !important;
-    }
-
-    .history-meta {
-        padding: 0.18rem 0.1rem 0.75rem;
-        border-bottom: 1px solid #eef3f7;
-        margin-bottom: 0.55rem;
-    }
-
-    .history-item {
-        padding: 0.7rem 0.6rem;
-        border-radius: 12px;
+    .sri-chat-bubble {
+        max-width: min(840px, 76vw);
+        padding: 0.74rem 0.9rem;
+        border-radius: 14px;
+        line-height: 1.5;
+        word-break: break-word;
+        font-size: 0.97rem;
         border: 1px solid transparent;
-        margin-bottom: 0.5rem;
-        transition: all 0.2s ease;
-        text-align: left;
+        box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+    }
+
+    .sri-chat-bubble-user {
+        background: linear-gradient(135deg, #1d4ed8 0%, #0284c7 100%);
+        color: #eff6ff;
+        border-color: rgba(147, 197, 253, 0.35);
+        border-bottom-right-radius: 6px;
+    }
+
+    .sri-chat-bubble-assistant {
+        background: transparent;
+        color: #e5e7eb;
+        border: 0;
+        box-shadow: none;
+        padding: 0.15rem 0.1rem;
+        border-radius: 0;
+        max-width: min(900px, 82vw);
+    }
+
+    .sri-chat-row-assistant .sri-chat-avatar {
+        display: none;
+    }
+
+    @keyframes sriChatRise {
+        from {
+            opacity: 0;
+            transform: translateY(6px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    section[data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #0b1220 0%, #111c33 50%, #18253f 100%);
+        border-right: 1px solid rgba(135, 152, 182, 0.28);
+    }
+
+    section[data-testid="stSidebar"] > div {
+        background: transparent;
+    }
+
+    section[data-testid="stSidebar"] .block-container {
+        padding-top: 1rem;
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+    }
+
+    section[data-testid="stSidebar"] h3 {
+        color: #f8fafc;
+        letter-spacing: 0.02em;
+        margin-bottom: 0.35rem;
+    }
+
+    section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+    section[data-testid="stSidebar"] [data-testid="stCaptionContainer"] {
+        color: #cbd5e1;
+    }
+
+    section[data-testid="stSidebar"] .stButton > button {
         width: 100%;
-    }
-
-    .history-item:hover {
-        border-color: var(--line);
-        background: #faf9ff;
-    }
-
-    .history-title {
+        min-height: 42px;
+        border-radius: 12px;
+        border: 1px solid rgba(133, 154, 186, 0.35);
+        background: linear-gradient(135deg, #1d4ed8 0%, #0ea5e9 100%);
+        color: #f8fafc;
         font-weight: 600;
-        color: var(--text);
-        font-size: 0.92rem;
+        box-shadow: 0 8px 20px rgba(14, 165, 233, 0.22);
+        transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
     }
 
-    .history-sub {
-        color: var(--muted);
-        font-size: 0.78rem;
+    section[data-testid="stSidebar"] .stButton > button:hover {
+        transform: translateY(-1px);
+        filter: brightness(1.04);
+        box-shadow: 0 10px 24px rgba(14, 165, 233, 0.3);
     }
 
-    .hero {
-        text-align: center;
-        padding: 2.4rem 1rem 1rem;
+    section[data-testid="stSidebar"] .stButton > button:active {
+        transform: translateY(0);
     }
 
-    .hero .full-logo {
-        width: 340px;
-        max-width: 80%;
-        margin: 0 auto 1.2rem;
+    section[data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(103, 132, 178, 0.8) transparent;
     }
 
-    .hero h2 {
-        margin: 0;
-        color: var(--text);
-        font-size: 1.5rem;
+    section[data-testid="stSidebar"] [data-testid="stSidebarUserContent"]::-webkit-scrollbar {
+        width: 8px;
     }
 
-    .hero p {
-        margin: 0.6rem auto 1.2rem;
-        color: var(--muted);
-        font-size: 1rem;
-        max-width: 680px;
-        line-height: 1.55;
-    }
-
-    .mini-brand {
-        display: flex;
-        align-items: center;
-        gap: 0.6rem;
-        justify-content: center;
-        margin-bottom: 0.4rem;
-    }
-
-    .mini-brand .icon {
-        width: 38px;
-        height: 38px;
+    section[data-testid="stSidebar"] [data-testid="stSidebarUserContent"]::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, rgba(59, 130, 246, 0.8), rgba(14, 165, 233, 0.8));
         border-radius: 10px;
-        background: linear-gradient(135deg, #e7fbff, #d9f0ff);
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
     }
 
-    .mini-brand .icon img {
-        width: 24px;
-        height: 24px;
-        object-fit: contain;
-    }
-
-    .mini-brand .wordmark img {
-        height: 34px;
-        width: auto;
-        object-fit: contain;
-    }
-
-    .chat-shell {
-        min-height: 520px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    div[data-testid="stChatInput"] textarea {
-        border-radius: 999px !important;
-        border: 1px solid var(--line) !important;
-        padding: 0.75rem 1rem !important;
-        background: #fdfefe !important;
-    }
-
-    .sidebar-collapsed {
-        padding: 0.4rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    @media (max-width: 960px) {
-        .topbar-logo img {
-            height: 34px;
+    @media (max-width: 760px) {
+        .main .block-container {
+            padding-top: 0.2rem;
         }
-        .hero .full-logo {
-            width: 250px;
+
+        .sri-header-bar {
+            min-height: 84px;
+            padding: 0.8rem 4rem 0.8rem 0.85rem;
         }
-        .hero h2 {
-            font-size: 1.22rem;
+
+        .sri-header-settings-popover-wrap {
+            top: 0.92rem;
+            right: 0.85rem;
+        }
+
+        .sri-logo-img {
+            height: 2.1rem;
+        }
+
+        .sri-main-logo {
+            width: min(420px, 88vw);
         }
     }
     </style>
@@ -383,218 +849,164 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-header_logo_b64 = load_logo_base64(HEADER_LOGO_FILE)
-full_logo_b64 = load_logo_base64(FULL_LOGO_FILE)
-icon_logo_b64 = load_logo_base64(ICON_FILE)
+if send_icon_data_uri:
+    st.markdown(
+        f"""
+        <style>
+        div[data-testid="stChatInput"] button {{
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            background-image: url("{send_icon_data_uri}");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 22px 22px;
+        }}
+
+        div[data-testid="stChatInput"] button svg {{
+            opacity: 0;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+if settings_icon_data_uri:
+    st.markdown(
+        f"""
+        <style>
+        .sri-header-settings-popover-wrap div[data-testid="stPopover"] > button {{
+            background-image: url("{settings_icon_data_uri}");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 22px 22px;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
 logo_html = (
-    f"<img src='data:image/png;base64,{header_logo_b64}' alt='SRI.AI' />"
-    if header_logo_b64
-    else "SRI.AI"
+    f'<img class="sri-logo-img" src="{logo_data_uri}" alt="SRI.AI logo" />'
+    if logo_data_uri
+    else '<div class="sri-logo-dot"></div><div class="sri-logo-text">SRI.AI</div>'
 )
-wordmark_html = (
-    f"<img src='data:image/png;base64,{header_logo_b64}' alt='SRI.AI wordmark' />"
-    if header_logo_b64
-    else "SRI.AI"
+main_logo_html = (
+    f'<img class="sri-main-logo" src="{main_ui_logo_data_uri}" alt="SRI.AI Full Logo" />'
+    if main_ui_logo_data_uri
+    else '<div class="sri-logo-text">SRI.AI</div>'
 )
-icon_html = (
-    f"<img src='data:image/png;base64,{icon_logo_b64}' alt='SRI.AI icon' />"
-    if icon_logo_b64
-    else ""
+st.markdown(
+    f"""
+    <div class="sri-header-outer">
+      <div class="sri-header-bar">
+        <div class="sri-header-left">
+          {logo_html}
+        </div>
+      </div>
+    </div>
+    """,
+    unsafe_allow_html=True,
 )
 
-model_name = "llama3.2:3b"
-if "temperature" not in st.session_state:
-    st.session_state.temperature = 0.2
-if "show_sidebar" not in st.session_state:
-    st.session_state.show_sidebar = True
+retriever = get_retriever(build_data_signature())
+ollama_client = get_ollama()
 
-if "chat_id" not in st.session_state:
-    st.session_state.chat_id = create_chat_id()
-if "messages" not in st.session_state:
-    st.session_state.messages = []
+st.markdown('<div class="sri-header-settings-popover-wrap">', unsafe_allow_html=True)
+with st.popover("⚙", use_container_width=False):
+        st.subheader("පද්ධති තත්ත්වය")
+        st.write(f"Ollama Running: {ollama_client.is_available()}")
+        st.write(f"JSON Topics: {len(retriever.json_retriever.entries)}")
+        st.write(f"Text Chunks: {len(retriever.text_retriever.chunks)}")
+        st.text_input("Ollama Model", key="model_name")
+st.markdown("</div>", unsafe_allow_html=True)
 
-st.markdown("<div class='topbar-anchor'></div>", unsafe_allow_html=True)
-top_cols = st.columns([6, 1])
-with top_cols[0]:
-    st.markdown(f"<div class='topbar-logo'>{logo_html}</div>", unsafe_allow_html=True)
-with top_cols[1]:
-    st.markdown("<div class='top-right-wrap'>", unsafe_allow_html=True)
-    with st.popover("⚙️", use_container_width=False):
-        st.markdown("**Settings**")
-        st.slider(
-            "Temperature Level",
-            min_value=0.0,
-            max_value=1.0,
-            step=0.05,
-            value=st.session_state.temperature,
-            key="temperature",
-        )
-        if st.button("Clear Session Chat History", use_container_width=True):
-            st.session_state.messages = []
-            save_chat_history(st.session_state.chat_id, st.session_state.messages)
-            st.rerun()
-    st.markdown("</div>", unsafe_allow_html=True)
+st.markdown(
+        f"""
+        <div class="sri-main-brand">
+            {main_logo_html}
+            <h1 class="sri-main-title">SRI.AI – Offline Sinhala Chatbot</h1>
+            <p class="sri-main-caption">OLLAMA සහ Streamlit භාවිතා කර නිර්මාණය කළ දේශීය AI සංවාද පද්ධතිය</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+)
 
-st.markdown("<div class='page-title'>Sinhala Offline Chatbot</div>", unsafe_allow_html=True)
+with st.sidebar:
+    st.subheader("Chat Sessions")
+    if st.button("Start New Chat", use_container_width=True):
+        save_session_history(st.session_state.active_session_id, st.session_state.chat_log)
+        st.session_state.active_session_id = generate_session_id()
+        st.session_state.memory.clear()
+        st.session_state.chat_log = []
+        st.rerun()
 
-ensure_chat_history_dir()
-chat_files = list_chat_files()
-
-client = ollama.Client(host="http://127.0.0.1:11434")
-status_ok, status_message = check_ollama_status(client, model_name)
-
-if status_ok:
-    st.caption(status_message)
-else:
-    st.caption(status_message)
-
-conversation_text = load_text_file(CONVERSATIONS_FILE)
-knowledge_text = load_text_file(KNOWLEDGE_FILE)
-examples_block = build_conversation_examples(conversation_text)
-system_prompt = build_system_prompt(examples_block, knowledge_text)
-
-if not conversation_text:
-    st.warning("conversations.txt not found. Please add Sinhala conversation examples.")
-if not knowledge_text:
-    st.warning("knowledge.txt not found. Please add Sinhala knowledge entries.")
-
-if st.session_state.show_sidebar:
-    left_col, right_col = st.columns([1.1, 2.6], gap="large")
-else:
-    left_col, right_col = st.columns([0.34, 2.66], gap="large")
-
-with left_col:
-    st.markdown("<div class='panel'>", unsafe_allow_html=True)
-    if st.session_state.show_sidebar:
-        header_cols = st.columns([6, 1])
-        with header_cols[0]:
-            st.markdown(
-                f"<div class='panel-title'>Previous Chats ({len(chat_files):02d})</div>",
-                unsafe_allow_html=True,
-            )
-        with header_cols[1]:
-            if st.button("☰", key="toggle_sidebar"):
-                st.session_state.show_sidebar = not st.session_state.show_sidebar
-                st.rerun()
+    st.caption(f"Current: {st.session_state.active_session_id}")
+    st.markdown("### History")
+    saved_sessions = list_saved_sessions()
+    if not saved_sessions:
+        st.caption("No saved sessions yet.")
     else:
-        st.markdown("<div class='sidebar-collapsed'>", unsafe_allow_html=True)
-        if st.button("☰", key="toggle_sidebar_compact"):
-            st.session_state.show_sidebar = True
-            st.rerun()
-        st.markdown("</div>", unsafe_allow_html=True)
-
-    if st.session_state.show_sidebar:
-        st.markdown("<div class='start-chat-btn'>", unsafe_allow_html=True)
-        if st.button("+ Start New Chat", use_container_width=True):
-            st.session_state.chat_id = create_chat_id()
-            st.session_state.messages = []
-            save_chat_history(st.session_state.chat_id, st.session_state.messages)
-            st.rerun()
-        st.markdown("</div>", unsafe_allow_html=True)
-
-        for chat_path in chat_files[:8]:
-            chat_id = chat_path.stem
-            preview_messages = load_chat_history(chat_id)
-            title = "New Chat"
-            preview = ""
-            for msg in preview_messages:
-                if msg.get("role") == "user":
-                    title = normalize_text(str(msg.get("content", "")))[:28] or "New Chat"
-                    break
-            for msg in preview_messages:
-                if msg.get("role") == "assistant":
-                    preview = normalize_text(str(msg.get("content", "")))[:40]
-                    break
-
-            timestamp = datetime.fromtimestamp(chat_path.stat().st_mtime).strftime("%d/%m/%Y %I:%M %p")
-
-            if st.button(f"{title}", key=f"chat_{chat_id}", use_container_width=True):
-                st.session_state.chat_id = chat_id
-                st.session_state.messages = preview_messages
+        for session in saved_sessions:
+            is_current = session["session_id"] == st.session_state.active_session_id
+            button_label = session["label"] + (" (Current)" if is_current else "")
+            if st.button(button_label, key=f"session_{session['session_id']}", use_container_width=True):
+                loaded_chat = load_session_history(session["session_id"])
+                st.session_state.active_session_id = session["session_id"]
+                st.session_state.chat_log = loaded_chat
+                rebuild_memory_from_chat(st.session_state.memory, loaded_chat)
                 st.rerun()
 
-            st.markdown(
-                f"<div class='history-meta history-sub'>{timestamp} • {preview}</div>",
-                unsafe_allow_html=True,
-            )
+for item in st.session_state.chat_log:
+    render_chat_message(item["role"], item["content"])
 
-    st.markdown("</div>", unsafe_allow_html=True)
+if user_input := st.chat_input("ඔබේ ප්‍රශ්නය සිංහලෙන් ටයිප් කරන්න..."):
+    user_text = user_input.strip()
+    cached_answer = find_cached_answer(st.session_state.chat_log, user_text)
 
-with right_col:
-    st.markdown("<div class='panel chat-shell'>", unsafe_allow_html=True)
-    if not st.session_state.messages:
-        st.markdown(
-            f"""
-            <div class="hero">
-                <div class="mini-brand">
-                    <div class="icon">{icon_html}</div>
-                    <div class="wordmark">{wordmark_html}</div>
-                </div>
-                <div class="full-logo"></div>
-                <h2>Welcome to SRI.AI</h2>
-                <p>
-                    SRI.AI ඔබගේ සිංහල උපකාරක සහකාරයායි. ඔබට ලිවීම, අදහස් විමසීම,
-                    හෝ මිතුරැ කතාබස් අවශ්‍ය නම්, පහත කොටුවෙන් ඔබේ ප්‍රශ්නය ඇතුළත් කරන්න.
-                </p>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
+    st.session_state.chat_log.append({"role": "user", "content": user_text})
+    st.session_state.memory.add("user", user_text)
+    save_session_history(st.session_state.active_session_id, st.session_state.chat_log)
 
-        if full_logo_b64:
-            st.markdown(
-                f"""
-                <style>
-                .hero .full-logo {{
-                    background: url('data:image/png;base64,{full_logo_b64}') no-repeat center;
-                    background-size: contain;
-                    height: 160px;
-                }}
-                </style>
-                """,
-                unsafe_allow_html=True,
-            )
+    render_chat_message("user", user_text)
 
-    for msg in st.session_state.messages:
-        with st.chat_message(msg["role"]):
-            st.markdown(msg["content"])
+    with st.spinner("සෙවීම සහ පිළිතුරු සකසමින්..."):
+        if cached_answer is not None:
+            answer = cached_answer
+        else:
+            result = narrow_result_to_primary_topic(retriever.retrieve(user_text))
+            if not result.context or not is_retrieval_relevant(user_text, result):
+                answer = FALLBACK_ANSWER
+            else:
+                prompt = build_prompt(context=result.context, question=user_text)
+                try:
+                    answer = ollama_client.generate(prompt=prompt, model=st.session_state.model_name.strip() or "gemma")
+                except RuntimeError:
+                    answer = FALLBACK_ANSWER
 
-    user_prompt = st.chat_input("ඔබේ පණිවිඩය සිංහලෙන් ටයිප් කරන්න...")
-    st.markdown("</div>", unsafe_allow_html=True)
+                if is_weak_fallback(answer):
+                    answer = build_grounded_backup_answer(result)
 
-if user_prompt:
-    user_prompt = normalize_text(user_prompt)
-    st.session_state.messages.append({"role": "user", "content": user_prompt})
-    save_chat_history(st.session_state.chat_id, st.session_state.messages)
-    with st.chat_message("user"):
-        st.markdown(user_prompt)
+            answer = clean_answer_text(answer)
 
-    if not status_ok:
-        assistant_text = (
-            "සමාවන්න, Ollama සේවාව හෝ model එක සකස් කර නැහැ. "
-            "කරුණාකර sidebar හි දක්වා ඇති උපදෙස් අනුගමනය කරන්න."
-        )
-        with st.chat_message("assistant"):
-            st.markdown(assistant_text)
-        st.session_state.messages.append({"role": "assistant", "content": assistant_text})
-        save_chat_history(st.session_state.chat_id, st.session_state.messages)
-    else:
-        history = st.session_state.messages[-6:]
-        conversation = [{"role": "system", "content": system_prompt}] + history
+    render_chat_message("assistant", answer)
 
-        with st.chat_message("assistant"):
-            response = client.chat(
-                model=model_name,
-                messages=conversation,
-                options={"temperature": st.session_state.temperature},
-                stream=False,
-            )
-            assistant_text = normalize_text(str(response.get("message", {}).get("content", "")))
+    if cached_answer is None:
+        with st.expander("Retrieved Context"):
+            if result.json_hits:
+                st.markdown("**JSON Retrieval (Top 2):**")
+                for idx, hit in enumerate(result.json_hits, start=1):
+                    st.markdown(f"{idx}. {hit.topic} (score={hit.score:.3f})")
+            else:
+                st.markdown("JSON Retrieval: none")
 
-            if is_low_quality_response(assistant_text):
-                assistant_text = rule_based_reply(user_prompt)
+            if result.text_hits:
+                st.markdown("**Text Retrieval (Top 3):**")
+                for idx, hit in enumerate(result.text_hits, start=1):
+                    st.markdown(f"{idx}. {hit.source} / {hit.topic} (score={hit.score:.3f})")
+            else:
+                st.markdown("Text Retrieval: none")
 
-            st.markdown(assistant_text)
-
-        st.session_state.messages.append({"role": "assistant", "content": assistant_text})
-        save_chat_history(st.session_state.chat_id, st.session_state.messages)
+    st.session_state.chat_log.append({"role": "assistant", "content": answer})
+    st.session_state.memory.add("assistant", answer)
+    save_session_history(st.session_state.active_session_id, st.session_state.chat_log)

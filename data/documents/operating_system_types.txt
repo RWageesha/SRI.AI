@@ -1,0 +1,7 @@
+මාතෘකාව: Operating System Types
+
+Operating System වර්ග විවිධ පරිගණක අවශ්‍යතා සඳහා නිර්මාණය කර ඇත. ප්‍රධාන වර්ග ලෙස batch systems, time-sharing systems සහ real-time systems සඳහන් කළ හැක.
+
+Batch OS එකේ කාර්යයන් කණ්ඩායම් වශයෙන් ක්‍රියාත්මක වේ. Time-sharing OS එකේ multiple users එකවර system resources භාවිතා කරයි.
+
+Real-time OS එකේ latency අඩු කර නියමිත කාල සීමාව තුළ ප්‍රතිචාර ලබා දීම වැදගත් වේ. Embedded systems සහ industrial control වලදී real-time OS බහුලව භාවිතා කරයි.

@@ -1,0 +1,7 @@
+මාතෘකාව: Algorithm
+
+Algorithm යනු ගැටලුවක් විසඳීම සඳහා සකස් කරන ලද පියවර මාලාවකි. එය තාර්කිකව, අනුපිළිවෙලින් සහ නිශ්චිතව ලියා තිබිය යුතුය.
+
+හොඳ algorithm එකකට clarity, correctness සහ efficiency වැදගත් වේ. complexity අඩු algorithm එකක් සාමාන්‍යයෙන් වේගවත් ක්‍රියාකාරීත්වයක් ලබා දේ.
+
+Programming ආරම්භ කිරීමට පෙර algorithm එක සකස් කිරීමෙන් code errors අඩු කර solution quality වැඩි කරගත හැක.

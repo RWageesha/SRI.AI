@@ -1,0 +1,7 @@
+මාතෘකාව: Backend
+
+Backend යනු application එකේ server-side logic, database interaction සහ business rules ක්‍රියාත්මක වන කොටසයි. User requests සැකසීම backend තුළ සිදු වේ.
+
+Backend frameworks සහ languages භාවිතා කර APIs, authentication, validation සහ data processing ක්‍රියාත්මක කරයි. Database සමඟ සම්බන්ධ වෙමින් නිවැරදි දත්ත ගනුදෙනු පවත්වා ගනී.
+
+Performance, security සහ scalability backend design එකේ ප්‍රධාන අංග වේ. Logging, monitoring සහ error handling නිවැරදිව තිබීම production reliability වැඩි කරයි.

@@ -1,0 +1,7 @@
+මාතෘකාව: Software Engineering
+
+Software Engineering යනු software සංවර්ධනය සඳහා ක්‍රමවත්, සැලසුම්ගත සහ පරීක්ෂාකාරී ක්‍රියාවලියකි. Quality, maintainability සහ reliability ලබා ගැනීම එහි අරමුණ වේ.
+
+සාමාන්‍ය software lifecycle පියවර ලෙස requirement analysis, design, implementation, testing සහ maintenance සඳහන් කළ හැක. එක් එක් අදියර නිවැරදිව කළ විට project අවදානම් අඩුවේ.
+
+Documentation, code reviews, testing automation සහ collaboration tools භාවිතා කිරීම engineering quality වැඩි කරයි. User needs මත පදනම්ව iterative improvements කිරීමද වැදගත් වේ.

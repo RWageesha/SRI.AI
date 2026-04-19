@@ -1,0 +1,7 @@
+මාතෘකාව: Open Source
+
+Open Source software යනු source code පොදු ජනතාවට දැකීමට, භාවිතා කිරීමට සහ වෙනස් කිරීමට අවසර දෙන software ආකෘතියකි. මෙය transparency සහ collaboration වැඩි කරයි.
+
+Developers ලෝකය පුරා එකම project එකකට දායක විය හැකි බැවින් innovation වේගවත් වේ. Community support හේතුවෙන් bug fixes සහ feature improvements ඉක්මනින් සිදු වේ.
+
+Open source භාවිතයේදී licenses (MIT, GPL, Apache) තේරුම් ගැනීම වැදගත්ය. License conditions අනුගමනය කිරීම නීතිමය වශයෙන් අත්‍යවශ්‍ය වේ.

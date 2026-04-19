@@ -1,2 +1,5 @@
-streamlit>=1.33.0
-ollama>=0.3.0
+streamlit>=1.39.0
+requests>=2.32.0
+faiss-cpu>=1.8.0
+sentence-transformers>=3.0.1
+numpy>=1.26.0

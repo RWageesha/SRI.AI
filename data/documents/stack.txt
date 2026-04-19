@@ -1,0 +1,7 @@
+මාතෘකාව: Stack
+
+Stack යනු LIFO (Last In First Out) ආකෘතියෙන් ක්‍රියා කරන data structure එකකි. අවසානයේ ඇතුල් කළ අයිතමය මුලින්ම ඉවත් වේ.
+
+ප්‍රධාන operations ලෙස push (ඇතුල් කිරීම), pop (ඉවත් කිරීම) සහ peek/top (ඉහළ අගය බැලීම) ඇත. Function calls සහ undo operations වැනි අවස්ථාවල stack බහුලව භාවිතා කරයි.
+
+Stack overflow සහ underflow වැනි තත්ව දැනුවත්ව handle කිරීම වැදගත් වේ. Algorithm design තුළ recursion සමඟ stack සංකල්පය සම්බන්ධ වේ.

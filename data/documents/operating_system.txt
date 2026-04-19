@@ -1,0 +1,7 @@
+මාතෘකාව: ඔපරේටින් පද්ධතිය
+
+ඔපරේටින් පද්ධතිය (Operating System) යනු hardware සහ software අතර සම්බන්ධතාවය කළමනාකරණය කරන මූලික පද්ධතියකි. එය computer resources නිවැරදිව බෙදා දෙයි.
+
+OS කාර්යයන් ලෙස process management, memory management, file management සහ device control ඇතුළත් වේ. User commands සහ applications hardware වෙත යොමු කිරීම OS මඟින් සිදු වේ.
+
+Windows, Linux, macOS වැනි පද්ධති OS උදාහරණ වේ. හොඳ OS එකක් භාවිතා කිරීමෙන් performance සහ security දෙකම වැඩි වේ.

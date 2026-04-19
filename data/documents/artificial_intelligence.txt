@@ -1,0 +1,7 @@
+මාතෘකාව: Artificial Intelligence
+
+Artificial Intelligence (AI) යනු යන්ත්‍රවලට මිනිස් බුද්ධියට සමාන තීරණ, හඳුනාගැනීම් සහ ඉගෙනීම් හැකියාවන් ලබා දීමයි. AI systems දත්ත විශ්ලේෂණය කර patterns හඳුනා ගනී.
+
+AI භාවිතා වන ක්ෂේත්‍ර ලෙස chatbots, recommendation systems, image recognition, voice assistants, healthcare diagnostics වැනි උදාහරණ ඇත.
+
+AI නිවැරදිව භාවිතා කිරීමට data quality, fairness, transparency සහ ethics ගැන සැලකිලිමත් විය යුතුය. Responsible AI approaches භාවිතයෙන් විශ්වාසදායක පද්ධති ගොඩනගා ගත හැක.

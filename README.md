@@ -1,98 +1,109 @@
-# SRI.AI - Sinhala Offline Chatbot (Ollama + Streamlit)
+# Sinhala Hybrid RAG Chatbot (Offline)
 
-SRI.AI is a simple Sinhala chatbot that runs fully offline using Ollama and a Streamlit web UI. It uses local UTF-8 text files for conversation examples and knowledge.
+Complete Sinhala chatbot system using Hybrid RAG (JSON + Text), Streamlit UI, FAISS retrieval, and Ollama local inference.
 
-## Features
+## Assignment Coverage
 
-- 100% offline execution (no internet API calls)
-- Local LLM inference with Ollama (any local model)
-- Streamlit chat UI
-- Sinhala Unicode input/output (UTF-8)
-- Session-based chat history
-- Clean and focused prompt design
+- Fully offline capable at runtime
+- Ollama local LLM inference (`http://localhost:11434/api/generate`)
+- Streamlit chat interface
+- Sinhala Unicode input/output
+- In-session memory for recent conversation turns (last 10)
+- Hybrid retrieval flow:
+  1. JSON semantic retrieval (Top 2)
+  2. Text semantic retrieval from selected topics (Top 3)
+  3. Context merge and grounded generation
 
 ## Project Structure
 
 ```
-SRI-AI/
+project/
 ├── app.py
-├── knowledge.txt
-├── conversations.txt
+├── chatbot/
+│   ├── hybrid_retriever.py
+│   ├── json_retriever.py
+│   ├── text_retriever.py
+│   ├── embeddings.py
+│   ├── prompt.py
+│   ├── ollama.py
+│   ├── memory.py
+│   ├── build_indexes.py
+│   └── test_queries.py
+├── data/
+│   ├── knowledge.json
+│   └── documents/
+│       ├── headache.txt
+│       ├── stress.txt
+│       └── ...
+├── vectorstore/
+│   ├── json_index.faiss
+│   └── text_index.faiss
 ├── requirements.txt
 └── README.md
 ```
 
-## 1. Prerequisites
+## Offline Requirements
 
-- Windows, Linux, or macOS
-- Python 3.10+
-- Ollama installed locally
+1. Ollama must be installed locally.
+2. Gemma model must already exist locally.
+3. Sentence-transformers embedding model must be locally available.
 
-## 2. Install Ollama
+Runtime code uses local-only embedding loading by default (`EMBEDDING_LOCAL_ONLY=1`).
 
-1. Download from: https://ollama.com/download
-2. Verify:
-   - `ollama --version`
-
-## 3. Download an Ollama Model
+## Install
 
 ```powershell
-ollama pull llama3.2:3b
-```
-
-You can use any model you have locally. Update the model name in the sidebar.
-
-## 4. Setup Python Environment
-
-```powershell
-cd d:\Repos\SRI.AI
-python -m venv .venv
-.\.venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 5. Run Offline
+## Run Ollama Offline
 
 ```powershell
 ollama serve
-streamlit run app.py
+ollama pull gemma
 ```
 
-Open the local URL shown in the terminal, usually:
+After model pull is completed once, usage is local/offline.
+
+## Build FAISS Indexes
+
+```powershell
+python -m chatbot.build_indexes
+```
+
+This generates:
+
+- `vectorstore/json_index.faiss`
+- `vectorstore/text_index.faiss`
+
+## Run Streamlit Chatbot
+
+```powershell
+streamlit run app.py --server.port 8501
+```
+
+Open:
+
 - http://localhost:8501
 
-## 6. Local Data Files
+## Prompt Policy
 
-### conversations.txt
-Example human-like Sinhala conversations:
+The exact assignment prompt is used in `chatbot/prompt.py` with strict fallback:
 
-```
-User: ඔබ කොහොමද?
-Assistant: මම හොඳින් ඉන්නවා! ඔබට කොහොමද?
-```
+"මට ඒ පිළිබඳ ප්‍රමාණවත් තොරතුරු නොමැත"
 
-### knowledge.txt
-Short Sinhala knowledge facts (IT, Maths, general):
+## Testing (20 Sinhala Queries)
 
-```
-Python යනු ප්‍රෝග්‍රැමින් භාෂාවකි.
-Algorithm යනු ගැටළුවක් විසඳන පියවර මාලාවකි.
+Run retrieval tests:
+
+```powershell
+python -m chatbot.test_queries
 ```
 
-Both files are loaded using UTF-8 encoding.
+The script includes 20 Sinhala test cases and checks retrieval correctness by expected topic.
 
-## 7. Offline Verification Checklist
+## Notes
 
-1. Turn off Wi-Fi or disconnect internet.
-2. Ensure the model is already pulled.
-3. Run:
-   - `ollama serve`
-   - `streamlit run app.py`
-4. Chat in Sinhala and verify responses.
-
-## 8. Important Constraints Satisfied
-
-- No internet APIs
-- No translation pipelines
-- No external databases
-- Sinhala-only output enforced by prompt
+- No keyword matching is used for retrieval.
+- Full dataset is never sent to the model.
+- Only retrieved context is sent to Ollama.

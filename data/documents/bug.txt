@@ -1,0 +1,7 @@
+මාතෘකාව: Bug
+
+Bug යනු software එකක දෝෂයක් හෝ අනපේක්ෂිත හැසිරීමකි. Bug එකක් හේතුවෙන් application crash වීම, wrong output ලැබීම හෝ performance අඩුවීම සිදු විය හැක.
+
+Bugs ඇතිවීමට common හේතු ලෙස logic errors, incorrect assumptions, input validation issues සහ integration conflicts සඳහන් කළ හැක. Testing අඩු වීමෙන් bugs production වෙත යා හැක.
+
+Early detection සඳහා unit tests, integration tests සහ code reviews වැදගත් වේ. Bug reports පැහැදිලිව ලිවීම fix process එක ඉක්මන් කරයි.

@@ -1,0 +1,7 @@
+මාතෘකාව: Internet
+
+Internet යනු ලෝකය පුරා ඇති network එකිනෙකට සම්බන්ධ කරන විශාල ගෝලීය ජාලයකි. එය information sharing සහ communication සඳහා ප්‍රධාන ව්‍යුහයකි.
+
+Web browsing, email, cloud services, online learning, video communication වැනි බොහෝ සේවා Internet මත ක්‍රියාත්මක වේ. HTTP/HTTPS වැනි protocols web access සඳහා භාවිතා කරයි.
+
+Internet භාවිතයේදී security සහ privacy ගැන අවධානයෙන් සිටීම වැදගත් වේ. Strong passwords සහ trusted websites භාවිතා කිරීම ආරක්ෂාව වැඩි කරයි.

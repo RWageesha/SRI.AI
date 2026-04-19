@@ -1,0 +1,7 @@
+මාතෘකාව: DBMS
+
+DBMS (Database Management System) යනු database එක කළමනාකරණය කරන software එකකි. එය data create, read, update, delete කිරීම පහසු කරයි.
+
+DBMS මඟින් user access control, backup, recovery සහ security features ලබා දේ. Multiple users එකවර වැඩ කරන විට consistency පවත්වා ගැනීමටද DBMS උපකාරී වේ.
+
+MySQL, PostgreSQL, Oracle, SQL Server වැනි පද්ධති DBMS උදාහරණ වේ. Application development සඳහා DBMS මූලික වැදගත්කමක් දරයි.

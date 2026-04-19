@@ -1,0 +1,7 @@
+මාතෘකාව: Interpreter
+
+Interpreter යනු source code එක line-by-line ලෙස කියවා වහාම ක්‍රියාත්මක කරන program එකකි. Compile කර වෙනම executable file එකක් සෑදීම අනිවාර්ය නොවේ.
+
+Error එකක් තිබේ නම් එය ඇති line එකටම අදාළව ඉක්මනින් දැනගත හැක. එබැවින් learning සහ rapid prototyping සඳහා interpreters ප්‍රයෝජනවත් වේ.
+
+Python සහ JavaScript වැනි භාෂා interpreter-based execution වලට උදාහරණ වේ. Runtime performance compiled code වලට වඩා වෙනස් විය හැක.

@@ -1,0 +1,7 @@
+මාතෘකාව: Machine Learning
+
+Machine Learning (ML) යනු දත්ත මත පදනම්ව patterns ඉගෙනගෙන පුරෝකථන හෝ තීරණ ලබා දෙන AI ශාඛාවකි. Explicit rules සියල්ල ලියන්නේ නැතිව model එක දත්තෙන් ඉගෙන ගනී.
+
+Supervised, unsupervised සහ reinforcement learning වැනි ප්‍රධාන ක්‍රම ඇත. Training data quality එක model performance එකට විශාල බලපෑමක් දරයි.
+
+Model evaluation සඳහා accuracy, precision, recall වැනි metrics භාවිතා කරයි. Overfitting සහ data bias වැනි ගැටලු පාලනය කිරීම ML development හි වැදගත් කොටසකි.
