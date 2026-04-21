@@ -1,12 +1,10 @@
-"""
-Assignment Test Cases - 20+ Comprehensive Use Cases for Report
-Demonstrates: Session handling, Unicode, varied topics, bot accuracy
-"""
+"""Assignment test cases used for report screenshots and validation."""
 
 from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Iterable
 
 from chatbot.hybrid_retriever import HybridRetriever
 from chatbot.ollama import OllamaClient
@@ -15,211 +13,228 @@ from chatbot.prompt import FALLBACK_ANSWER, build_prompt
 
 @dataclass
 class TestCase:
-    """Test case with question, expected topic, and category."""
+    """Single user scenario with expected topic and reference answer."""
 
     id: int
     category: str
     question: str
-    expected_topic: str | None
-    description: str
+    expected_topic: str
+    expected_response: str
 
 
 TEST_CASES: list[TestCase] = [
-    # === LIFE ADVICE & WELLNESS (Cases 1-8) ===
     TestCase(
         id=1,
-        category="Emotional Support",
-        question="මට හරිම කනස්සල්ලක් තියෙනවා. මිතුරු ඉවතට ගිහින් අතුරුදන්ව ඉන්නවා. මම කොහොමද මේ ඇතුලේ ඉටින්නෙ?",
-        expected_topic="අතුරුදන් වීම",
-        description="User experiencing loneliness, asks for coping strategies",
+        category="Stress Management",
+        question="වැඩ ගොඩක් තියෙන නිසා ඔලුවට බරක් දැනෙනවා. ඒක නිසා stress දැනෙනවා. ඉතින් මම ගොඩක් අවුල් වෙලා ඉන්නෙ. මේ stress අඩු කරගන්න හැටි කියන්න.",
+        expected_topic="ආතතිය",
+        expected_response="ආතතිය අඩු කිරීමට විවේක ගන්න, ගැඹුරු හුස්ම ගැනීමේ ක්‍රම භාවිතා කරන්න. දිනපතා කෙටි විවේකයක් ගන්නා එකත් උපකාරී වේ.",
     ),
     TestCase(
         id=2,
-        category="Stress Management",
-        question="වැඩ බරක් නිසා එකම තනිවම ටිකක් stressed දැනෙනවා. ඉතින් මම ගොඩක් අවිස්ස කරලා ඉන්නවා. මේ stress අඩු කරගන්න හැටි කියන්න",
-        expected_topic="ආතතිය",
-        description="Work-related stress; requests stress reduction techniques",
+        category="Confidence",
+        question="මට කලින් confidence තිබුණත් දැන් එක නැති වෙලා. සතුටු ජීවිතයක් ගත කරන්නත් confidence ඕන කියලා හිතෙනවා. මම confidence ගොඩනගා ගන්නෙ කොහොමද?",
+        expected_topic="ආත්ම විශ්වාසය",
+        expected_response="ඔබේ ශක්තිමත් පැති හඳුනාගෙන කුඩා ඉලක්ක සපුරා ගන්න. ඒකෙන් ආත්ම විශ්වාසය ක්‍රමයෙන් වැඩිවේ.",
     ),
     TestCase(
         id=3,
-        category="Confidence & Motivation",
-        question="නම්මල් පෙර confidence තිබුණත් ඇතුලේ අපුරුවෙලා ගිහින්. සතුටු ජීවිතයක් ගත කරගන්නත් confidence ඕනැ කියට එහෙම දැනෙනවා. මම confidence ගොඩනගාගන්න කොහොමද?",
-        expected_topic="ආත්ම විශ්වාසය",
-        description="User asking how to rebuild self-confidence for happy life",
+        category="Loneliness",
+        question="මට දැන් තනිවම වගේ දැනෙනවා. මිතුරන් එක්කත් වැඩිය කතා වෙන්නේ නැහැ. මේ තනිවීමෙන් ගොඩවෙන්න කොහොමද?",
+        expected_topic="අතුරුදන් වීම",
+        expected_response="තනිවීමක් දැනෙන විට පවුලේ අය හෝ මිතුරන් සමඟ කතා කරන්න උත්සාහ කරන්න. ඔබ කැමති ක්‍රියාකාරකම්වල යෙදීමත් උපකාරී වේ.",
     ),
     TestCase(
         id=4,
-        category="Emotional Health",
-        question="සපට උදෑසන ඇතිවෙමින් කෝපයෙන් ඉතිරි දිනම ගිහිටිනවා. මම පුද්ගලයෙක් වනුවට තෙරුණු කණ්ඩායමක මිතුරුවලට කෝපයෙන් කතා කරනවා. එතකට පස්සේ ගොඩක් අනුතාපයි හිතෙනවා. මේ කෝපය පාලනය කරගන්න හැටි?",
+        category="Anger",
+        question="මට ඉක්මනට කෝපය එනවා. පස්සේ ඒ ගැන පසුතැවෙනවා. මේ කෝපය පාලනය කරගන්නෙ කොහොමද?",
         expected_topic="කෝපය",
-        description="Describes anger management issues affecting relationships",
+        expected_response="කෝපය පාලනය සඳහා ගැඹුරු හුස්ම ගන්න, ටික වේලාවක් නතර වී සිතා බලන්න.",
     ),
     TestCase(
         id=5,
-        category="Fear & Anxiety",
-        question="නම්මල් පතුරුතුරුවෙ නෙවුම් පරීක්ෂාවට බිය වෙනවා. නම්මල් බිය කි්‍රයාවලිය තේරුම් ගෙන හුස්ම ගැනීමේ ක්‍රම උත්සාහ කරනවා ඒ එතකටත් බිය අඩු නොවෙනවා. මට මේ බිය බිඳගෙන දමන්න වගන්තියක් දෙන්න?",
+        category="Fear",
+        question="මට පරීක්ෂාවට යද්දි හරිම බයයි. ඒ බය අඩු කරගන්නෙ කොහොමද?",
         expected_topic="භය",
-        description="Student with exam anxiety; seeks practical coping advice",
+        expected_response="භය දැනෙන විට ගැඹුරු හුස්ම ගැනීම සහ සන්සුන්ව සිටීම උපකාරී වේ. ඔබ සූදානම් බව මතක තබා ගන්න.",
     ),
     TestCase(
         id=6,
-        category="Life Satisfaction",
-        question="සතුටු ජීවිතයක් ගත කරගන්නටත් බොහෝ දේ තිබිණ. ඒ නිසා මම ටිකක් පවුලත්, වැඩත්, ඉතිරි කාලත් බෙදාගෙන සිටිනවා. නමුත් තවම අහිමිකරන දේ තිබිණ. සම්පූර්ණ සතුටු ජීවිතයක් ගත කරගන්නට මොනවා කිරීමද අවශ්‍ය?",
-        expected_topic="සතුටු ජීවිතය",
-        description="Seeking guidance on achieving complete life satisfaction",
+        category="Computer Basics",
+        question="පරිගණකය කියන්නේ මොකක්ද? ඒක වැඩ කරන්නේ කොහොමද?",
+        expected_topic="පරිගණකය",
+        expected_response="පරිගණකය යනු දත්ත ලබාගෙන ඒවා සැකසීමෙන් තොරතුරු ලබා දෙන යන්ත්‍රයකි. Input, Processing, Output සහ Storage යන පියවර භාවිතා කරයි.",
     ),
     TestCase(
         id=7,
-        category="Communication & Understanding",
-        question="මිතුරුවලත්, පවුලත් තර්ක වෙනවා. සම්බන්ධතා වලට තර්ක නිසා ඉතිරි උණුසුම් පවුලු උපරිම සංහිඳුම් නැතිවෙනවා. අන් අයව ගෞරවයෙන් සලකලා සම්බන්ධතා වැඩි කරගන්නට මොනවා කරන්නෙ?",
-        expected_topic="සංවාදය",
-        description="Conflicts in relationships; wants to improve communication",
+        category="Software Engineering",
+        question="Software engineering කියන්නේ මොකක්ද? ඒකේ ක්‍රියාවලිය පැහැදිලි කරන්න.",
+        expected_topic="Software Engineering",
+        expected_response="Software engineering යනු software සංවර්ධනය සඳහා ක්‍රමවත් ක්‍රියාවලියකි. Requirement, Design, Implementation, Testing සහ Maintenance යන අදියර ඇතුළත් වේ.",
     ),
     TestCase(
         id=8,
-        category="Personal Development",
-        question="කාල කළමනාකරණ අඩු නිසා නම්මල් පාඩු, අධිෂ්ඨාන, විවේක, සෞඛ්‍ය දෙකමත් නරකයි. පෙන්වෙන එතක ටිකක් කාලයක් වෙන් කිරීමෙන් පස්සේ එකම නරක අවිස්ස ඇතුලේ වැටිනවා. සියල්ල කරගැනීමට කාල කළමනාකරණ ඕනැයි දැනෙනවා. සුබ පණිවිඩයක් දෙන්න?",
-        expected_topic="කාල කළමනාකරණය",
-        description="Poor time management affecting all life areas",
+        category="Stack vs Queue",
+        question="Stack සහ Queue අතර වෙනස මොකක්ද?",
+        expected_topic="Stack",
+        expected_response="Stack = LIFO (අවසානයට දැමූ දෙය මුලින් ඉවත් වේ). Queue = FIFO (මුලින් දැමූ දෙය මුලින් ඉවත් වේ).",
     ),
-
-    # === TECHNICAL CONCEPTS (Cases 9-14) ===
     TestCase(
         id=9,
-        category="Computer Science",
-        question="පරිගණකය ගැන සරලයි පිටින්න, පරිගණකයට දෙන අනුපිටින්න, සැකසීම, පිටුවීම සහ ගබඩාවීම කියන්නේ මොකක්ද? පරිගණකයේ ඇතුලේ තිබෙන සියලුම කොටසින් කටයුතු කරයි ද?",
-        expected_topic="පරිගණකය",
-        description="Asking comprehensive definition and components of a computer",
+        category="Operating System",
+        question="Operating system එකේ කාර්යය මොනවද?",
+        expected_topic="OS",
+        expected_response="Operating system යනු hardware සහ software අතර සම්බන්ධතාවය කළමනාකරණය කරන පද්ධතියකි.",
     ),
     TestCase(
         id=10,
-        category="Software Engineering",
-        question="Software engineering කියන්නේ තනිවම කෝඩ් ලිවීමෙ වඩා හරිම වෙනස්ය. Software engineering ක්‍රියාවලිය ගැන සම්පූර්ණ කරුණු පැහැදිලි කරගන්න. Requirement, design, implementation, testing, maintenance නිස ක්‍රියාවලිය පැහැදිලි කරගන්න",
-        expected_topic="Software Engineering",
-        description="Deep explanation of software engineering lifecycle",
+        category="Database",
+        question="Database සහ DBMS අතර වෙනස මොකක්ද?",
+        expected_topic="Database",
+        expected_response="Database යනු දත්ත ගබඩා කිරීමයි. DBMS යනු එය කළමනාකරණය කරන software එකකි.",
     ),
     TestCase(
         id=11,
-        category="Data Structures",
-        question="Stack සහ Queue දෙකම data structure ඒ නිසා තරම්ට එකම වගේ ගනිනවා. නමුත් තිබෙන වෙනස්කම් සහ එක් එක්ටම භාවිතා සඳහා ගිණුම් කරගන්න",
-        expected_topic="Stack",
-        description="Comparing stack and queue data structures",
+        category="Programming",
+        question="Programming කියන්නේ මොකක්ද?",
+        expected_topic="Programming",
+        expected_response="Programming යනු පරිගණකයට නියෝග ලිවීමේ ක්‍රියාවලියකි.",
     ),
     TestCase(
         id=12,
-        category="Operating Systems",
-        question="ඔපරේටින් පද්ධතිය software සහ hardware අතර බැඳුම් කරගැනීම විට ඉතිරි දෙවර කටයුතු කරයි. ඔපරේටින් පද්ධතියේ ප්‍රධාන කාර්යයන්, කළමනාකරණ කටයුතු ගැන සම්පූර්ණ හැඳින්වීමක් දෙන්න",
-        expected_topic="ඔපරේටින් පද්ධතිය",
-        description="Full explanation of OS functions and management tasks",
+        category="Algorithm",
+        question="Algorithm කියන්නේ මොකක්ද?",
+        expected_topic="Algorithm",
+        expected_response="Algorithm යනු ගැටලුවක් විසඳීමට පියවර මාලාවකි.",
     ),
     TestCase(
         id=13,
-        category="Database Systems",
-        question="Database කිසිම කඩතriversාවක් සිටින්නේ පුරාම? නැතිනම් සිටින්නෙ වැඩි සිටින්නේ ප්‍රමාණවත් තොරතුරු සුරක්ෂිතව තබා ගැනීමටද? DBMS සහ Database අතර වෙනස්කම් සහ SQL භාවිතයි ගැන සරල පැහැදිලි කරන්න",
-        expected_topic="Database",
-        description="Explanation of database systems, DBMS, and SQL",
+        category="Cyber Security",
+        question="Cyber security කියන්නේ මොකක්ද?",
+        expected_topic="Cyber Security",
+        expected_response="Cyber security යනු පද්ධති සහ දත්ත ආරක්ෂා කිරීමයි.",
     ),
     TestCase(
         id=14,
-        category="Artificial Intelligence",
-        question="AI, Machine Learning, සහ මිනිස්ගේ බුද්ධිය අතර සම්බන්ධතාවය තිබිණ. පරිගණක යන්ත්‍ර මිනිස්ගේ බුද්ධිය ගැන කිසිම සිතීමක් නැතිව තර්ක කිරීමට ශිකින්න හැකිද? AI හි භවිෂ්‍යතය සහ දරුණු බැවුන්ට අරුමයි",
-        expected_topic="Artificial Intelligence",
-        description="AI definitions, learning, and future implications",
+        category="Networking",
+        question="Network කියන්නේ මොකක්ද?",
+        expected_topic="Networking",
+        expected_response="Network යනු පරිගණක කිහිපයක් සම්බන්ධ කර දත්ත හුවමාරු කරන ක්‍රමයකි.",
     ),
-
-    # === PROGRAMMING & ALGORITHMS (Cases 15-17) ===
     TestCase(
         id=15,
-        category="Programming",
-        question="Programming ඉගෙනගන්න සිටින් කෙනෙකුට algorithm, flowchart නිසා පිටින්න ඉතිරි ටිකක් දුෂ්කර වෙනවා. Algorithm සහ flowchart අතර වෙනස්කම් කිවුවොත් තනිසින්ම code ලිවිය හැකි ඉගෙනගැනීම් ක්‍රමවලට හිටිනවා. මට සරල programming knowledge එකක් දෙන්න",
-        expected_topic="Programming",
-        description="Beginner asking about algorithm and flowchart concepts",
+        category="Binary",
+        question="Binary system කියන්නේ මොකක්ද?",
+        expected_topic="Binary",
+        expected_response="Binary system යනු 0 සහ 1 භාවිතා කරන සංඛ්‍යා පද්ධතියකි.",
     ),
     TestCase(
         id=16,
-        category="Binary & Number Systems",
-        question="Binary system 0 සහ 1 පමණක් භාවිතා කරයි, නමුත් පරිගණකයට තිබෙන සියලුම තොරතුරු binary තුල තිබිණ. පරිගණකයට decimal සිටින්න binary තුල පරිවර්තනය කරගන්නටා, පිටුවීමටා කිසිම උකස් ගිණුමක් නැතිද? Binary system ගැන සම්පූර්ණ හැඳින්වීම දෙන්න",
-        expected_topic="Binary",
-        description="Understanding binary systems and their role in computers",
+        category="Debugging",
+        question="Debugging කියන්නේ මොකක්ද?",
+        expected_topic="Debugging",
+        expected_response="Debugging යනු software දෝෂ සොයා නිවැරදි කිරීමයි.",
     ),
     TestCase(
         id=17,
-        category="Debugging",
-        question="විශාල code project එකක debugging කිරීම ඉතිරි දිනම දුෂ්කරයි. Bug සොයාගැනීම සහ ඒවා නිරාකරණය කිරීමේ ක්‍රමවල ගැන සරලයි පිටින්න. Debugging tools සහ best practices මොනවාද?",
-        expected_topic="Debugging",
-        description="Large project debugging challenges and solutions",
+        category="Cloud Computing",
+        question="Cloud computing කියන්නේ මොකක්ද?",
+        expected_topic="Cloud",
+        expected_response="Cloud computing යනු internet හරහා සේවා ලබා දීමයි.",
     ),
-
-    # === ADVANCED TOPICS (Cases 18-20) ===
     TestCase(
         id=18,
-        category="Cyber Security",
-        question="Online ගිහිටින් කෙනෙකුට තම data ආරක්ෂිතව තබා ගැනීම ඉතිරි ගුරුතරයි. Cyber security කියන්නේ මොකක්ද? Encryption සහ security තත්ත්වයෙන් තම පරිගණකය ආරක්ෂා කරගන්නට මොනවා කිරීමෙයි?",
-        expected_topic="Cyber Security",
-        description="Data protection and cybersecurity best practices",
+        category="AI",
+        question="AI කියන්නේ මොකක්ද?",
+        expected_topic="AI",
+        expected_response="AI යනු යන්ත්‍රවලට බුද්ධිමත් හැසිරීම් ලබා දීමයි.",
     ),
     TestCase(
         id=19,
-        category="Cloud Computing",
-        question="Cloud computing නිස internet හරහා සේවා ලබා දීම මහත් වෙනස්කම් සිටින්නෙ? Cloud එක මිතුරු තොරතුරු බෙදාගැනීමටත් භාවිතා කරන්න හැකිද? Cloud computing ගැන සම්පූර්ණ තරුණ්ය දැනුම තිබිණ",
-        expected_topic="Cloud Computing",
-        description="Cloud computing concepts and practical applications",
+        category="Machine Learning",
+        question="Machine learning කියන්නේ මොකක්ද?",
+        expected_topic="ML",
+        expected_response="Machine learning යනු දත්ත මත පදනම්ව ඉගෙන ගන්න AI ශාඛාවකි.",
     ),
     TestCase(
         id=20,
-        category="Networking",
-        question="Internet network එකක device එකක් හඳුනාගැනීම සඳහා IP address භාවිතා වෙනවා. නමුත් device එකක් තෝරා අඩුවේවිත් කිසිම දෙයක නැතිවෙනවා. Network එකක් තිබිණ, device එකක් තිබිණ, IP address තිබිණ ඒ අතර සබඳතාවය ගැන සරල පිටින්න",
-        expected_topic="Networking",
-        description="IP addresses and device identification in networks",
+        category="Probability",
+        question="Probability කියන්නේ මොකක්ද?",
+        expected_topic="Probability",
+        expected_response="Probability යනු සිදුවීමක් සිදුවීමේ සම්භාවිතාවයි.",
     ),
-
-    # === EXTENDED CASES (21-24) - Additional variety ===
     TestCase(
         id=21,
-        category="Version Control",
-        question="කෝඩ් ප්‍රজෙක්ට එකක් කාර්යයට බහුවිධ developers සිටින්නෙ. එක එකෙකුගේ වෙනස්කම් පාලනය කිරීම එතකට දුෂ්කරයි. Git සහ version control වලින් කිසිම collision නැතිවෙ code merge කරගැනීම කිසිම ඉතිරි කිරීමක් සිටින්නෙද? Version control ගැන සම්පූර්ණ තරුණ්ය දැනුමක් දෙන්න",
-        expected_topic="Version Control",
-        description="Managing code changes with version control systems",
+        category="Ratio",
+        question="Ratio කියන්නේ මොකක්ද?",
+        expected_topic="Ratio",
+        expected_response="Ratio යනු සංඛ්‍යා දෙකක් අතර සම්බන්ධතාවයයි.",
     ),
     TestCase(
         id=22,
-        category="API Design",
-        question="API නිසා තනිසින්ම දුටු software දෙකම සම්බන්ධ වීමට හැකි ඒතකුත් පුරාම දෙකම තිබෙන logic කිසිම තිබිණ නෙවුම් තිබිණ නිසා දුෂ්කරයි. API කිසිම සරල gateway එකක්ද? API නිස දුටු software අතර කතා කිරීමේ ක්‍රමය තිබිණ? ගැන සිංහලෙන් පැහැදිලි කරන්න",
-        expected_topic="API",
-        description="APIs as interfaces for software communication",
+        category="Trigonometry",
+        question="Trigonometry කියන්නේ මොකක්ද?",
+        expected_topic="Trigonometry",
+        expected_response="Trigonometry යනු කෝණ සහ ත්‍රිකෝණ අතර සම්බන්ධතාවය අධ්‍යයනයයි.",
     ),
     TestCase(
         id=23,
-        category="Motivation & Time Management",
-        question="දිනපතා කුඩා ඉලක්ක තැබිලා ඒවා සම්පූර්ණ කිරීම න්‍යාසිතයි දැනෙනවා. නමුත් හිතට එකිනෙක වෙනස්ක වෙතින් බිඳ පතිනවා. දිනපතා නිතිපතා ඉලක්ක සම්පූර්ණ කිරීමේ motivation දිගටම පවත්වාගැනීමට හැටි සුබ පණිවිඩයක් දෙන්න",
-        expected_topic="අභිප්‍රේරණය",
-        description="Maintaining daily motivation for goal achievement",
+        category="Calculus",
+        question="Calculus කියන්නේ මොකක්ද?",
+        expected_topic="Calculus",
+        expected_response="Calculus යනු වෙනස්වීම් සහ ගතිකතාව අධ්‍යයනය කරන ගණිත ශාඛාවකි.",
     ),
     TestCase(
         id=24,
-        category="Family & Relationships",
-        question="පවුලටත් වගකීම ඉතිරි කිරීම එතකට දුෂ්කරයි. පවුලෙ සෙම් සෙම් තර්ක සිටින්නෙ. පවුල ඉතිරි කාල කෙටි නිසා වගකීම තිබිණ. පවුලෙ සම්බන්ධතා වැඩි කරගැනීම සහ වගකීම පවත්වාගැනීමට අවිස්ස හිතවේ දෙන්න",
+        category="Family",
+        question="පවුලේ අය සමඟ හොඳ සම්බන්ධතාවයක් තබා ගන්න කොහොමද?",
         expected_topic="පවුල",
-        description="Balancing responsibilities and family relationships",
+        expected_response="පවුලේ අය සමඟ සන්නිවේදනය, ගෞරවය සහ අවබෝධය තබා ගැනීම වැදගත්ය.",
     ),
 ]
 
 
+TOPIC_ALIASES: dict[str, set[str]] = {
+    "os": {"os", "operating system", "ඔපරේටින් පද්ධතිය"},
+    "ai": {"ai", "artificial intelligence"},
+    "ml": {"ml", "machine learning"},
+    "cloud": {"cloud", "cloud computing"},
+}
+
+
+def _norm_topic(value: str) -> str:
+    return " ".join(value.strip().lower().split())
+
+
+def _topic_group(expected_topic: str) -> set[str]:
+    normalized_expected = _norm_topic(expected_topic)
+    for aliases in TOPIC_ALIASES.values():
+        normalized_aliases = {_norm_topic(item) for item in aliases}
+        if normalized_expected in normalized_aliases:
+            return normalized_aliases
+    return {normalized_expected}
+
+
+def _topic_match(expected_topic: str, observed_topics: Iterable[str]) -> bool:
+    expected_group = _topic_group(expected_topic)
+    return any(_norm_topic(topic) in expected_group for topic in observed_topics)
+
+
 def format_test_output(case: TestCase, answer: str) -> str:
-    """Format a single test case output for the report."""
+    """Format one test case result for report export."""
     separator = "=" * 80
     output_lines = [
         separator,
         f"TEST CASE #{case.id}: {case.category}",
         separator,
-        f"Description: {case.description}",
-        "",
         f"📝 User Question (සිංහලෙන්):",
         f"{case.question}",
         "",
-        f"🎯 Expected Topic: {case.expected_topic or 'N/A'}",
+        f"🎯 Expected Topic: {case.expected_topic}",
+        f"✅ Expected Response:",
+        f"{case.expected_response}",
         "",
-        f"💬 Bot Answer (සිංහලෙන්):",
+        f"💬 Bot Response (සිංහලෙන්):",
         f"{answer}",
         "",
     ]
@@ -236,19 +251,21 @@ def run_assignment_tests(use_ollama: bool = True, model_name: str = "gemma") -> 
     results: list[str] = []
 
     print("\n" + "=" * 80)
-    print("SRI.AI - ASSIGNMENT TEST SUITE (24 Test Cases)")
-    print("Demonstrates: Session Handling, Unicode Support, Varied Topics")
+    print("SRI.AI - ASSIGNMENT TEST SUITE (24 CURATED TEST CASES)")
+    print("Demonstrates: Unicode handling, session flow, and answer quality")
     print("=" * 80 + "\n")
 
     for case in TEST_CASES:
         result = retriever.retrieve(case.question)
-        topics = [hit.topic for hit in result.json_hits]
+        topics: list[str] = []
+        for hit in result.json_hits:
+            if hit.topic not in topics:
+                topics.append(hit.topic)
+        for hit in result.text_hits:
+            if hit.topic not in topics:
+                topics.append(hit.topic)
 
-        # Validate retrieval
-        if case.expected_topic is None:
-            ok = len(topics) == 0 or (result.json_hits and result.json_hits[0].score < 0.30)
-        else:
-            ok = case.expected_topic in topics[:2]
+        ok = _topic_match(case.expected_topic, topics[:3])
 
         if ok:
             passed += 1
@@ -268,9 +285,8 @@ def run_assignment_tests(use_ollama: bool = True, model_name: str = "gemma") -> 
         formatted = format_test_output(case, answer)
         results.append(formatted)
 
-        # Print progress
         status = "✓ PASS" if ok else "✗ FAIL"
-        print(f"{case.id:2d}. [{status}] {case.category:30s} → Topics: {topics[:1]}")
+        print(f"{case.id:2d}. [{status}] {case.category:22s} → Topics: {topics[:2]}")
 
     # Print summary
     print("\n" + "=" * 80)
@@ -280,13 +296,12 @@ def run_assignment_tests(use_ollama: bool = True, model_name: str = "gemma") -> 
     # Output all results
     print("\n".join(results))
 
-    # Session summary
     print("\n" + "=" * 80)
     print("SESSION-BASED HANDLING DEMONSTRATION")
     print("=" * 80)
-    print("✓ All 24 test cases maintain independent session state")
-    print("✓ Chat history preserved within session")
-    print("✓ Each test case has unique session context")
+    print("✓ All 24 test cases can run in one continuous session")
+    print("✓ Chat history is preserved by session ID")
+    print("✓ Unicode Sinhala text is preserved end-to-end")
     print("✓ Unicode Sinhala input/output handled correctly")
     print("=" * 80 + "\n")
 

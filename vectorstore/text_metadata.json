@@ -2,12 +2,32 @@
   {
     "topic": "Algorithm",
     "source": "algorithm.txt",
-    "content": "Algorithm යනු ගැටලුවක් විසඳීම සඳහා සකස් කරන ලද පියවර මාලාවකි. එය තාර්කිකව, අනුපිළිවෙලින් සහ නිශ්චිතව ලියා තිබිය යුතුය.\nහොඳ algorithm එකකට clarity, correctness සහ efficiency වැදගත් වේ. complexity අඩු algorithm එකක් සාමාන්‍යයෙන් වේගවත් ක්‍රියාකාරීත්වයක් ලබා දේ.\nProgramming ආරම්භ කිරීමට පෙර algorithm එක සකස් කිරීමෙන් code errors අඩු කර solution quality වැඩි කරගත හැක."
+    "content": "Algorithm යනු ගැටලුවක් විසඳීම සඳහා සකස් කරන ලද පියවර මාලාවකි. එය තාර්කිකව, අනුපිළිවෙලින් සහ නිශ්චිතව ලියා තිබිය යුතුය.\nහොඳ algorithm එකකට clarity, correctness සහ efficiency වැදගත් වේ. complexity අඩු algorithm එකක් සාමාන්‍යයෙන් වේගවත් ක්‍රියාකාරීත්වයක් ලබා දේ.\nProgramming ආරම්භ කිරීමට පෙර algorithm එක සකස් කිරීමෙන් code errors අඩු කර solution quality වැඩි කරගත හැක.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Algorithm ඉ"
+  },
+  {
+    "topic": "Algorithm",
+    "source": "algorithm.txt",
+    "content": "ion quality වැඩි කරගත හැක.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Algorithm ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit di"
+  },
+  {
+    "topic": "Algorithm",
+    "source": "algorithm.txt",
+    "content": "entions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   },
   {
     "topic": "කෝපය",
     "source": "anger.txt",
-    "content": "කෝපය එන මොහොතේම ප්‍රතිචාර දීමේ වෙනුවට කෙටි විරාමයක් ගන්න. තත්පර කිහිපයක් ගැඹුරු හුස්ම ගන්නා විට සිතිවිලි පැහැදිලි වේ.\nකෝපයේ හේතුව පැහැදිලි කරගැනීම වැදගත්ය. ගැටලුව සහ පුද්ගලයා වෙන් කර බලන විට සාමකාමී විසඳුමකට යාම පහසු වේ.\nගෞරවයෙන් සහ පැහැදිලිව කතා කිරීම, හඬ උස් නොකර අදහස කියා දීම, සම්බන්ධතාවය රැකගන්නා හොඳ ක්‍රමයකි."
+    "content": "කෝපය එන මොහොතේම ප්‍රතිචාර දීමේ වෙනුවට කෙටි විරාමයක් ගන්න. තත්පර කිහිපයක් ගැඹුරු හුස්ම ගන්නා විට සිතිවිලි පැහැදිලි වේ.\nකෝපයේ හේතුව පැහැදිලි කරගැනීම වැදගත්ය. ගැටලුව සහ පුද්ගලයා වෙන් කර බලන විට සාමකාමී විසඳුමකට යාම පහසු වේ.\nගෞරවයෙන් සහ පැහැදිලිව කතා කිරීම, හඬ උස් නොකර අදහස කියා දීම, සම්බන්ධතාවය රැකගන්නා හොඳ ක්‍රමයකි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: කෝපය සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහ"
+  },
+  {
+    "topic": "කෝපය",
+    "source": "anger.txt",
+    "content": "- ප්‍රධාන කරුණු: කෝපය සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor ස"
+  },
+  {
+    "topic": "කෝපය",
+    "source": "anger.txt",
+    "content": "ණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "API",
@@ -17,7 +37,12 @@
   {
     "topic": "API",
     "source": "api.txt",
-    "content": "ts, authentication, error handling සහ documentation වැදගත් වේ. Secure APIs සඳහා tokens සහ access control ක්‍රියාත්මක කළ යුතුය."
+    "content": "ts, authentication, error handling සහ documentation වැදගත් වේ. Secure APIs සඳහා tokens සහ access control ක්‍රියාත්මක කළ යුතුය.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: API ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code qualit"
+  },
+  {
+    "topic": "API",
+    "source": "api.txt",
+    "content": "ෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   },
   {
     "topic": "Artificial Intelligence",
@@ -27,7 +52,12 @@
   {
     "topic": "Artificial Intelligence",
     "source": "artificial_intelligence.txt",
-    "content": "fairness, transparency සහ ethics ගැන සැලකිලිමත් විය යුතුය. Responsible AI approaches භාවිතයෙන් විශ්වාසදායක පද්ධති ගොඩනගා ගත හැක."
+    "content": "fairness, transparency සහ ethics ගැන සැලකිලිමත් විය යුතුය. Responsible AI approaches භාවිතයෙන් විශ්වාසදායක පද්ධති ගොඩනගා ගත හැක.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Artificial Intelligence සම්බන්ධ වැඩ වලදී data representation, accuracy, සහ consistency පදනම් කරගෙන සැලසුම් කිරීම වැදගත්ය.\n- ප්‍රායෝගික භාවිතය: sample datasets/queries/examples භාවිතා කර output verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හ"
+  },
+  {
+    "topic": "Artificial Intelligence",
+    "source": "artificial_intelligence.txt",
+    "content": "amples භාවිතා කර output verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.\n- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ performance tuning.\n- හොඳ පුරුදු: input constraints, edge cases, සහ failure handling කලින් සැලසුම් කිරීමෙන් production issues අඩු වේ."
   },
   {
     "topic": "Backend",
@@ -37,12 +67,27 @@
   {
     "topic": "Backend",
     "source": "backend.txt",
-    "content": "urity සහ scalability backend design එකේ ප්‍රධාන අංග වේ. Logging, monitoring සහ error handling නිවැරදිව තිබීම production reliability වැඩි කරයි."
+    "content": "urity සහ scalability backend design එකේ ප්‍රධාන අංග වේ. Logging, monitoring සහ error handling නිවැරදිව තිබීම production reliability වැඩි කරයි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Backend ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උ"
+  },
+  {
+    "topic": "Backend",
+    "source": "backend.txt",
+    "content": "-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   },
   {
     "topic": "Binary",
     "source": "binary.txt",
-    "content": "Binary system යනු 0 සහ 1 යන අංක දෙක පමණක් භාවිතා කරන ගණිත පද්ධතියකි. පරිගණක hardware logic states (on/off) සමඟ ගැලපෙන නිසා binary මූලික වේ.\nDecimal numbers binary බවට පරිවර්තනය කිරීම computation වලදී වැදගත් වේ. Bits සහ bytes යනු binary data මිනුම් ඒකක වේ.\nText, images, audio සහ programs සියල්ල අවසානයේ binary ආකාරයෙන් පරිගණකයේ ගබඩා කර සකසයි. එබැවින් binary සංකල්පය computing හි පදනමක් වේ."
+    "content": "Binary system යනු 0 සහ 1 යන අංක දෙක පමණක් භාවිතා කරන ගණිත පද්ධතියකි. පරිගණක hardware logic states (on/off) සමඟ ගැලපෙන නිසා binary මූලික වේ.\nDecimal numbers binary බවට පරිවර්තනය කිරීම computation වලදී වැදගත් වේ. Bits සහ bytes යනු binary data මිනුම් ඒකක වේ.\nText, images, audio සහ programs සියල්ල අවසානයේ binary ආකාරයෙන් පරිගණකයේ ගබඩා කර සකසයි. එබැවින් binary සංකල්පය computing හි පදනමක් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍"
+  },
+  {
+    "topic": "Binary",
+    "source": "binary.txt",
+    "content": "ි. එබැවින් binary සංකල්පය computing හි පදනමක් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Binary සම්බන්ධ වැඩ වලදී data representation, accuracy, සහ consistency පදනම් කරගෙන සැලසුම් කිරීම වැදගත්ය.\n- ප්‍රායෝගික භාවිතය: sample datasets/queries/examples භාවිතා කර output verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.\n- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ performance tuning.\n-"
+  },
+  {
+    "topic": "Binary",
+    "source": "binary.txt",
+    "content": "මාතෘකා: indexing/search, data validation, scalability, සහ performance tuning.\n- හොඳ පුරුදු: input constraints, edge cases, සහ failure handling කලින් සැලසුම් කිරීමෙන් production issues අඩු වේ."
   },
   {
     "topic": "Bug",
@@ -52,7 +97,22 @@
   {
     "topic": "Bug",
     "source": "bug.txt",
-    "content": "සඳහා unit tests, integration tests සහ code reviews වැදගත් වේ. Bug reports පැහැදිලිව ලිවීම fix process එක ඉක්මන් කරයි."
+    "content": "සඳහා unit tests, integration tests සහ code reviews වැදගත් වේ. Bug reports පැහැදිලිව ලිවීම fix process එක ඉක්මන් කරයි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Bug ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming"
+  },
+  {
+    "topic": "Bug",
+    "source": "bug.txt",
+    "content": "y දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
+  },
+  {
+    "topic": "Calculus",
+    "source": "calculus.txt",
+    "content": "Calculus යනු වෙනස්වීම් සහ අඛණ්ඩ ප්‍රමාණ අධ්‍යයනය කරන ගණිත ශාඛාවකි. Differentiation මගින් වෙනස්වීමේ වේගය සොයා ගනී, Integration මගින් ප්‍රමාණ එකතු කිරීම සහ වක්‍රයක් යටතේ ඇති ප්‍රදේශය සොයා ගනී.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Calculus ඉගෙනීමේදී සංකේත (symbols), ඒකක (units), සහ මූලික නිර්වචන පැහැදිලිව වෙන්කර මතක තබා ගන්න.\n- ප්‍රායෝගික භාවිතය: සූත්‍රය පමණක් මතක තබාගැනීම වෙනුවට solved examples + step-by-step reas"
+  },
+  {
+    "topic": "Calculus",
+    "source": "calculus.txt",
+    "content": "ික භාවිතය: සූත්‍රය පමණක් මතක තබාගැනීම වෙනුවට solved examples + step-by-step reasoning සමඟ ගැටලු විසඳන්න.\n- සම්බන්ධ උපමාතෘකා: formula derivation, graph interpretation, approximation, සහ real-world applications.\n- හොඳ පුරුදු: පිළිතුරේ units සහ reasonableness පරීක්ෂා කිරීම, සහ වැරදුණු පියවර ලකුණු කර correction notebook එකක් තබා ගැනීම."
   },
   {
     "topic": "Cloud Computing",
@@ -62,32 +122,87 @@
   {
     "topic": "Cloud Computing",
     "source": "cloud_computing.txt",
-    "content": "ී. Data security, backup සහ access control නිවැරදිව සැලසුම් කිරීම cloud භාවිතයේදී වැදගත් වේ."
+    "content": "ී. Data security, backup සහ access control නිවැරදිව සැලසුම් කිරීම cloud භාවිතයේදී වැදගත් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Cloud Computing සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.\n- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configura"
+  },
+  {
+    "topic": "Cloud Computing",
+    "source": "cloud_computing.txt",
+    "content": "අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.\n- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම."
   },
   {
     "topic": "සංවාදය",
     "source": "communication.txt",
-    "content": "හොඳ සංවාදයක මූලික කරුණක් වන්නේ සවන් දීමයි. අනිත් අය කතා කරන විට අවධානයෙන් අසා පසුව ප්‍රතිචාර දීමෙන් අවබෝධය වැඩි වේ.\nකෙටි, පැහැදිලි වාක්‍ය භාවිතා කරන්න. අදහස පැහැදිලිව කියා පසුව අවශ්‍ය නම් උදාහරණයක් දෙන්න.\nවිරුද්ධ අදහස් තිබුණත් ගෞරවයෙන් කතා කිරීම සහ ප්‍රශ්න කර පැහැදිලි කරගැනීම සංවාද ගුණාත්මකතාව වැඩි කරයි."
+    "content": "හොඳ සංවාදයක මූලික කරුණක් වන්නේ සවන් දීමයි. අනිත් අය කතා කරන විට අවධානයෙන් අසා පසුව ප්‍රතිචාර දීමෙන් අවබෝධය වැඩි වේ.\nකෙටි, පැහැදිලි වාක්‍ය භාවිතා කරන්න. අදහස පැහැදිලිව කියා පසුව අවශ්‍ය නම් උදාහරණයක් දෙන්න.\nවිරුද්ධ අදහස් තිබුණත් ගෞරවයෙන් කතා කිරීම සහ ප්‍රශ්න කර පැහැදිලි කරගැනීම සංවාද ගුණාත්මකතාව වැඩි කරයි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: සංවාදය සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීම"
+  },
+  {
+    "topic": "සංවාදය",
+    "source": "communication.txt",
+    "content": "කරුණු: සංවාදය සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා ක"
+  },
+  {
+    "topic": "සංවාදය",
+    "source": "communication.txt",
+    "content": "ාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "Compiler",
     "source": "compiler.txt",
-    "content": "Compiler යනු high-level source code එක machine language හෝ bytecode බවට පරිවර්තනය කරන program එකකි. පරිවර්තනය සාමාන්‍යයෙන් run කිරීමට පෙර සිදු වේ.\nCompilation process එකේදී lexical analysis, syntax analysis සහ code generation වැනි අදියර ඇත. Errors තිබේ නම් compile stage එකේදී දැනුම් දේ.\nCompiled languages උදාහරණ ලෙස C/C++ සඳහන් කළ හැක. Compiler optimization මඟින් performance වැඩි executable code ලබාගත හැක."
+    "content": "Compiler යනු high-level source code එක machine language හෝ bytecode බවට පරිවර්තනය කරන program එකකි. පරිවර්තනය සාමාන්‍යයෙන් run කිරීමට පෙර සිදු වේ.\nCompilation process එකේදී lexical analysis, syntax analysis සහ code generation වැනි අදියර ඇත. Errors තිබේ නම් compile stage එකේදී දැනුම් දේ.\nCompiled languages උදාහරණ ලෙස C/C++ සඳහන් කළ හැක. Compiler optimization මඟින් performance වැඩි executable code ලබාගත හැක.\nඅමතර විස්ත"
+  },
+  {
+    "topic": "Compiler",
+    "source": "compiler.txt",
+    "content": "mpiler optimization මඟින් performance වැඩි executable code ලබාගත හැක.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Compiler ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentatio"
+  },
+  {
+    "topic": "Compiler",
+    "source": "compiler.txt",
+    "content": "ම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   },
   {
     "topic": "පරිගණකය",
     "source": "computer.txt",
-    "content": "පරිගණකය යනු දත්ත ලබාගෙන ඒවා සැකසීමෙන් තොරතුරු නිපදවන ඉලෙක්ට්‍රොනික යන්ත්‍රයකි. පරිගණකයක මූලික කාර්යයන් ලෙස input, processing, output සහ storage සලකයි.\nInput යනු යතුරුපුවරුව, mouse, scanner වැනි උපකරණ හරහා දත්ත ලබා දීමයි. Processing යනු CPU මඟින් එම දත්ත සැකසීමයි.\nOutput ලෙස monitor, printer හෝ speaker හරහා ප්‍රතිඵල ලැබේ. Storage ලෙස hard disk, SSD, cloud වැනි මාධ්‍ය භාවිතා කර දත්ත තබා ගනී."
+    "content": "පරිගණකය යනු දත්ත ලබාගෙන ඒවා සැකසීමෙන් තොරතුරු නිපදවන ඉලෙක්ට්‍රොනික යන්ත්‍රයකි. පරිගණකයක මූලික කාර්යයන් ලෙස input, processing, output සහ storage සලකයි.\nInput යනු යතුරුපුවරුව, mouse, scanner වැනි උපකරණ හරහා දත්ත ලබා දීමයි. Processing යනු CPU මඟින් එම දත්ත සැකසීමයි.\nOutput ලෙස monitor, printer හෝ speaker හරහා ප්‍රතිඵල ලැබේ. Storage ලෙස hard disk, SSD, cloud වැනි මාධ්‍ය භාවිතා කර දත්ත තබා ගනී.\nඅමතර විස්තර (විස්තීරණය):\n-"
+  },
+  {
+    "topic": "පරිගණකය",
+    "source": "computer.txt",
+    "content": "disk, SSD, cloud වැනි මාධ්‍ය භාවිතා කර දත්ත තබා ගනී.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: පරිගණකය සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.\n- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control,"
+  },
+  {
+    "topic": "පරිගණකය",
+    "source": "computer.txt",
+    "content": "ක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.\n- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම."
   },
   {
     "topic": "ආත්ම විශ්වාසය",
     "source": "confidence.txt",
-    "content": "ආත්ම විශ්වාසය එක දිනකින් නොඑයි. දිනපතා කුඩා කාර්යයන් සාර්ථකව කිරීමෙන් සහ ඔබේ ශක්තිමත් පැති හඳුනා ගැනීමෙන් එය මන්දගාමීව වර්ධනය වේ.\nඔබ අසාර්ථක වූ අවස්ථා ගැන අතිශයින්ම දැඩිව නොව, ඒවායේ පාඩම් සොයා බලන්න. මේ ආකාරයෙන් ඔබේ හැකියාවන් යාවත්කාලීන කර ගත හැක.\nතමන් ගැන ගෞරවයෙන් සිතීම, නිරන්තර පුහුණුව සහ සකස් කළ இலක්ක සපුරා ගැනීම ආත්ම විශ්වාසය තිරසාර කරයි."
+    "content": "ආත්ම විශ්වාසය එක දිනකින් නොඑයි. දිනපතා කුඩා කාර්යයන් සාර්ථකව කිරීමෙන් සහ ඔබේ ශක්තිමත් පැති හඳුනා ගැනීමෙන් එය මන්දගාමීව වර්ධනය වේ.\nඔබ අසාර්ථක වූ අවස්ථා ගැන අතිශයින්ම දැඩිව නොව, ඒවායේ පාඩම් සොයා බලන්න. මේ ආකාරයෙන් ඔබේ හැකියාවන් යාවත්කාලීන කර ගත හැක.\nතමන් ගැන ගෞරවයෙන් සිතීම, නිරන්තර පුහුණුව සහ සකස් කළ ඉලක්ක සපුරා ගැනීම ආත්ම විශ්වාසය තිරසාර කරයි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: ආත්ම විශ්වාසය සඳහා trigger factor"
+  },
+  {
+    "topic": "ආත්ම විශ්වාසය",
+    "source": "confidence.txt",
+    "content": "රයි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: ආත්ම විශ්වාසය සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩ"
+  },
+  {
+    "topic": "ආත්ම විශ්වාසය",
+    "source": "confidence.txt",
+    "content": "very habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "CPU",
     "source": "cpu.txt",
-    "content": "CPU (Central Processing Unit) යනු පරිගණකයේ මූලික සැකසුම් ඒකකය වන අතර බොහෝ විට “පරිගණකයේ මොළය” ලෙස හඳුන්වයි. එය නියෝග කියවා ඒවා ක්‍රියාත්මක කරයි.\nALU (Arithmetic Logic Unit) කොටස ගණිත හා තර්ක ක්‍රියා සිදු කරයි. Control Unit කොටස නියෝග පාලනය කර අනෙකුත් කොටස් සම්බන්ධීකරණය කරයි.\nRegisters යනු ඉතා කෙටි කාලයක් සඳහා තාවකාලික දත්ත තබා ගන්නා වේගවත් මතක කොටස් වේ. CPU වේගය වැඩි වීමෙන් processing කාර්යක්ෂමතාව වැඩි වේ."
+    "content": "CPU (Central Processing Unit) යනු පරිගණකයේ මූලික සැකසුම් ඒකකය වන අතර බොහෝ විට “පරිගණකයේ මොළය” ලෙස හඳුන්වයි. එය නියෝග කියවා ඒවා ක්‍රියාත්මක කරයි.\nALU (Arithmetic Logic Unit) කොටස ගණිත හා තර්ක ක්‍රියා සිදු කරයි. Control Unit කොටස නියෝග පාලනය කර අනෙකුත් කොටස් සම්බන්ධීකරණය කරයි.\nRegisters යනු ඉතා කෙටි කාලයක් සඳහා තාවකාලික දත්ත තබා ගන්නා වේගවත් මතක කොටස් වේ. CPU වේගය වැඩි වීමෙන් processing කාර්යක්ෂමතාව වැඩි වේ.\nඅමතර විස්ත"
+  },
+  {
+    "topic": "CPU",
+    "source": "cpu.txt",
+    "content": "් මතක කොටස් වේ. CPU වේගය වැඩි වීමෙන් processing කාර්යක්ෂමතාව වැඩි වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: CPU සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.\n- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, acc"
+  },
+  {
+    "topic": "CPU",
+    "source": "cpu.txt",
+    "content": "පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.\n- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම."
   },
   {
     "topic": "Cyber Security",
@@ -97,12 +212,27 @@
   {
     "topic": "Cyber Security",
     "source": "cyber_security.txt",
-    "content": "hentication, software updates සහ regular backups ආරක්ෂාව වැඩි කරයි. Incident response plan එකක් තිබීමද වැදගත් ආරක්ෂක පියවරකි."
+    "content": "hentication, software updates සහ regular backups ආරක්ෂාව වැඩි කරයි. Incident response plan එකක් තිබීමද වැදගත් ආරක්ෂක පියවරකි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Cyber Security සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.\n- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැ"
+  },
+  {
+    "topic": "Cyber Security",
+    "source": "cyber_security.txt",
+    "content": "kup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.\n- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම."
   },
   {
     "topic": "දත්ත සහ තොරතුරු",
     "source": "data_information.txt",
-    "content": "දත්ත (Data) යනු අමු සත්‍යයන් හෝ ලකුණු (raw facts) වේ. එම දත්ත තනිව භාවිතා කරන විට අර්ථය සීමිත විය හැක.\nතොරතුරු (Information) යනු දත්ත සංවිධානය කර විශ්ලේෂණය කිරීමෙන් ලැබෙන අර්ථවත් ප්‍රතිඵලයයි. ඒ නිසා තීරණ ගැනීමට තොරතුරු වැදගත් වේ.\nඋදාහරණයක් ලෙස 35, 40, 45 යන සංඛ්‍යා දත්ත වේ. ඒවා සිසුන්ගේ ලකුණු බව දක්වා සාමාන්‍යය ගණනය කළ විට එය තොරතුරක් වේ."
+    "content": "දත්ත (Data) යනු අමු සත්‍යයන් හෝ ලකුණු (raw facts) වේ. එම දත්ත තනිව භාවිතා කරන විට අර්ථය සීමිත විය හැක.\nතොරතුරු (Information) යනු දත්ත සංවිධානය කර විශ්ලේෂණය කිරීමෙන් ලැබෙන අර්ථවත් ප්‍රතිඵලයයි. ඒ නිසා තීරණ ගැනීමට තොරතුරු වැදගත් වේ.\nඋදාහරණයක් ලෙස 35, 40, 45 යන සංඛ්‍යා දත්ත වේ. ඒවා සිසුන්ගේ ලකුණු බව දක්වා සාමාන්‍යය ගණනය කළ විට එය තොරතුරක් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: දත්ත සහ තොරතුරු සම්බන්ධ වැඩ වලදී data"
+  },
+  {
+    "topic": "දත්ත සහ තොරතුරු",
+    "source": "data_information.txt",
+    "content": "අමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: දත්ත සහ තොරතුරු සම්බන්ධ වැඩ වලදී data representation, accuracy, සහ consistency පදනම් කරගෙන සැලසුම් කිරීම වැදගත්ය.\n- ප්‍රායෝගික භාවිතය: sample datasets/queries/examples භාවිතා කර output verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.\n- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ performance tuning.\n- හොඳ පුරුදු: input constraints, edge case"
+  },
+  {
+    "topic": "දත්ත සහ තොරතුරු",
+    "source": "data_information.txt",
+    "content": ", scalability, සහ performance tuning.\n- හොඳ පුරුදු: input constraints, edge cases, සහ failure handling කලින් සැලසුම් කිරීමෙන් production issues අඩු වේ."
   },
   {
     "topic": "Data Structure",
@@ -112,17 +242,42 @@
   {
     "topic": "Data Structure",
     "source": "data_structure.txt",
-    "content": "l-world systems තුළ searching, sorting, caching සහ scheduling වැනි කාර්යයන් data structures මත දැඩිව රඳා පවතී."
+    "content": "l-world systems තුළ searching, sorting, caching සහ scheduling වැනි කාර්යයන් data structures මත දැඩිව රඳා පවතී.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Data Structure සම්බන්ධ වැඩ වලදී data representation, accuracy, සහ consistency පදනම් කරගෙන සැලසුම් කිරීම වැදගත්ය.\n- ප්‍රායෝගික භාවිතය: sample datasets/queries/examples භාවිතා කර output verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.\n- සම්බන්ධ උපමාතෘකා: ind"
+  },
+  {
+    "topic": "Data Structure",
+    "source": "data_structure.txt",
+    "content": "ify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.\n- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ performance tuning.\n- හොඳ පුරුදු: input constraints, edge cases, සහ failure handling කලින් සැලසුම් කිරීමෙන් production issues අඩු වේ."
   },
   {
     "topic": "Database",
     "source": "database.txt",
-    "content": "Database යනු දත්ත සංවිධානය කර ගබඩා කරන පද්ධතියකි. එය structured ලෙස data තබා ගැනීමට සහ ඉක්මනින් ලබා ගැනීමට උපකාරී වේ.\nDatabase භාවිතයෙන් data redundancy අඩු කර consistency වැඩි කරයි. Tables, rows, columns වැනි ආකෘතියක් relational databases හි භාවිතා කරයි.\nපාසල්, බැංකු, ව්‍යාපාර සහ web systems වැනි බොහෝ ක්ෂේත්‍රවල database වැදගත් වේ. නිවැරදි database design එක performance සහ scalability වැඩි කරයි."
+    "content": "Database යනු දත්ත සංවිධානය කර ගබඩා කරන පද්ධතියකි. එය structured ලෙස data තබා ගැනීමට සහ ඉක්මනින් ලබා ගැනීමට උපකාරී වේ.\nDatabase භාවිතයෙන් data redundancy අඩු කර consistency වැඩි කරයි. Tables, rows, columns වැනි ආකෘතියක් relational databases හි භාවිතා කරයි.\nපාසල්, බැංකු, ව්‍යාපාර සහ web systems වැනි බොහෝ ක්ෂේත්‍රවල database වැදගත් වේ. නිවැරදි database design එක performance සහ scalability වැඩි කරයි.\nඅමතර විස්තර (විස්තීර"
+  },
+  {
+    "topic": "Database",
+    "source": "database.txt",
+    "content": "දි database design එක performance සහ scalability වැඩි කරයි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Database සම්බන්ධ වැඩ වලදී data representation, accuracy, සහ consistency පදනම් කරගෙන සැලසුම් කිරීම වැදගත්ය.\n- ප්‍රායෝගික භාවිතය: sample datasets/queries/examples භාවිතා කර output verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.\n- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ performanc"
+  },
+  {
+    "topic": "Database",
+    "source": "database.txt",
+    "content": "- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ performance tuning.\n- හොඳ පුරුදු: input constraints, edge cases, සහ failure handling කලින් සැලසුම් කිරීමෙන් production issues අඩු වේ."
   },
   {
     "topic": "DBMS",
     "source": "dbms.txt",
-    "content": "DBMS (Database Management System) යනු database එක කළමනාකරණය කරන software එකකි. එය data create, read, update, delete කිරීම පහසු කරයි.\nDBMS මඟින් user access control, backup, recovery සහ security features ලබා දේ. Multiple users එකවර වැඩ කරන විට consistency පවත්වා ගැනීමටද DBMS උපකාරී වේ.\nMySQL, PostgreSQL, Oracle, SQL Server වැනි පද්ධති DBMS උදාහරණ වේ. Application development සඳහා DBMS මූලික වැදගත්කමක් දරයි."
+    "content": "DBMS (Database Management System) යනු database එක කළමනාකරණය කරන software එකකි. එය data create, read, update, delete කිරීම පහසු කරයි.\nDBMS මඟින් user access control, backup, recovery සහ security features ලබා දේ. Multiple users එකවර වැඩ කරන විට consistency පවත්වා ගැනීමටද DBMS උපකාරී වේ.\nMySQL, PostgreSQL, Oracle, SQL Server වැනි පද්ධති DBMS උදාහරණ වේ. Application development සඳහා DBMS මූලික වැදගත්කමක් දරයි.\nඅමතර විස්තර"
+  },
+  {
+    "topic": "DBMS",
+    "source": "dbms.txt",
+    "content": "උදාහරණ වේ. Application development සඳහා DBMS මූලික වැදගත්කමක් දරයි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: DBMS සම්බන්ධ වැඩ වලදී data representation, accuracy, සහ consistency පදනම් කරගෙන සැලසුම් කිරීම වැදගත්ය.\n- ප්‍රායෝගික භාවිතය: sample datasets/queries/examples භාවිතා කර output verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.\n- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ perfo"
+  },
+  {
+    "topic": "DBMS",
+    "source": "dbms.txt",
+    "content": "හැක.\n- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ performance tuning.\n- හොඳ පුරුදු: input constraints, edge cases, සහ failure handling කලින් සැලසුම් කිරීමෙන් production issues අඩු වේ."
   },
   {
     "topic": "Debugging",
@@ -132,7 +287,12 @@
   {
     "topic": "Debugging",
     "source": "debugging.txt",
-    "content": "දගත් වේ. එමඟින් එක ගැටලුවක් විසඳන විට වෙනත් feature එකක් බිඳ වැටීම වැළැක්විය හැක."
+    "content": "දගත් වේ. එමඟින් එක ගැටලුවක් විසඳන විට වෙනත් feature එකක් බිඳ වැටීම වැළැක්විය හැක.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Debugging ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control,"
+  },
+  {
+    "topic": "Debugging",
+    "source": "debugging.txt",
+    "content": "ට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   },
   {
     "topic": "Encryption",
@@ -142,42 +302,112 @@
   {
     "topic": "Encryption",
     "source": "encryption.txt",
-    "content": "ත්‍රවල බහුලව භාවිතා වේ. දත්ත ආරක්ෂාව වැඩි කිරීමට key management නිවැරදිව කළ යුතුය."
+    "content": "ත්‍රවල බහුලව භාවිතා වේ. දත්ත ආරක්ෂාව වැඩි කිරීමට key management නිවැරදිව කළ යුතුය.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Encryption සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.\n- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management"
+  },
+  {
+    "topic": "Encryption",
+    "source": "encryption.txt",
+    "content": "න් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.\n- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම."
   },
   {
     "topic": "පරිසරය",
     "source": "environment.txt",
-    "content": "පරිසරය ආරක්ෂා කිරීම සඳහා දෛනික පුරුදු වෙනස් කිරීම වැදගත්ය. අභිබවා පරිභෝජනය අඩු කිරීම සහ නැවත භාවිතා කිරීම පරිසරයට හිතකර පියවර වේ.\nඅපද්‍රව්‍ය වර්ග කර නිසි ලෙස ඉවත් කිරීම, ජලය හා විදුලිය මිතව භාවිතා කිරීම, සහ ගස් රෝපණය වැනි ක්‍රියාකාරකම් මඟින් පරිසර බලපෑම අඩු කළ හැක.\nසමාජ මට්ටමින් වගකීමෙන් ක්‍රියා කිරීමෙන් දිගුකාලීන පාරිසරික සුරක්ෂිතතාව ලබා ගත හැක."
+    "content": "පරිසරය ආරක්ෂා කිරීම සඳහා දෛනික පුරුදු වෙනස් කිරීම වැදගත්ය. අභිබවා පරිභෝජනය අඩු කිරීම සහ නැවත භාවිතා කිරීම පරිසරයට හිතකර පියවර වේ.\nඅපද්‍රව්‍ය වර්ග කර නිසි ලෙස ඉවත් කිරීම, ජලය හා විදුලිය මිතව භාවිතා කිරීම, සහ ගස් රෝපණය වැනි ක්‍රියාකාරකම් මඟින් පරිසර බලපෑම අඩු කළ හැක.\nසමාජ මට්ටමින් වගකීමෙන් ක්‍රියා කිරීමෙන් දිගුකාලීන පාරිසරික සුරක්ෂිතතාව ලබා ගත හැක.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: පරිසරය සඳහා trigger factors,"
+  },
+  {
+    "topic": "පරිසරය",
+    "source": "environment.txt",
+    "content": "ගත හැක.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: පරිසරය සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල"
+  },
+  {
+    "topic": "පරිසරය",
+    "source": "environment.txt",
+    "content": "y habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "ව්‍යායාම",
     "source": "exercise.txt",
-    "content": "නිතිපතා ව්‍යායාම කිරීම ශරීර ශක්තිය, හෘද සෞඛ්‍යය සහ මානසික සුවය වැඩි කරයි. සතියකට දින කිහිපයක් නියමිත කාලයක් වෙන් කිරීම හොඳ පුරුද්දකි.\nඇවිදීම, සැහැල්ලු දිවීම, හෝ stretching වැනි සරල ක්‍රියාකාරකම්වලින් ආරම්භ කරන්න. අධික ලෙස ආරම්භ නොකර සෙමින් වැඩි කිරීම ආරක්ෂිතය.\nව්‍යායාමය සමඟ ප්‍රමාණවත් ජලය පානය කිරීම සහ විවේකය තබා ගැනීම ශරීරය ආරක්ෂා කිරීමට වැදගත්ය."
+    "content": "නිතිපතා ව්‍යායාම කිරීම ශරීර ශක්තිය, හෘද සෞඛ්‍යය සහ මානසික සුවය වැඩි කරයි. සතියකට දින කිහිපයක් නියමිත කාලයක් වෙන් කිරීම හොඳ පුරුද්දකි.\nඇවිදීම, සැහැල්ලු දිවීම, හෝ stretching වැනි සරල ක්‍රියාකාරකම්වලින් ආරම්භ කරන්න. අධික ලෙස ආරම්භ නොකර සෙමින් වැඩි කිරීම ආරක්ෂිතය.\nව්‍යායාමය සමඟ ප්‍රමාණවත් ජලය පානය කිරීම සහ විවේකය තබා ගැනීම ශරීරය ආරක්ෂා කිරීමට වැදගත්ය.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: ව්‍යායාම සඳහා trigger factor"
+  },
+  {
+    "topic": "ව්‍යායාම",
+    "source": "exercise.txt",
+    "content": "වැදගත්ය.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: ව්‍යායාම සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩ"
+  },
+  {
+    "topic": "ව්‍යායාම",
+    "source": "exercise.txt",
+    "content": "very habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "පවුල",
     "source": "family.txt",
-    "content": "පවුල පුද්ගලයාගේ ආරක්ෂාව, අනුග්‍රහය සහ සංවේදී සහය සපයන මූලික පද්ධතියකි. දෛනික ජීවිතයේ අභියෝග හමුවේ පවුලේ සහය මනස සන්සුන් කරයි.\nපවුල තුළ හොඳ සම්බන්ධතා පවත්වා ගැනීමට විවෘත සංවාදය, ගෞරවය සහ එකිනෙකාගේ අවශ්‍යතා අගය කිරීම වැදගත් වේ.\nකාලය ගත කිරීම, එකිනෙකාට සවන් දීම සහ අභියෝග අවස්ථාවලදී එකට තීරණ ගැනීම පවුල් බැඳීම් ශක්තිමත් කරයි."
+    "content": "පවුල පුද්ගලයාගේ ආරක්ෂාව, අනුග්‍රහය සහ සංවේදී සහය සපයන මූලික පද්ධතියකි. දෛනික ජීවිතයේ අභියෝග හමුවේ පවුලේ සහය මනස සන්සුන් කරයි.\nපවුල තුළ හොඳ සම්බන්ධතා පවත්වා ගැනීමට විවෘත සංවාදය, ගෞරවය සහ එකිනෙකාගේ අවශ්‍යතා අගය කිරීම වැදගත් වේ.\nකාලය ගත කිරීම, එකිනෙකාට සවන් දීම සහ අභියෝග අවස්ථාවලදී එකට තීරණ ගැනීම පවුල් බැඳීම් ශක්තිමත් කරයි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: පවුල සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙ"
+  },
+  {
+    "topic": "පවුල",
+    "source": "family.txt",
+    "content": "තීරණය):\n- ප්‍රධාන කරුණු: පවුල සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/d"
+  },
+  {
+    "topic": "පවුල",
+    "source": "family.txt",
+    "content": "ා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "භය",
     "source": "fear.txt",
-    "content": "භය දැනෙන විට මුලින්ම ඔබ ආරක්ෂිත ස්ථානයක සිටින බව තහවුරු කර ගන්න. පසුව හුස්ම ගැනීම පාලනය කරමින් ශරීරය සන්සුන් කර ගන්න.\nභය ඇතිකරන සිතුවිලි ලියන්න සහ ඒවා යථාර්ථයට ගැලපේදැයි විමසන්න. මෙය අනවශ්‍ය බිය අඩු කිරීමට උපකාරී වේ.\nඅවශ්‍ය වේලාවට විශ්වාසවන්ත අයගේ සහය ලබා ගැනීම භය පාලනයට හොඳ උපකාරයකි."
+    "content": "භය දැනෙන විට මුලින්ම ඔබ ආරක්ෂිත ස්ථානයක සිටින බව තහවුරු කර ගන්න. පසුව හුස්ම ගැනීම පාලනය කරමින් ශරීරය සන්සුන් කර ගන්න.\nභය ඇතිකරන සිතුවිලි ලියන්න සහ ඒවා යථාර්ථයට ගැලපේදැයි විමසන්න. මෙය අනවශ්‍ය බිය අඩු කිරීමට උපකාරී වේ.\nඅවශ්‍ය වේලාවට විශ්වාසවන්ත අයගේ සහය ලබා ගැනීම භය පාලනයට හොඳ උපකාරයකි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: භය සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n-"
+  },
+  {
+    "topic": "භය",
+    "source": "fear.txt",
+    "content": "ger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "Flowchart",
     "source": "flowchart.txt",
-    "content": "Flowchart යනු algorithm එකක් සංකේත භාවිතා කර දෘශ්‍යමය ලෙස පෙන්වන ආකෘතියකි. එය program logic පැහැදිලිව අවබෝධ කරගැනීමට උපකාරී වේ.\nසාමාන්‍ය symbols ලෙස start/end, process, decision, input/output භාවිතා කරයි. Arrow භාවිතයෙන් පියවර අතර ගමන් මාර්ගය පෙන්වයි.\nFlowchart භාවිතයෙන් debugging සහ planning පහසු වේ. Team discussions තුළ solution flow පැහැදිලිව පැවසීමටද මෙය ප්‍රයෝජනවත් වේ."
+    "content": "Flowchart යනු algorithm එකක් සංකේත භාවිතා කර දෘශ්‍යමය ලෙස පෙන්වන ආකෘතියකි. එය program logic පැහැදිලිව අවබෝධ කරගැනීමට උපකාරී වේ.\nසාමාන්‍ය symbols ලෙස start/end, process, decision, input/output භාවිතා කරයි. Arrow භාවිතයෙන් පියවර අතර ගමන් මාර්ගය පෙන්වයි.\nFlowchart භාවිතයෙන් debugging සහ planning පහසු වේ. Team discussions තුළ solution flow පැහැදිලිව පැවසීමටද මෙය ප්‍රයෝජනවත් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: F"
+  },
+  {
+    "topic": "Flowchart",
+    "source": "flowchart.txt",
+    "content": "හැදිලිව පැවසීමටද මෙය ප්‍රයෝජනවත් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Flowchart ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු:"
+  },
+  {
+    "topic": "Flowchart",
+    "source": "flowchart.txt",
+    "content": "aming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   },
   {
     "topic": "Frontend",
     "source": "frontend.txt",
-    "content": "Frontend යනු user එකට සෘජුව පෙනෙන software කොටසයි. Web pages, buttons, forms, colors සහ layouts වැනි UI/UX මෙයට අයත් වේ.\nHTML, CSS, JavaScript වැනි තාක්ෂණයන් frontend development සඳහා මූලික වේ. React, Vue, Angular වැනි frameworks භාවිතයෙන් interactive interfaces ගොඩනගා ගත හැක.\nහොඳ frontend එකකට usability, responsiveness සහ accessibility වැදගත් වේ. User experience හොඳ වීමෙන් application භාවිතා කිරීම සාර්ථක වේ."
+    "content": "Frontend යනු user එකට සෘජුව පෙනෙන software කොටසයි. Web pages, buttons, forms, colors සහ layouts වැනි UI/UX මෙයට අයත් වේ.\nHTML, CSS, JavaScript වැනි තාක්ෂණයන් frontend development සඳහා මූලික වේ. React, Vue, Angular වැනි frameworks භාවිතයෙන් interactive interfaces ගොඩනගා ගත හැක.\nහොඳ frontend එකකට usability, responsiveness සහ accessibility වැදගත් වේ. User experience හොඳ වීමෙන් application භාවිතා කිරීම සාර්ථක වේ.\nඅමතර වි"
+  },
+  {
+    "topic": "Frontend",
+    "source": "frontend.txt",
+    "content": "ැදගත් වේ. User experience හොඳ වීමෙන් application භාවිතා කිරීම සාර්ථක වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Frontend ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documenta"
+  },
+  {
+    "topic": "Frontend",
+    "source": "frontend.txt",
+    "content": "- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   },
   {
     "topic": "Full Stack",
     "source": "full_stack.txt",
     "content": "Full Stack development යනු frontend සහ backend දෙකම සංවර්ධනය කිරීමයි. Full stack developer කෙනෙකු UI සිට database logic දක්වා ක්‍රියාකරයි.\nFrontend තාක්ෂණයන් සහ backend APIs දෙකම තේරුම් ගැනීම Full stack වැඩ වල මූලික කොටසකි. මේ දැනුම end-to-end systems හොඳින් ගොඩනගා ගැනීමට උපකාරී වේ.\nProject planning, deployment සහ debugging සියල්ල දැනුවත්ව කළ හැකි බැවින් small to medium teams වල full stack skills ඉතා ප්‍රයෝජනවත් වේ."
+  },
+  {
+    "topic": "Full Stack",
+    "source": "full_stack.txt",
+    "content": "ව කළ හැකි බැවින් small to medium teams වල full stack skills ඉතා ප්‍රයෝජනවත් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Full Stack ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control,"
+  },
+  {
+    "topic": "Full Stack",
+    "source": "full_stack.txt",
+    "content": "පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   },
   {
     "topic": "සතුටු ජීවිතය",
@@ -187,7 +417,12 @@
   {
     "topic": "සතුටු ජීවිතය",
     "source": "happy_life.txt",
-    "content": "ු කිරීම, සහ සෞඛ්‍ය සම්පන්න පුරුදු (නින්ද, ව්‍යායාම, සමබර ආහාර) තබා ගැනීම සතුටු ජීවිතයක ප්‍රධාන කොටස් වේ."
+    "content": "ු කිරීම, සහ සෞඛ්‍ය සම්පන්න පුරුදු (නින්ද, ව්‍යායාම, සමබර ආහාර) තබා ගැනීම සතුටු ජීවිතයක ප්‍රධාන කොටස් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: සතුටු ජීවිතය සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication,"
+  },
+  {
+    "topic": "සතුටු ජීවිතය",
+    "source": "happy_life.txt",
+    "content": "දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "Hardware",
@@ -197,12 +432,27 @@
   {
     "topic": "Hardware",
     "source": "hardware_topic.txt",
-    "content": "වයේ පවත්වා ගැනීමෙන් system stability සහ lifespan වැඩි කළ හැක. Dust control සහ proper cooling වැනි පුරුදු වැදගත් වේ."
+    "content": "වයේ පවත්වා ගැනීමෙන් system stability සහ lifespan වැඩි කළ හැක. Dust control සහ proper cooling වැනි පුරුදු වැදගත් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Hardware සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.\n- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපම"
+  },
+  {
+    "topic": "Hardware",
+    "source": "hardware_topic.txt",
+    "content": "යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.\n- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම."
   },
   {
     "topic": "හිසරදය",
     "source": "headache.txt",
-    "content": "හිසරදය ඇති වන විට මුලින්ම විවේක ගැනීම වැදගත්ය. ශබ්දය සහ වැඩි ආලෝකය අඩු පරිසරයක විනාඩි කිහිපයක් නිශ්ශබ්දව සිටීමෙන් වේදනාව අඩුවිය හැක.\nදිනපතා ප්‍රමාණවත් ජලය නොබොන විට ද හිසරදය ඇති විය හැකි බැවින් ජලය පානය කරන්න. බඩගිනි සහ නිදාගැනීමේ අඩුවීම ද හිසරදය වැඩි කරන හේතු වේ.\nහිසරදය දිගටම පවතින්නේ නම්, හෝ නිතර නැවත නැවත ඇති වන්නේ නම්, වෛද්‍ය උපදෙස් ලබා ගැනීම වඩාත් ආරක්ෂිත වේ."
+    "content": "හිසරදය ඇති වන විට මුලින්ම විවේක ගැනීම වැදගත්ය. ශබ්දය සහ වැඩි ආලෝකය අඩු පරිසරයක විනාඩි කිහිපයක් නිශ්ශබ්දව සිටීමෙන් වේදනාව අඩුවිය හැක.\nදිනපතා ප්‍රමාණවත් ජලය නොබොන විට ද හිසරදය ඇති විය හැකි බැවින් ජලය පානය කරන්න. බඩගිනි සහ නිදාගැනීමේ අඩුවීම ද හිසරදය වැඩි කරන හේතු වේ.\nහිසරදය දිගටම පවතින්නේ නම්, හෝ නිතර නැවත නැවත ඇති වන්නේ නම්, වෛද්‍ය උපදෙස් ලබා ගැනීම වඩාත් ආරක්ෂිත වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: හිසරදය සඳහා"
+  },
+  {
+    "topic": "හිසරදය",
+    "source": "headache.txt",
+    "content": "බා ගැනීම වඩාත් ආරක්ෂිත වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: හිසරදය සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ"
+  },
+  {
+    "topic": "හිසරදය",
+    "source": "headache.txt",
+    "content": "daries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "Internet",
@@ -212,17 +462,42 @@
   {
     "topic": "Internet",
     "source": "internet.txt",
-    "content": "හ privacy ගැන අවධානයෙන් සිටීම වැදගත් වේ. Strong passwords සහ trusted websites භාවිතා කිරීම ආරක්ෂාව වැඩි කරයි."
+    "content": "හ privacy ගැන අවධානයෙන් සිටීම වැදගත් වේ. Strong passwords සහ trusted websites භාවිතා කිරීම ආරක්ෂාව වැඩි කරයි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Internet සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.\n- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා:"
+  },
+  {
+    "topic": "Internet",
+    "source": "internet.txt",
+    "content": "kflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.\n- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම."
   },
   {
     "topic": "Interpreter",
     "source": "interpreter.txt",
-    "content": "Interpreter යනු source code එක line-by-line ලෙස කියවා වහාම ක්‍රියාත්මක කරන program එකකි. Compile කර වෙනම executable file එකක් සෑදීම අනිවාර්ය නොවේ.\nError එකක් තිබේ නම් එය ඇති line එකටම අදාළව ඉක්මනින් දැනගත හැක. එබැවින් learning සහ rapid prototyping සඳහා interpreters ප්‍රයෝජනවත් වේ.\nPython සහ JavaScript වැනි භාෂා interpreter-based execution වලට උදාහරණ වේ. Runtime performance compiled code වලට වඩා වෙනස් විය හැක."
+    "content": "Interpreter යනු source code එක line-by-line ලෙස කියවා වහාම ක්‍රියාත්මක කරන program එකකි. Compile කර වෙනම executable file එකක් සෑදීම අනිවාර්ය නොවේ.\nError එකක් තිබේ නම් එය ඇති line එකටම අදාළව ඉක්මනින් දැනගත හැක. එබැවින් learning සහ rapid prototyping සඳහා interpreters ප්‍රයෝජනවත් වේ.\nPython සහ JavaScript වැනි භාෂා interpreter-based execution වලට උදාහරණ වේ. Runtime performance compiled code වලට වඩා වෙනස් විය හැක.\nඅමතර වි"
+  },
+  {
+    "topic": "Interpreter",
+    "source": "interpreter.txt",
+    "content": "වලට උදාහරණ වේ. Runtime performance compiled code වලට වඩා වෙනස් විය හැක.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Interpreter ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, docume"
+  },
+  {
+    "topic": "Interpreter",
+    "source": "interpreter.txt",
+    "content": "ේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   },
   {
     "topic": "IP Address",
     "source": "ip_address.txt",
-    "content": "IP Address යනු network එකක එක් device එකක් අනෙකාගෙන් වෙන්කර හඳුනාගැනීමට භාවිතා කරන අංකීය ලිපිනයකි. Data packets නිවැරදි destination එකට යොමු වීමට මෙය උපකාරී වේ.\nIPv4 සහ IPv6 යන වර්ග දෙක ප්‍රධාන වේ. IPv4 ලිපිනයන් සීමිත වන අතර IPv6 වැඩි ලිපින අවකාශයක් ලබා දේ.\nNetwork troubleshooting කිරීමේදී IP, subnet, gateway වැනි සංකල්ප වැදගත් වේ. IP තේරුම් ගැනීම network administration සඳහා මූලික දැනුමකි."
+    "content": "IP Address යනු network එකක එක් device එකක් අනෙකාගෙන් වෙන්කර හඳුනාගැනීමට භාවිතා කරන අංකීය ලිපිනයකි. Data packets නිවැරදි destination එකට යොමු වීමට මෙය උපකාරී වේ.\nIPv4 සහ IPv6 යන වර්ග දෙක ප්‍රධාන වේ. IPv4 ලිපිනයන් සීමිත වන අතර IPv6 වැඩි ලිපින අවකාශයක් ලබා දේ.\nNetwork troubleshooting කිරීමේදී IP, subnet, gateway වැනි සංකල්ප වැදගත් වේ. IP තේරුම් ගැනීම network administration සඳහා මූලික දැනුමකි.\nඅමතර විස්තර (විස්තීරණය):\n-"
+  },
+  {
+    "topic": "IP Address",
+    "source": "ip_address.txt",
+    "content": "ුම් ගැනීම network administration සඳහා මූලික දැනුමකි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: IP Address සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.\n- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access contro"
+  },
+  {
+    "topic": "IP Address",
+    "source": "ip_address.txt",
+    "content": "හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.\n- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම."
   },
   {
     "topic": "අතුරුදන් වීම",
@@ -232,7 +507,12 @@
   {
     "topic": "අතුරුදන් වීම",
     "source": "loneliness.txt",
-    "content": "කාරකම්, හෝ කණ්ඩායම් ක්‍රියාකාරකම්වලට එක්වීමෙන් සම්බන්ධතා පුළුල් කළ හැක. නිරන්තරව තනිවීම පවතින්නේ නම් සහය ඉල්ලීම ප්‍රයෝජනවත් වේ."
+    "content": "කාරකම්, හෝ කණ්ඩායම් ක්‍රියාකාරකම්වලට එක්වීමෙන් සම්බන්ධතා පුළුල් කළ හැක. නිරන්තරව තනිවීම පවතින්නේ නම් සහය ඉල්ලීම ප්‍රයෝජනවත් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: අතුරුදන් වීම සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills,"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "source": "loneliness.txt",
+    "content": "utine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "Machine Learning",
@@ -242,12 +522,27 @@
   {
     "topic": "Machine Learning",
     "source": "machine_learning.txt",
-    "content": "recall වැනි metrics භාවිතා කරයි. Overfitting සහ data bias වැනි ගැටලු පාලනය කිරීම ML development හි වැදගත් කොටසකි."
+    "content": "recall වැනි metrics භාවිතා කරයි. Overfitting සහ data bias වැනි ගැටලු පාලනය කිරීම ML development හි වැදගත් කොටසකි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Machine Learning සම්බන්ධ වැඩ වලදී data representation, accuracy, සහ consistency පදනම් කරගෙන සැලසුම් කිරීම වැදගත්ය.\n- ප්‍රායෝගික භාවිතය: sample datasets/queries/examples භාවිතා කර output verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.\n- සම්බන්ධ උපමාතෘක"
+  },
+  {
+    "topic": "Machine Learning",
+    "source": "machine_learning.txt",
+    "content": "ut verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.\n- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ performance tuning.\n- හොඳ පුරුදු: input constraints, edge cases, සහ failure handling කලින් සැලසුම් කිරීමෙන් production issues අඩු වේ."
   },
   {
     "topic": "අභිප්‍රේරණය",
     "source": "motivation.txt",
-    "content": "අභිප්‍රේරණය අඩුවී ඇති විට විශාල இலක්කයකට වඩා කුඩා இலක්ක තැබීමෙන් ආරම්භ කරන්න. කුඩා සාර්ථකත්වයන් එකතු වීමෙන් උද්යෝගය වැඩි වේ.\nදිනපතා කිරීමට අවශ්‍ය වැදගත් කාර්ය තුනක් පමණක් ලියන්න. ඒවා සම්පූර්ණ කළ විට ඔබගේ ප්‍රගතිය දෘශ්‍යමාන වන අතර තවදුරටත් වැඩ කිරීමට ශක්තිය ලැබේ.\nඋදව් අවශ්‍ය විට මිතුරන් හෝ පවුලේ අය සමඟ இலක්ක බෙදාගැනීම වගකීම සහ අධිෂ්ඨානය පවත්වා ගැනීමට උපකාරී වේ."
+    "content": "අභිප්‍රේරණය අඩුවී ඇති විට විශාල ඉලක්කයකට වඩා කුඩා ඉලක්ක තැබීමෙන් ආරම්භ කරන්න. කුඩා සාර්ථකත්වයන් එකතු වීමෙන් උද්යෝගය වැඩි වේ.\nදිනපතා කිරීමට අවශ්‍ය වැදගත් කාර්ය තුනක් පමණක් ලියන්න. ඒවා සම්පූර්ණ කළ විට ඔබගේ ප්‍රගතිය දෘශ්‍යමාන වන අතර තවදුරටත් වැඩ කිරීමට ශක්තිය ලැබේ.\nඋදව් අවශ්‍ය විට මිතුරන් හෝ පවුලේ අය සමඟ ඉලක්ක බෙදාගැනීම වගකීම සහ අධිෂ්ඨානය පවත්වා ගැනීමට උපකාරී වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: අභිප්‍රේරණය සඳහ"
+  },
+  {
+    "topic": "අභිප්‍රේරණය",
+    "source": "motivation.txt",
+    "content": "ත්වා ගැනීමට උපකාරී වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: අභිප්‍රේරණය සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ"
+  },
+  {
+    "topic": "අභිප්‍රේරණය",
+    "source": "motivation.txt",
+    "content": "ndaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "Networking",
@@ -257,7 +552,12 @@
   {
     "topic": "Networking",
     "source": "networking.txt",
-    "content": "නයක් පවත්වා ගනී. නිවැරදි network configuration මඟින් performance සහ reliability වැඩි කරගත හැක."
+    "content": "නයක් පවත්වා ගනී. නිවැරදි network configuration මඟින් performance සහ reliability වැඩි කරගත හැක.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Networking සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.\n- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuratio"
+  },
+  {
+    "topic": "Networking",
+    "source": "networking.txt",
+    "content": "ුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.\n- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම."
   },
   {
     "topic": "Open Source",
@@ -267,7 +567,12 @@
   {
     "topic": "Open Source",
     "source": "open_source.txt",
-    "content": "ී licenses (MIT, GPL, Apache) තේරුම් ගැනීම වැදගත්ය. License conditions අනුගමනය කිරීම නීතිමය වශයෙන් අත්‍යවශ්‍ය වේ."
+    "content": "ී licenses (MIT, GPL, Apache) තේරුම් ගැනීම වැදගත්ය. License conditions අනුගමනය කිරීම නීතිමය වශයෙන් අත්‍යවශ්‍ය වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Open Source ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, na"
+  },
+  {
+    "topic": "Open Source",
+    "source": "open_source.txt",
+    "content": "heory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   },
   {
     "topic": "ඔපරේටින් පද්ධතිය",
@@ -277,7 +582,12 @@
   {
     "topic": "ඔපරේටින් පද්ධතිය",
     "source": "operating_system.txt",
-    "content": "cOS වැනි පද්ධති OS උදාහරණ වේ. හොඳ OS එකක් භාවිතා කිරීමෙන් performance සහ security දෙකම වැඩි වේ."
+    "content": "cOS වැනි පද්ධති OS උදාහරණ වේ. හොඳ OS එකක් භාවිතා කිරීමෙන් performance සහ security දෙකම වැඩි වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: ඔපරේටින් පද්ධතිය සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.\n- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: confi"
+  },
+  {
+    "topic": "ඔපරේටින් පද්ධතිය",
+    "source": "operating_system.txt",
+    "content": "එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.\n- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම."
   },
   {
     "topic": "Operating System Types",
@@ -287,12 +597,37 @@
   {
     "topic": "Operating System Types",
     "source": "operating_system_types.txt",
-    "content": "ලබා දීම වැදගත් වේ. Embedded systems සහ industrial control වලදී real-time OS බහුලව භාවිතා කරයි."
+    "content": "ලබා දීම වැදගත් වේ. Embedded systems සහ industrial control වලදී real-time OS බහුලව භාවිතා කරයි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Operating System Types සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.\n- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා:"
+  },
+  {
+    "topic": "Operating System Types",
+    "source": "operating_system_types.txt",
+    "content": "flow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.\n- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම."
+  },
+  {
+    "topic": "Probability",
+    "source": "probability.txt",
+    "content": "Probability යනු සිදුවීමක් සිදුවීමේ සම්භාවිතාව මැනීමට භාවිතා කරන සංකල්පයකි. සම්භාවිතාව සාමාන්‍යයෙන් 0 සිට 1 දක්වා අගයකින් හෝ ප්‍රතිශතයක් ලෙස පෙන්වයි. 0 යනු කිසිසේත් සිදු නොවීමත්, 1 යනු නිසැකව සිදුවීමත් අදහස් කරයි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Probability ඉගෙනීමේදී සංකේත (symbols), ඒකක (units), සහ මූලික නිර්වචන පැහැදිලිව වෙන්කර මතක තබා ගන්න.\n- ප්‍රායෝගික භාවිතය: සූත්‍රය පමණක් මතක තබාගැනීම වෙනුවට solved exa"
+  },
+  {
+    "topic": "Probability",
+    "source": "probability.txt",
+    "content": "මතක තබා ගන්න.\n- ප්‍රායෝගික භාවිතය: සූත්‍රය පමණක් මතක තබාගැනීම වෙනුවට solved examples + step-by-step reasoning සමඟ ගැටලු විසඳන්න.\n- සම්බන්ධ උපමාතෘකා: formula derivation, graph interpretation, approximation, සහ real-world applications.\n- හොඳ පුරුදු: පිළිතුරේ units සහ reasonableness පරීක්ෂා කිරීම, සහ වැරදුණු පියවර ලකුණු කර correction notebook එකක් තබා ගැනීම."
   },
   {
     "topic": "Programming",
     "source": "programming.txt",
-    "content": "Programming යනු පරිගණකයට කාර්යයන් ඉටු කිරීමට නියෝග ලිවීමේ ක්‍රියාවලියකි. එය problem solving කුසලතා සමඟ බැඳී ඇත.\nProgramming කිරීමේදී variables, conditions, loops, functions වැනි මූලික සංකල්ප භාවිතා කරයි. code logic නිවැරදි වීම ප්‍රතිඵලයේ ගුණාත්මකතාවයට බලපායි.\nහොඳ programming පුරුදු ලෙස readable code, comments, testing සහ version control භාවිතා කිරීම වැදගත් වේ. මේවා teamwork සහ maintenance පහසු කරයි."
+    "content": "Programming යනු පරිගණකයට කාර්යයන් ඉටු කිරීමට නියෝග ලිවීමේ ක්‍රියාවලියකි. එය problem solving කුසලතා සමඟ බැඳී ඇත.\nProgramming කිරීමේදී variables, conditions, loops, functions වැනි මූලික සංකල්ප භාවිතා කරයි. code logic නිවැරදි වීම ප්‍රතිඵලයේ ගුණාත්මකතාවයට බලපායි.\nහොඳ programming පුරුදු ලෙස readable code, comments, testing සහ version control භාවිතා කිරීම වැදගත් වේ. මේවා teamwork සහ maintenance පහසු කරයි.\nඅමතර විස්තර (විස්"
+  },
+  {
+    "topic": "Programming",
+    "source": "programming.txt",
+    "content": "ාවිතා කිරීම වැදගත් වේ. මේවා teamwork සහ maintenance පහසු කරයි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Programming ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, ස"
+  },
+  {
+    "topic": "Programming",
+    "source": "programming.txt",
+    "content": "්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   },
   {
     "topic": "Programming Languages",
@@ -302,7 +637,12 @@
   {
     "topic": "Programming Languages",
     "source": "programming_languages.txt",
-    "content": "e, community support සහ ecosystem මත පදනම් විය යුතුය. එකකට වඩා භාෂා දැනගැනීම වෘත්තීය වශයෙන් ප්‍රයෝජනවත් වේ."
+    "content": "e, community support සහ ecosystem මත පදනම් විය යුතුය. එකකට වඩා භාෂා දැනගැනීම වෘත්තීය වශයෙන් ප්‍රයෝජනවත් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Programming Languages ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality"
+  },
+  {
+    "topic": "Programming Languages",
+    "source": "programming_languages.txt",
+    "content": "න් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   },
   {
     "topic": "Queue",
@@ -312,32 +652,97 @@
   {
     "topic": "Queue",
     "source": "queue.txt",
-    "content": "ue වැනි විවිධ ආකෘතිද භාවිතා වේ. Throughput සහ fairness අවශ්‍ය අවස්ථාවල queue structures ප්‍රයෝජනවත් වේ."
+    "content": "ue වැනි විවිධ ආකෘතිද භාවිතා වේ. Throughput සහ fairness අවශ්‍ය අවස්ථාවල queue structures ප්‍රයෝජනවත් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Queue සම්බන්ධ වැඩ වලදී data representation, accuracy, සහ consistency පදනම් කරගෙන සැලසුම් කිරීම වැදගත්ය.\n- ප්‍රායෝගික භාවිතය: sample datasets/queries/examples භාවිතා කර output verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.\n- සම්බන්ධ උපමාතෘකා: indexing/search, da"
+  },
+  {
+    "topic": "Queue",
+    "source": "queue.txt",
+    "content": "cept correctness ඉක්මනින් තහවුරු කළ හැක.\n- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ performance tuning.\n- හොඳ පුරුදු: input constraints, edge cases, සහ failure handling කලින් සැලසුම් කිරීමෙන් production issues අඩු වේ."
   },
   {
     "topic": "RAM",
     "source": "ram.txt",
-    "content": "RAM (Random Access Memory) යනු පරිගණකයේ තාවකාලික මතකයකි. ක්‍රියාත්මක වන වැඩසටහන් සහ සක්‍රීය දත්ත මෙහි තබා ගනී.\nRAM වල විශේෂත්වය වේගවත් data access එකයි. ඒ නිසා වැඩසටහන් ඉක්මනින් ක්‍රියාත්මක වීමට RAM වැදගත් වේ.\nකෙසේ නමුත් RAM volatile memory එකක් වන නිසා විදුලිය අහිමි වූ විට එහි දත්ත අහිමි වේ. වැඩි RAM ප්‍රමාණයක් තිබීම multi-tasking සඳහා උපකාරී වේ."
+    "content": "RAM (Random Access Memory) යනු පරිගණකයේ තාවකාලික මතකයකි. ක්‍රියාත්මක වන වැඩසටහන් සහ සක්‍රීය දත්ත මෙහි තබා ගනී.\nRAM වල විශේෂත්වය වේගවත් data access එකයි. ඒ නිසා වැඩසටහන් ඉක්මනින් ක්‍රියාත්මක වීමට RAM වැදගත් වේ.\nකෙසේ නමුත් RAM volatile memory එකක් වන නිසා විදුලිය අහිමි වූ විට එහි දත්ත අහිමි වේ. වැඩි RAM ප්‍රමාණයක් තිබීම multi-tasking සඳහා උපකාරී වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: RAM සඳහා architecture compon"
+  },
+  {
+    "topic": "RAM",
+    "source": "ram.txt",
+    "content": "පකාරී වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: RAM සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.\n- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.\n- හොඳ පුරුදු: documen"
+  },
+  {
+    "topic": "RAM",
+    "source": "ram.txt",
+    "content": ", observability, access control, සහ patch/update strategy.\n- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම."
+  },
+  {
+    "topic": "Ratio",
+    "source": "ratio.txt",
+    "content": "Ratio යනු සංඛ්‍යා දෙකක් අතර සම්බන්ධතාවය පෙන්වන ක්‍රමයකි. උදාහරණයක් ලෙස 2:3 යන්නෙන් පළමු සංඛ්‍යාව දෙවන සංඛ්‍යාවට සම්බන්ධව දක්වයි. අනුපාතය සංසන්දනය, ප්‍රමාණ සහ බෙදාහැරීම් ගැටලු වලදී වැදගත් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Ratio ඉගෙනීමේදී සංකේත (symbols), ඒකක (units), සහ මූලික නිර්වචන පැහැදිලිව වෙන්කර මතක තබා ගන්න.\n- ප්‍රායෝගික භාවිතය: සූත්‍රය පමණක් මතක තබාගැනීම වෙනුවට solved examples + step-by-step reasoni"
+  },
+  {
+    "topic": "Ratio",
+    "source": "ratio.txt",
+    "content": "භාවිතය: සූත්‍රය පමණක් මතක තබාගැනීම වෙනුවට solved examples + step-by-step reasoning සමඟ ගැටලු විසඳන්න.\n- සම්බන්ධ උපමාතෘකා: formula derivation, graph interpretation, approximation, සහ real-world applications.\n- හොඳ පුරුදු: පිළිතුරේ units සහ reasonableness පරීක්ෂා කිරීම, සහ වැරදුණු පියවර ලකුණු කර correction notebook එකක් තබා ගැනීම."
   },
   {
     "topic": "ROM",
     "source": "rom.txt",
-    "content": "ROM (Read Only Memory) යනු ස්ථිර මතකයකි. පද්ධතිය ආරම්භ වීමට අවශ්‍ය මූලික උපදෙස් මෙහි ගබඩා කර ඇත.\nRAM මෙන් නොව ROM හි දත්ත විදුලිය නැති වූ පසුවද අහිමි නොවේ. එබැවින් firmware වැනි මූලික code ROM තුළ තබා ගනී.\nBoot process එකේදී පද්ධතිය අවශ්‍ය ආරම්භක උපදෙස් ROM වෙතින් ලබා ගනී. මෙය system stability සඳහා වැදගත් කොටසකි."
+    "content": "ROM (Read Only Memory) යනු ස්ථිර මතකයකි. පද්ධතිය ආරම්භ වීමට අවශ්‍ය මූලික උපදෙස් මෙහි ගබඩා කර ඇත.\nRAM මෙන් නොව ROM හි දත්ත විදුලිය නැති වූ පසුවද අහිමි නොවේ. එබැවින් firmware වැනි මූලික code ROM තුළ තබා ගනී.\nBoot process එකේදී පද්ධතිය අවශ්‍ය ආරම්භක උපදෙස් ROM වෙතින් ලබා ගනී. මෙය system stability සඳහා වැදගත් කොටසකි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: ROM සඳහා architecture components, data flow, සහ reliability con"
+  },
+  {
+    "topic": "ROM",
+    "source": "rom.txt",
+    "content": "- ප්‍රධාන කරුණු: ROM සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.\n- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.\n- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.\n- හොඳ පුරුදු: documentation update, periodic health chec"
+  },
+  {
+    "topic": "ROM",
+    "source": "rom.txt",
+    "content": "patch/update strategy.\n- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම."
   },
   {
     "topic": "දුක",
     "source": "sadness.txt",
-    "content": "දුක දැනෙන විට එය සඟවා නොගෙන පිළිගැනීම වැදගත්ය. ඔබේ හැඟීම් විශ්වාසවන්ත මිතුරෙකු හෝ පවුලේ කෙනෙකු සමඟ බෙදා ගැනීමෙන් සහනයක් ලැබේ.\nදිනචරියාව පවත්වා ගැනීම ද උපකාරී වේ. සුළු ව්‍යායාම, කෙටි ඇවිදීම, සහ සංගීතය වැනි සරල ක්‍රියාකාරකම් දුකේ බර අඩු කරයි.\nදුක දිගු කාලයක් තිස්සේ පැවතී දෛනික කටයුතු වලට බලපාන්නේ නම් වෘත්තීය උපදෙස් ලබා ගැනීම ප්‍රයෝජනවත් වේ."
+    "content": "දුක දැනෙන විට එය සඟවා නොගෙන පිළිගැනීම වැදගත්ය. ඔබේ හැඟීම් විශ්වාසවන්ත මිතුරෙකු හෝ පවුලේ කෙනෙකු සමඟ බෙදා ගැනීමෙන් සහනයක් ලැබේ.\nදිනචරියාව පවත්වා ගැනීම ද උපකාරී වේ. සුළු ව්‍යායාම, කෙටි ඇවිදීම, සහ සංගීතය වැනි සරල ක්‍රියාකාරකම් දුකේ බර අඩු කරයි.\nදුක දිගු කාලයක් තිස්සේ පැවතී දෛනික කටයුතු වලට බලපාන්නේ නම් වෘත්තීය උපදෙස් ලබා ගැනීම ප්‍රයෝජනවත් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: දුක සඳහා trigger factors, සිතුවිලි සහ"
+  },
+  {
+    "topic": "දුක",
+    "source": "sadness.txt",
+    "content": "අමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: දුක සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qual"
+  },
+  {
+    "topic": "දුක",
+    "source": "sadness.txt",
+    "content": "සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "නින්ද",
     "source": "sleep.txt",
-    "content": "හොඳ නින්දක් සඳහා නිතර එකම වේලාවට නිදාගැනීම සහ නැගිටීම වැදගත් වේ. නින්දට පෙර තිර භාවිතය අඩු කිරීමෙන් මනස නිදාගැනීමට සූදානම් වේ.\nකැෆේන් සහ බර ආහාර නින්දට සමීප වේලාවක වළක්වා ගන්න. නිදාගැනීමේ කාමරය අඳුරු, නිශ්ශබ්ද සහ සුවපහසු ලෙස තබා ගන්න.\nනින්ද නොයෑම දිගුකාලීනව පවතින්නේ නම්, නිදාගැනීමේ පුරුදු සැලසුම් කර නිරීක්ෂණය කිරීම ප්‍රයෝජනවත්ය."
+    "content": "හොඳ නින්දක් සඳහා නිතර එකම වේලාවට නිදාගැනීම සහ නැගිටීම වැදගත් වේ. නින්දට පෙර තිර භාවිතය අඩු කිරීමෙන් මනස නිදාගැනීමට සූදානම් වේ.\nකැෆේන් සහ බර ආහාර නින්දට සමීප වේලාවක වළක්වා ගන්න. නිදාගැනීමේ කාමරය අඳුරු, නිශ්ශබ්ද සහ සුවපහසු ලෙස තබා ගන්න.\nනින්ද නොයෑම දිගුකාලීනව පවතින්නේ නම්, නිදාගැනීමේ පුරුදු සැලසුම් කර නිරීක්ෂණය කිරීම ප්‍රයෝජනවත්ය.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: නින්ද සඳහා trigger factors, සිතුවිලි සහ ශාරීරික"
+  },
+  {
+    "topic": "නින්ද",
+    "source": "sleep.txt",
+    "content": "තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: නින්ද සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified co"
+  },
+  {
+    "topic": "නින්ද",
+    "source": "sleep.txt",
+    "content": "්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "සමාජ මාධ්‍ය",
     "source": "social_media.txt",
-    "content": "සමාජ මාධ්‍ය භාවිතා කිරීමේදී කාල සීමාවක් තබා ගැනීම ප්‍රයෝජනවත් වේ. අඛණ්ඩ භාවිතය අවධානය අඩු කර මානසික ආතතිය වැඩි කළ හැක.\nතොරතුරු බෙදාගැනීමට පෙර එහි විශ්වාසනීයත්වය පරීක්ෂා කරන්න. පෞද්ගලික තොරතුරු ආරක්ෂිතව තබා ගැනීම සයිබර් ආරක්ෂාව සඳහා වැදගත්ය.\nසමාජ මාධ්‍යය සබඳතා සහ ඉගෙනීම සඳහා භාවිතා කළ හැකි නමුත් වගකීමෙන් සහ සීමිතව භාවිතා කිරීම හොඳම ක්‍රමය වේ."
+    "content": "සමාජ මාධ්‍ය භාවිතා කිරීමේදී කාල සීමාවක් තබා ගැනීම ප්‍රයෝජනවත් වේ. අඛණ්ඩ භාවිතය අවධානය අඩු කර මානසික ආතතිය වැඩි කළ හැක.\nතොරතුරු බෙදාගැනීමට පෙර එහි විශ්වාසනීයත්වය පරීක්ෂා කරන්න. පෞද්ගලික තොරතුරු ආරක්ෂිතව තබා ගැනීම සයිබර් ආරක්ෂාව සඳහා වැදගත්ය.\nසමාජ මාධ්‍යය සබඳතා සහ ඉගෙනීම සඳහා භාවිතා කළ හැකි නමුත් වගකීමෙන් සහ සීමිතව භාවිතා කිරීම හොඳම ක්‍රමය වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: සමාජ මාධ්‍ය සඳහා trigger factors,"
+  },
+  {
+    "topic": "සමාජ මාධ්‍ය",
+    "source": "social_media.txt",
+    "content": "වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: සමාජ මාධ්‍ය සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල"
+  },
+  {
+    "topic": "සමාජ මාධ්‍ය",
+    "source": "social_media.txt",
+    "content": "y habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "Software Engineering",
@@ -347,12 +752,27 @@
   {
     "topic": "Software Engineering",
     "source": "software_engineering.txt",
-    "content": "mentation, code reviews, testing automation සහ collaboration tools භාවිතා කිරීම engineering quality වැඩි කරයි. User needs මත පදනම්ව iterative improvements කිරීමද වැදගත් වේ."
+    "content": "mentation, code reviews, testing automation සහ collaboration tools භාවිතා කිරීම engineering quality වැඩි කරයි. User needs මත පදනම්ව iterative improvements කිරීමද වැදගත් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Software Engineering ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම"
+  },
+  {
+    "topic": "Software Engineering",
+    "source": "software_engineering.txt",
+    "content": "ිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   },
   {
     "topic": "Software",
     "source": "software_topic.txt",
-    "content": "Software යනු පරිගණකයට නියෝග ලබා දෙන වැඩසටහන්, libraries සහ data එකතුවකි. Hardware එක ක්‍රියාශීලී වීමට software අවශ්‍ය වේ.\nSystem software (උදා: OS, drivers) සහ application software (උදා: browser, editor) ලෙස software වර්ග කරයි. එක් එක් software එකකට විශේෂ කාර්යභාරයක් ඇත.\nSoftware update කිරීමෙන් bugs අඩු කර security වැඩි කර performance දියුණු කළ හැක. නිවැරදි software තේරීම user efficiency වැඩි කරයි."
+    "content": "Software යනු පරිගණකයට නියෝග ලබා දෙන වැඩසටහන්, libraries සහ data එකතුවකි. Hardware එක ක්‍රියාශීලී වීමට software අවශ්‍ය වේ.\nSystem software (උදා: OS, drivers) සහ application software (උදා: browser, editor) ලෙස software වර්ග කරයි. එක් එක් software එකකට විශේෂ කාර්යභාරයක් ඇත.\nSoftware update කිරීමෙන් bugs අඩු කර security වැඩි කර performance දියුණු කළ හැක. නිවැරදි software තේරීම user efficiency වැඩි කරයි.\nඅමතර විස්තර (විස්"
+  },
+  {
+    "topic": "Software",
+    "source": "software_topic.txt",
+    "content": "යුණු කළ හැක. නිවැරදි software තේරීම user efficiency වැඩි කරයි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Software ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ r"
+  },
+  {
+    "topic": "Software",
+    "source": "software_topic.txt",
+    "content": "උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   },
   {
     "topic": "SQL",
@@ -362,22 +782,67 @@
   {
     "topic": "SQL",
     "source": "sql.txt",
-    "content": "වැනි කාර්යයන් SQL මඟින් කාර්යක්ෂමව කරගත හැක. Data-driven applications සඳහා SQL දැනුම වැදගත් වේ."
+    "content": "වැනි කාර්යයන් SQL මඟින් කාර්යක්ෂමව කරගත හැක. Data-driven applications සඳහා SQL දැනුම වැදගත් වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: SQL සම්බන්ධ වැඩ වලදී data representation, accuracy, සහ consistency පදනම් කරගෙන සැලසුම් කිරීම වැදගත්ය.\n- ප්‍රායෝගික භාවිතය: sample datasets/queries/examples භාවිතා කර output verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.\n- සම්බන්ධ උපමාතෘකා: indexing/search, data valida"
+  },
+  {
+    "topic": "SQL",
+    "source": "sql.txt",
+    "content": "ectness ඉක්මනින් තහවුරු කළ හැක.\n- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ performance tuning.\n- හොඳ පුරුදු: input constraints, edge cases, සහ failure handling කලින් සැලසුම් කිරීමෙන් production issues අඩු වේ."
   },
   {
     "topic": "Stack",
     "source": "stack.txt",
-    "content": "Stack යනු LIFO (Last In First Out) ආකෘතියෙන් ක්‍රියා කරන data structure එකකි. අවසානයේ ඇතුල් කළ අයිතමය මුලින්ම ඉවත් වේ.\nප්‍රධාන operations ලෙස push (ඇතුල් කිරීම), pop (ඉවත් කිරීම) සහ peek/top (ඉහළ අගය බැලීම) ඇත. Function calls සහ undo operations වැනි අවස්ථාවල stack බහුලව භාවිතා කරයි.\nStack overflow සහ underflow වැනි තත්ව දැනුවත්ව handle කිරීම වැදගත් වේ. Algorithm design තුළ recursion සමඟ stack සංකල්පය සම්බන්ධ වේ."
+    "content": "Stack යනු LIFO (Last In First Out) ආකෘතියෙන් ක්‍රියා කරන data structure එකකි. අවසානයේ ඇතුල් කළ අයිතමය මුලින්ම ඉවත් වේ.\nප්‍රධාන operations ලෙස push (ඇතුල් කිරීම), pop (ඉවත් කිරීම) සහ peek/top (ඉහළ අගය බැලීම) ඇත. Function calls සහ undo operations වැනි අවස්ථාවල stack බහුලව භාවිතා කරයි.\nStack overflow සහ underflow වැනි තත්ව දැනුවත්ව handle කිරීම වැදගත් වේ. Algorithm design තුළ recursion සමඟ stack සංකල්පය සම්බන්ධ වේ.\nඅමතර"
+  },
+  {
+    "topic": "Stack",
+    "source": "stack.txt",
+    "content": "රීම වැදගත් වේ. Algorithm design තුළ recursion සමඟ stack සංකල්පය සම්බන්ධ වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Stack සම්බන්ධ වැඩ වලදී data representation, accuracy, සහ consistency පදනම් කරගෙන සැලසුම් කිරීම වැදගත්ය.\n- ප්‍රායෝගික භාවිතය: sample datasets/queries/examples භාවිතා කර output verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.\n- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability,"
+  },
+  {
+    "topic": "Stack",
+    "source": "stack.txt",
+    "content": "වුරු කළ හැක.\n- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ performance tuning.\n- හොඳ පුරුදු: input constraints, edge cases, සහ failure handling කලින් සැලසුම් කිරීමෙන් production issues අඩු වේ."
   },
   {
     "topic": "ආතතිය",
     "source": "stress.txt",
-    "content": "ආතතිය දැනෙන විට ක්ෂණිකව ගැඹුරු හුස්ම ගැනීමේ ක්‍රම භාවිතා කිරීම ප්‍රයෝජනවත්ය. සෙමින් හුස්ම ඇදගෙන සෙමින් පිට කිරීම මඟින් ශරීරය සහ මනස සන්සුන් වේ.\nකාර්යයන් එකවර බරපතළ ලෙස නොගන්න. කාර්යයන් කුඩා කොටස්වලට බෙදා එක් එක් කොටස සම්පූර්ණ කිරීමෙන් ආතතිය අඩු කරගත හැක.\nවිවේක කාලයක් තබා ගන්න, ඇවිදීම, සංගීතය ඇසීම, හෝ විශ්වාසවන්ත අය සමඟ කතා කිරීම මඟින් මානසික බර අඩුවිය හැක."
+    "content": "ආතතිය දැනෙන විට ක්ෂණිකව ගැඹුරු හුස්ම ගැනීමේ ක්‍රම භාවිතා කිරීම ප්‍රයෝජනවත්ය. සෙමින් හුස්ම ඇදගෙන සෙමින් පිට කිරීම මඟින් ශරීරය සහ මනස සන්සුන් වේ.\nකාර්යයන් එකවර බරපතළ ලෙස නොගන්න. කාර්යයන් කුඩා කොටස්වලට බෙදා එක් එක් කොටස සම්පූර්ණ කිරීමෙන් ආතතිය අඩු කරගත හැක.\nවිවේක කාලයක් තබා ගන්න, ඇවිදීම, සංගීතය ඇසීම, හෝ විශ්වාසවන්ත අය සමඟ කතා කිරීම මඟින් මානසික බර අඩුවිය හැක.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: ආතතිය සඳහා trigger"
+  },
+  {
+    "topic": "ආතතිය",
+    "source": "stress.txt",
+    "content": "සික බර අඩුවිය හැක.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: ආතතිය සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටය"
+  },
+  {
+    "topic": "ආතතිය",
+    "source": "stress.txt",
+    "content": "හ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
   },
   {
     "topic": "කාල කළමනාකරණය",
     "source": "time_management.txt",
-    "content": "කාල කළමනාකරණයේ පළමු පියවර වන්නේ කාර්යයන් ප්‍රමුඛතාව අනුව වෙන් කිරීමයි. වැදගත් සහ හදිසි කාර්යයන් මුලින්ම කරන්න.\nදිනය ආරම්භයේදී කෙටි සැලැස්මක් ලියන්න. විශාල කාර්යයන් කුඩා කොටස්වලට බෙදා එක් කොටසක් නිම කළ පසු ඊළඟ කොටසට යන්න.\nවිවේක කාලය ද සැලැස්මට ඇතුළත් කරන්න. අඛණ්ඩව වැඩ කිරීමේ වෙනුවට කෙටි විරාමවලින් වැඩ කිරීම අවධානය සහ ගුණාත්මකතාව රැකගැනීමට උපකාරී වේ."
+    "content": "කාල කළමනාකරණයේ පළමු පියවර වන්නේ කාර්යයන් ප්‍රමුඛතාව අනුව වෙන් කිරීමයි. වැදගත් සහ හදිසි කාර්යයන් මුලින්ම කරන්න.\nදිනය ආරම්භයේදී කෙටි සැලැස්මක් ලියන්න. විශාල කාර්යයන් කුඩා කොටස්වලට බෙදා එක් කොටසක් නිම කළ පසු ඊළඟ කොටසට යන්න.\nවිවේක කාලය ද සැලැස්මට ඇතුළත් කරන්න. අඛණ්ඩව වැඩ කිරීමේ වෙනුවට කෙටි විරාමවලින් වැඩ කිරීම අවධානය සහ ගුණාත්මකතාව රැකගැනීමට උපකාරී වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: කාල කළමනාකරණය සඳහා trigger"
+  },
+  {
+    "topic": "කාල කළමනාකරණය",
+    "source": "time_management.txt",
+    "content": "උපකාරී වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: කාල කළමනාකරණය සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ.\n- ප්‍රායෝගික ක්‍රම: breathing, short walk, hydration, සහ structured routine එකක් එකට යොදන විට දෛනික පාලනය වැඩි වේ.\n- සම්බන්ධ උපමාතෘකා: coping skills, healthy communication, boundaries, සහ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටය"
+  },
+  {
+    "topic": "කාල කළමනාකරණය",
+    "source": "time_management.txt",
+    "content": "හ recovery habits.\n- සහය අවශ්‍ය අවස්ථා: ලක්ෂණ දිගු කාලයක් පැවතේ නම් හෝ දෛනික කටයුතු අඩාල වේ නම් qualified counselor/doctor සමඟ කතා කරන්න."
+  },
+  {
+    "topic": "Trigonometry",
+    "source": "trigonometry.txt",
+    "content": "Trigonometry යනු කෝණ සහ ත්‍රිකෝණ අතර සම්බන්ධතා අධ්‍යයනය කරන ගණිත ශාඛාවකි. සයින් (sine), කොසයින් (cosine), ටැන්ජන්ට් (tangent) වැනි සම්බන්ධතා භාවිතා කර දුර, උස සහ කෝණ ගණනය කරයි.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Trigonometry ඉගෙනීමේදී සංකේත (symbols), ඒකක (units), සහ මූලික නිර්වචන පැහැදිලිව වෙන්කර මතක තබා ගන්න.\n- ප්‍රායෝගික භාවිතය: සූත්‍රය පමණක් මතක තබාගැනීම වෙනුවට solved examples + step-by-step reasoning සමඟ"
+  },
+  {
+    "topic": "Trigonometry",
+    "source": "trigonometry.txt",
+    "content": "සූත්‍රය පමණක් මතක තබාගැනීම වෙනුවට solved examples + step-by-step reasoning සමඟ ගැටලු විසඳන්න.\n- සම්බන්ධ උපමාතෘකා: formula derivation, graph interpretation, approximation, සහ real-world applications.\n- හොඳ පුරුදු: පිළිතුරේ units සහ reasonableness පරීක්ෂා කිරීම, සහ වැරදුණු පියවර ලකුණු කර correction notebook එකක් තබා ගැනීම."
   },
   {
     "topic": "Version Control",
@@ -387,6 +852,11 @@
   {
     "topic": "Version Control",
     "source": "version_control.txt",
-    "content": "uality වැඩි කරයි. Version control භාවිතය production errors අවම කිරීමටද උපකාරී වේ."
+    "content": "uality වැඩි කරයි. Version control භාවිතය production errors අවම කිරීමටද උපකාරී වේ.\nඅමතර විස්තර (විස්තීරණය):\n- ප්‍රධාන කරුණු: Version Control ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.\n- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version co"
+  },
+  {
+    "topic": "Version Control",
+    "source": "version_control.txt",
+    "content": "තාව බවට පත් වේ.\n- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.\n- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක."
   }
 ]

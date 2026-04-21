@@ -5,3 +5,9 @@ DBMS (Database Management System) යනු database එක කළමනාක�
 DBMS මඟින් user access control, backup, recovery සහ security features ලබා දේ. Multiple users එකවර වැඩ කරන විට consistency පවත්වා ගැනීමටද DBMS උපකාරී වේ.
 
 MySQL, PostgreSQL, Oracle, SQL Server වැනි පද්ධති DBMS උදාහරණ වේ. Application development සඳහා DBMS මූලික වැදගත්කමක් දරයි.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: DBMS සම්බන්ධ වැඩ වලදී data representation, accuracy, සහ consistency පදනම් කරගෙන සැලසුම් කිරීම වැදගත්ය.
+- ප්‍රායෝගික භාවිතය: sample datasets/queries/examples භාවිතා කර output verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.
+- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ performance tuning.
+- හොඳ පුරුදු: input constraints, edge cases, සහ failure handling කලින් සැලසුම් කිරීමෙන් production issues අඩු වේ.

@@ -1,0 +1,8 @@
+මාතෘකාව: Trigonometry
+Trigonometry යනු කෝණ සහ ත්‍රිකෝණ අතර සම්බන්ධතා අධ්‍යයනය කරන ගණිත ශාඛාවකි. සයින් (sine), කොසයින් (cosine), ටැන්ජන්ට් (tangent) වැනි සම්බන්ධතා භාවිතා කර දුර, උස සහ කෝණ ගණනය කරයි.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: Trigonometry ඉගෙනීමේදී සංකේත (symbols), ඒකක (units), සහ මූලික නිර්වචන පැහැදිලිව වෙන්කර මතක තබා ගන්න.
+- ප්‍රායෝගික භාවිතය: සූත්‍රය පමණක් මතක තබාගැනීම වෙනුවට solved examples + step-by-step reasoning සමඟ ගැටලු විසඳන්න.
+- සම්බන්ධ උපමාතෘකා: formula derivation, graph interpretation, approximation, සහ real-world applications.
+- හොඳ පුරුදු: පිළිතුරේ units සහ reasonableness පරීක්ෂා කිරීම, සහ වැරදුණු පියවර ලකුණු කර correction notebook එකක් තබා ගැනීම.

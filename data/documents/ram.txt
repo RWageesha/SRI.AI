@@ -5,3 +5,9 @@ RAM (Random Access Memory) යනු පරිගණකයේ තාවකාල
 RAM වල විශේෂත්වය වේගවත් data access එකයි. ඒ නිසා වැඩසටහන් ඉක්මනින් ක්‍රියාත්මක වීමට RAM වැදගත් වේ.
 
 කෙසේ නමුත් RAM volatile memory එකක් වන නිසා විදුලිය අහිමි වූ විට එහි දත්ත අහිමි වේ. වැඩි RAM ප්‍රමාණයක් තිබීම multi-tasking සඳහා උපකාරී වේ.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: RAM සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.
+- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.
+- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.
+- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම.

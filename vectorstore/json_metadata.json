@@ -151,6 +151,21 @@
   },
   {
     "topic": "කෝපය",
+    "view_type": "keyword",
+    "text": "angry"
+  },
+  {
+    "topic": "කෝපය",
+    "view_type": "keyword",
+    "text": "rage"
+  },
+  {
+    "topic": "කෝපය",
+    "view_type": "keyword",
+    "text": "irritated"
+  },
+  {
+    "topic": "කෝපය",
     "view_type": "question",
     "text": "මට කෝපයක් තියෙනවා"
   },
@@ -161,8 +176,23 @@
   },
   {
     "topic": "කෝපය",
+    "view_type": "question",
+    "text": "මට ඉක්මනට කෝපය එනවා"
+  },
+  {
+    "topic": "කෝපය",
+    "view_type": "question",
+    "text": "මේ කෝපය පාලනය කරගන්නෙ කොහොමද"
+  },
+  {
+    "topic": "කෝපය",
+    "view_type": "question",
+    "text": "කෝපය අඩු කරගන්න ක්‍රම කියන්න"
+  },
+  {
+    "topic": "කෝපය",
     "view_type": "content",
-    "text": "කෝපය පාලනය සඳහා ගැඹුරු හුස්ම ගන්න, කාලයක් ගන්න සහ ප්‍රතිචාර දීමට පෙර සිතන්න."
+    "text": "කෝපය පාලනය සඳහා ගැඹුරු හුස්ම 5 වතාවක් ගන්න සහ ටික වේලාවක් නතර වී සිතා බලන්න. ප්‍රතිචාර දීමට පෙර හේතුව පැහැදිලිව කියා ගෞරවයෙන් කතා කිරීම හොඳයි."
   },
   {
     "topic": "භය",
@@ -191,6 +221,26 @@
   },
   {
     "topic": "භය",
+    "view_type": "keyword",
+    "text": "පරීක්ෂාව"
+  },
+  {
+    "topic": "භය",
+    "view_type": "keyword",
+    "text": "විභාග බිය"
+  },
+  {
+    "topic": "භය",
+    "view_type": "keyword",
+    "text": "exam anxiety"
+  },
+  {
+    "topic": "භය",
+    "view_type": "keyword",
+    "text": "anxiety"
+  },
+  {
+    "topic": "භය",
     "view_type": "question",
     "text": "මට බයයි"
   },
@@ -206,8 +256,23 @@
   },
   {
     "topic": "භය",
+    "view_type": "question",
+    "text": "මට පරීක්ෂාවට යද්දි හරිම බයයි"
+  },
+  {
+    "topic": "භය",
+    "view_type": "question",
+    "text": "විභාග බිය අඩු කරගන්න කොහොමද"
+  },
+  {
+    "topic": "භය",
+    "view_type": "question",
+    "text": "බය අඩු කරගන්නෙ කොහොමද"
+  },
+  {
+    "topic": "භය",
     "view_type": "content",
-    "text": "භය දැනෙන විට මුලින්ම ඔබ ආරක්ෂිත ස්ථානයක සිටින බව තහවුරු කර ගන්න. සෙමින් ගැඹුරු හුස්ම ගැනීමෙන් ශරීරය සහ මනස සන්සුන් කරගත හැක. ඔබට බය ඇති කරන සිතුවිලි සරලව ලියා තාර්කිකව බලන්න. අවශ්‍ය නම් විශ්වාසවන්ත කෙනෙකු සමඟ කතා කිරීම භය අඩු කරගැනීමට උපකාරී වේ."
+    "text": "භය දැනෙන විට ගැඹුරු හුස්ම ගැනීමෙන් ශරීරය සන්සුන් කරගන්න සහ සිතුවිලි යථාර්ථයට ගැලපේදැයි පරීක්ෂා කරන්න. පරීක්ෂා භය සඳහා කෙටි සැලැස්මක් සකස් කර විශ්වාසවන්ත කෙනෙකු සමඟ කතා කිරීම උපකාරී වේ."
   },
   {
     "topic": "අතුරුදන් වීම",
@@ -241,6 +306,21 @@
   },
   {
     "topic": "අතුරුදන් වීම",
+    "view_type": "keyword",
+    "text": "alone"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "view_type": "keyword",
+    "text": "isolated"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "view_type": "keyword",
+    "text": "තනියම"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
     "view_type": "question",
     "text": "මට තනිවම දැනෙනවා"
   },
@@ -256,8 +336,18 @@
   },
   {
     "topic": "අතුරුදන් වීම",
+    "view_type": "question",
+    "text": "මට දැන් තනිවම වගේ දැනෙනවා"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
+    "view_type": "question",
+    "text": "මේ තනිවීමෙන් ගොඩවෙන්න කොහොමද"
+  },
+  {
+    "topic": "අතුරුදන් වීම",
     "view_type": "content",
-    "text": "තනිවීමක් දැනෙන විට එය සාමාන්‍ය හැඟීමක් බව මුලින් පිළිගන්න. පවුලේ අය, මිතුරන් හෝ විශ්වාසවන්ත කෙනෙකු සමඟ කෙටි සම්බන්ධතාවයක් ආරම්භ කරන්න. ඔබ කැමති ක්‍රියාකාරකමකට දිනපතා කෙටි කාලයක් වෙන් කිරීම මානසික සහනය වැඩි කරයි. සමාජ කණ්ඩායම් හෝ අධ්‍යාපනික/විනෝදාත්මක කටයුතු සමඟ සම්බන්ධ වීම තනිවීම අඩු කිරීමට උපකාරී වේ."
+    "text": "තනිවීමක් දැනෙන විට පවුලේ අය හෝ මිතුරන් සමඟ කතා කිරීමට කෙටි උත්සාහයක් ගන්න. ඔබ කැමති ක්‍රියාකාරකමක දිනපතා යෙදීම මානසික සහනය ලබා දේ."
   },
   {
     "topic": "ආදරය",
@@ -647,7 +737,7 @@
   {
     "topic": "අභිප්‍රේරණය",
     "view_type": "content",
-    "text": "කුඩා இலක්ක සකස් කර ඒවා සම්පූර්ණ කිරීමෙන් උද්යෝගය වැඩි කර ගන්න."
+    "text": "කුඩා ඉලක්ක සකස් කර ඒවා සම්පූර්ණ කිරීමෙන් උද්යෝගය වැඩි කර ගන්න."
   },
   {
     "topic": "සමාජ මාධ්‍ය",
@@ -682,7 +772,22 @@
   {
     "topic": "ආතතිය",
     "view_type": "keyword",
+    "text": "stressed"
+  },
+  {
+    "topic": "ආතතිය",
+    "view_type": "keyword",
     "text": "ආතතිය"
+  },
+  {
+    "topic": "ආතතිය",
+    "view_type": "keyword",
+    "text": "burnout"
+  },
+  {
+    "topic": "ආතතිය",
+    "view_type": "keyword",
+    "text": "overwhelmed"
   },
   {
     "topic": "ආතතිය",
@@ -691,8 +796,23 @@
   },
   {
     "topic": "ආතතිය",
+    "view_type": "question",
+    "text": "මට stress දැනෙනවා"
+  },
+  {
+    "topic": "ආතතිය",
+    "view_type": "question",
+    "text": "වැඩ ගොඩක් නිසා stress දැනෙනවා"
+  },
+  {
+    "topic": "ආතතිය",
+    "view_type": "question",
+    "text": "මේ stress අඩු කරගන්න හැටි කියන්න"
+  },
+  {
+    "topic": "ආතතිය",
     "view_type": "content",
-    "text": "ආතතිය අඩු කිරීමට විවේක ගන්න, හුස්ම ගැනීමේ ක්‍රම භාවිතා කරන්න."
+    "text": "ආතතිය අඩු කිරීමට විවේක ගන්න, ගැඹුරු හුස්ම ගැනීමේ ක්‍රම භාවිතා කරන්න. දිනපතා කෙටි විවේකයක් ගන්නා එකත් උපකාරී වේ."
   },
   {
     "topic": "ආත්ම විශ්වාසය",
@@ -706,13 +826,43 @@
   },
   {
     "topic": "ආත්ම විශ්වාසය",
+    "view_type": "keyword",
+    "text": "self confidence"
+  },
+  {
+    "topic": "ආත්ම විශ්වාසය",
+    "view_type": "keyword",
+    "text": "ආත්ම විශ්වාසය"
+  },
+  {
+    "topic": "ආත්ම විශ්වාසය",
+    "view_type": "keyword",
+    "text": "විශ්වාසය"
+  },
+  {
+    "topic": "ආත්ම විශ්වාසය",
     "view_type": "question",
     "text": "මට confidence නැහැ"
   },
   {
     "topic": "ආත්ම විශ්වාසය",
+    "view_type": "question",
+    "text": "මට confidence ගොඩනගා ගන්නෙ කොහොමද"
+  },
+  {
+    "topic": "ආත්ම විශ්වාසය",
+    "view_type": "question",
+    "text": "මට කලින් confidence තිබුණත් දැන් නැහැ"
+  },
+  {
+    "topic": "ආත්ම විශ්වාසය",
+    "view_type": "question",
+    "text": "ආත්ම විශ්වාසය වැඩි කරගන්න ක්‍රම කියන්න"
+  },
+  {
+    "topic": "ආත්ම විශ්වාසය",
     "view_type": "content",
-    "text": "ඔබේ ශක්තිමත් පැති හඳුනාගෙන කුඩා இலක්ක සපුරා ගන්න."
+    "text": "ඔබේ ශක්තිමත් පැති හඳුනාගෙන කුඩා ඉලක්ක සපුරා ගන්න. ඒකෙන් ආත්ම විශ්වාසය ක්‍රමයෙන් වැඩිවේ."
   },
   {
     "topic": "සංවේදනය",
@@ -766,13 +916,38 @@
   },
   {
     "topic": "පවුල",
+    "view_type": "keyword",
+    "text": "family relationship"
+  },
+  {
+    "topic": "පවුල",
+    "view_type": "keyword",
+    "text": "පවුල"
+  },
+  {
+    "topic": "පවුල",
+    "view_type": "keyword",
+    "text": "සම්බන්ධතාව"
+  },
+  {
+    "topic": "පවුල",
     "view_type": "question",
     "text": "පවුල වැදගත්ද"
   },
   {
     "topic": "පවුල",
+    "view_type": "question",
+    "text": "පවුලේ අය සමඟ හොඳ සම්බන්ධතාවයක් තබා ගන්න කොහොමද"
+  },
+  {
+    "topic": "පවුල",
+    "view_type": "question",
+    "text": "පවුලේ සම්බන්ධතා වැඩි කරගන්නෙ කොහොමද"
+  },
+  {
+    "topic": "පවුල",
     "view_type": "content",
-    "text": "පවුල ඔබට ආරක්ෂාව සහ සහයෝගය ලබා දෙන වැදගත් කණ්ඩායමකි."
+    "text": "පවුලේ අය සමඟ සන්නිවේදනය, ගෞරවය සහ අවබෝධය තබා ගැනීම වැදගත්ය. දිනපතා කෙටි කතාබහක් සහ එකිනෙකාට සවන් දීම පවුල් බැඳීම ශක්තිමත් කරයි."
   },
   {
     "topic": "වගකීම",
@@ -853,5 +1028,1350 @@
     "topic": "සතුටු ජීවිතය",
     "view_type": "content",
     "text": "සතුටු ජීවිතයක් සඳහා සෞඛ්‍යය, සම්බන්ධතා සහ දෛනික අරමුණු අතර සමබරතාවය වැදගත්ය. දිනපතා කුඩා අරමුණු සකස් කර ඒවා සම්පූර්ණ කිරීමෙන් ප්‍රගතියක් දැනේ. විශ්වාසවන්ත අය සමඟ කාලය ගත කිරීම සහ කෘතඥතාවය පුහුණු කිරීම මනසට හොඳ බලපෑමක් ලබා දේ. ප්‍රමාණවත් නින්ද, සරල ව්‍යායාම සහ විවේක වේලාවක් තබා ගැනීම දිගුකාලීන සතුටට උපකාරී වේ."
+  },
+  {
+    "topic": "පරිගණකය",
+    "view_type": "topic",
+    "text": "පරිගණකය"
+  },
+  {
+    "topic": "පරිගණකය",
+    "view_type": "keyword",
+    "text": "computer"
+  },
+  {
+    "topic": "පරිගණකය",
+    "view_type": "keyword",
+    "text": "පරිගණකය"
+  },
+  {
+    "topic": "පරිගණකය",
+    "view_type": "keyword",
+    "text": "input"
+  },
+  {
+    "topic": "පරිගණකය",
+    "view_type": "keyword",
+    "text": "processing"
+  },
+  {
+    "topic": "පරිගණකය",
+    "view_type": "keyword",
+    "text": "output"
+  },
+  {
+    "topic": "පරිගණකය",
+    "view_type": "keyword",
+    "text": "storage"
+  },
+  {
+    "topic": "පරිගණකය",
+    "view_type": "question",
+    "text": "පරිගණකය කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "පරිගණකය",
+    "view_type": "question",
+    "text": "computer එකක් කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "පරිගණකය",
+    "view_type": "question",
+    "text": "පරිගණකය වැඩ කරන්නේ කොහොමද"
+  },
+  {
+    "topic": "පරිගණකය",
+    "view_type": "question",
+    "text": "පරිගණකයේ input output කියන්නේ මොනවාද"
+  },
+  {
+    "topic": "පරිගණකය",
+    "view_type": "content",
+    "text": "පරිගණකය යනු දත්ත ලබාගෙන ඒවා සැකසීමෙන් තොරතුරු ලබා දෙන යන්ත්‍රයකි. එය Input, Processing, Output සහ Storage යන පියවර භාවිතා කරයි."
+  },
+  {
+    "topic": "දත්ත සහ තොරතුරු",
+    "view_type": "topic",
+    "text": "දත්ත සහ තොරතුරු"
+  },
+  {
+    "topic": "දත්ත සහ තොරතුරු",
+    "view_type": "keyword",
+    "text": "data"
+  },
+  {
+    "topic": "දත්ත සහ තොරතුරු",
+    "view_type": "keyword",
+    "text": "information"
+  },
+  {
+    "topic": "දත්ත සහ තොරතුරු",
+    "view_type": "keyword",
+    "text": "දත්ත"
+  },
+  {
+    "topic": "දත්ත සහ තොරතුරු",
+    "view_type": "keyword",
+    "text": "තොරතුරු"
+  },
+  {
+    "topic": "දත්ත සහ තොරතුරු",
+    "view_type": "question",
+    "text": "data සහ information අතර වෙනස මොකක්ද"
+  },
+  {
+    "topic": "දත්ත සහ තොරතුරු",
+    "view_type": "content",
+    "text": "දත්ත යනු අමු තොරතුරු වන අතර, ඒවා සැකසීමෙන් ලැබෙන්නේ තොරතුරු වේ."
+  },
+  {
+    "topic": "CPU",
+    "view_type": "topic",
+    "text": "CPU"
+  },
+  {
+    "topic": "CPU",
+    "view_type": "keyword",
+    "text": "CPU"
+  },
+  {
+    "topic": "CPU",
+    "view_type": "keyword",
+    "text": "processor"
+  },
+  {
+    "topic": "CPU",
+    "view_type": "question",
+    "text": "CPU කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "CPU",
+    "view_type": "content",
+    "text": "CPU යනු පරිගණකයේ මූලික සැකසුම් ඒකකය වන අතර සියලු ගණනය කිරීම් සහ නියෝග ක්‍රියාත්මක කරයි."
+  },
+  {
+    "topic": "RAM",
+    "view_type": "topic",
+    "text": "RAM"
+  },
+  {
+    "topic": "RAM",
+    "view_type": "keyword",
+    "text": "RAM"
+  },
+  {
+    "topic": "RAM",
+    "view_type": "keyword",
+    "text": "memory"
+  },
+  {
+    "topic": "RAM",
+    "view_type": "question",
+    "text": "RAM කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "RAM",
+    "view_type": "content",
+    "text": "RAM යනු තාවකාලික මතකයක් වන අතර ක්‍රියාත්මක වන වැඩසටහන් සුරක්ෂිතව තබා ගනී."
+  },
+  {
+    "topic": "ROM",
+    "view_type": "topic",
+    "text": "ROM"
+  },
+  {
+    "topic": "ROM",
+    "view_type": "keyword",
+    "text": "ROM"
+  },
+  {
+    "topic": "ROM",
+    "view_type": "question",
+    "text": "ROM කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "ROM",
+    "view_type": "content",
+    "text": "ROM යනු ස්ථිර මතකයක් වන අතර පද්ධති ආරම්භ කිරීමට අවශ්‍ය දත්ත සුරක්ෂිතව තබා ගනී."
+  },
+  {
+    "topic": "ඔපරේටින් පද්ධතිය",
+    "view_type": "topic",
+    "text": "ඔපරේටින් පද්ධතිය"
+  },
+  {
+    "topic": "ඔපරේටින් පද්ධතිය",
+    "view_type": "keyword",
+    "text": "OS"
+  },
+  {
+    "topic": "ඔපරේටින් පද්ධතිය",
+    "view_type": "keyword",
+    "text": "operating system"
+  },
+  {
+    "topic": "ඔපරේටින් පද්ධතිය",
+    "view_type": "keyword",
+    "text": "ඔපරේටින් පද්ධතිය"
+  },
+  {
+    "topic": "ඔපරේටින් පද්ධතිය",
+    "view_type": "keyword",
+    "text": "system software"
+  },
+  {
+    "topic": "ඔපරේටින් පද්ධතිය",
+    "view_type": "question",
+    "text": "operating system කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "ඔපරේටින් පද්ධතිය",
+    "view_type": "question",
+    "text": "operating system එකේ කාර්යය මොනවද"
+  },
+  {
+    "topic": "ඔපරේටින් පද්ධතිය",
+    "view_type": "question",
+    "text": "OS එකේ ප්‍රධාන කාර්යයන් මොනවාද"
+  },
+  {
+    "topic": "ඔපරේටින් පද්ධතිය",
+    "view_type": "content",
+    "text": "Operating system යනු hardware සහ software අතර සම්පත් කළමනාකරණය කරන පද්ධතියකි. එය process, memory, file සහ device management කාර්යයන් ඉටු කරයි."
+  },
+  {
+    "topic": "Software",
+    "view_type": "topic",
+    "text": "Software"
+  },
+  {
+    "topic": "Software",
+    "view_type": "keyword",
+    "text": "software"
+  },
+  {
+    "topic": "Software",
+    "view_type": "question",
+    "text": "software කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Software",
+    "view_type": "content",
+    "text": "Software යනු පරිගණකයට නියෝග ලබා දෙන වැඩසටහන් එකතුවකි."
+  },
+  {
+    "topic": "Hardware",
+    "view_type": "topic",
+    "text": "Hardware"
+  },
+  {
+    "topic": "Hardware",
+    "view_type": "keyword",
+    "text": "hardware"
+  },
+  {
+    "topic": "Hardware",
+    "view_type": "question",
+    "text": "hardware කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Hardware",
+    "view_type": "content",
+    "text": "Hardware යනු පරිගණකයේ දෘශ්‍යමය කොටස් වේ."
+  },
+  {
+    "topic": "Programming",
+    "view_type": "topic",
+    "text": "Programming"
+  },
+  {
+    "topic": "Programming",
+    "view_type": "keyword",
+    "text": "programming"
+  },
+  {
+    "topic": "Programming",
+    "view_type": "keyword",
+    "text": "coding"
+  },
+  {
+    "topic": "Programming",
+    "view_type": "keyword",
+    "text": "code"
+  },
+  {
+    "topic": "Programming",
+    "view_type": "keyword",
+    "text": "program"
+  },
+  {
+    "topic": "Programming",
+    "view_type": "question",
+    "text": "programming කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Programming",
+    "view_type": "question",
+    "text": "programming කියන්නෙ මොකක්ද"
+  },
+  {
+    "topic": "Programming",
+    "view_type": "question",
+    "text": "coding කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Programming",
+    "view_type": "content",
+    "text": "Programming යනු පරිගණකයට නියෝග ලිවීමේ ක්‍රියාවලියකි."
+  },
+  {
+    "topic": "Programming Languages",
+    "view_type": "topic",
+    "text": "Programming Languages"
+  },
+  {
+    "topic": "Programming Languages",
+    "view_type": "keyword",
+    "text": "languages"
+  },
+  {
+    "topic": "Programming Languages",
+    "view_type": "question",
+    "text": "programming languages මොනවද"
+  },
+  {
+    "topic": "Programming Languages",
+    "view_type": "content",
+    "text": "Python, Java, C++ වැනි භාෂා programming languages ලෙස හඳුන්වයි."
+  },
+  {
+    "topic": "Algorithm",
+    "view_type": "topic",
+    "text": "Algorithm"
+  },
+  {
+    "topic": "Algorithm",
+    "view_type": "keyword",
+    "text": "algorithm"
+  },
+  {
+    "topic": "Algorithm",
+    "view_type": "keyword",
+    "text": "step by step"
+  },
+  {
+    "topic": "Algorithm",
+    "view_type": "keyword",
+    "text": "procedure"
+  },
+  {
+    "topic": "Algorithm",
+    "view_type": "question",
+    "text": "algorithm කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Algorithm",
+    "view_type": "question",
+    "text": "Algorithm කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Algorithm",
+    "view_type": "question",
+    "text": "algorithm එකක් කියන්නේ මොනවාද"
+  },
+  {
+    "topic": "Algorithm",
+    "view_type": "content",
+    "text": "Algorithm යනු ගැටලුවක් විසඳීමට පියවර මාලාවකි. හොඳ algorithm එකක් පැහැදිලි, නිවැරදි සහ කාර්යක්ෂම විය යුතුය."
+  },
+  {
+    "topic": "Flowchart",
+    "view_type": "topic",
+    "text": "Flowchart"
+  },
+  {
+    "topic": "Flowchart",
+    "view_type": "keyword",
+    "text": "flowchart"
+  },
+  {
+    "topic": "Flowchart",
+    "view_type": "question",
+    "text": "flowchart කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Flowchart",
+    "view_type": "content",
+    "text": "Flowchart යනු algorithm එකක් දෘශ්‍යමයව පෙන්වන රූපයකි."
+  },
+  {
+    "topic": "Database",
+    "view_type": "topic",
+    "text": "Database"
+  },
+  {
+    "topic": "Database",
+    "view_type": "keyword",
+    "text": "database"
+  },
+  {
+    "topic": "Database",
+    "view_type": "keyword",
+    "text": "db"
+  },
+  {
+    "topic": "Database",
+    "view_type": "keyword",
+    "text": "dbms"
+  },
+  {
+    "topic": "Database",
+    "view_type": "keyword",
+    "text": "data storage"
+  },
+  {
+    "topic": "Database",
+    "view_type": "keyword",
+    "text": "sql"
+  },
+  {
+    "topic": "Database",
+    "view_type": "question",
+    "text": "database කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Database",
+    "view_type": "question",
+    "text": "Database සහ DBMS අතර වෙනස මොකක්ද"
+  },
+  {
+    "topic": "Database",
+    "view_type": "question",
+    "text": "dbms කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Database",
+    "view_type": "content",
+    "text": "Database යනු දත්ත ගබඩා කරන පද්ධතියකි. DBMS යනු එම database එක සුරක්ෂිතව කළමනාකරණය කරන software එකකි."
+  },
+  {
+    "topic": "DBMS",
+    "view_type": "topic",
+    "text": "DBMS"
+  },
+  {
+    "topic": "DBMS",
+    "view_type": "keyword",
+    "text": "DBMS"
+  },
+  {
+    "topic": "DBMS",
+    "view_type": "question",
+    "text": "DBMS කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "DBMS",
+    "view_type": "content",
+    "text": "DBMS යනු database කළමනාකරණය කරන software එකකි."
+  },
+  {
+    "topic": "SQL",
+    "view_type": "topic",
+    "text": "SQL"
+  },
+  {
+    "topic": "SQL",
+    "view_type": "keyword",
+    "text": "SQL"
+  },
+  {
+    "topic": "SQL",
+    "view_type": "question",
+    "text": "SQL කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "SQL",
+    "view_type": "content",
+    "text": "SQL යනු database එකක් සමඟ කටයුතු කිරීමට භාවිතා කරන භාෂාවකි."
+  },
+  {
+    "topic": "Networking",
+    "view_type": "topic",
+    "text": "Networking"
+  },
+  {
+    "topic": "Networking",
+    "view_type": "keyword",
+    "text": "network"
+  },
+  {
+    "topic": "Networking",
+    "view_type": "keyword",
+    "text": "networking"
+  },
+  {
+    "topic": "Networking",
+    "view_type": "keyword",
+    "text": "LAN"
+  },
+  {
+    "topic": "Networking",
+    "view_type": "keyword",
+    "text": "WAN"
+  },
+  {
+    "topic": "Networking",
+    "view_type": "keyword",
+    "text": "IP"
+  },
+  {
+    "topic": "Networking",
+    "view_type": "question",
+    "text": "network කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Networking",
+    "view_type": "question",
+    "text": "Network කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Networking",
+    "view_type": "question",
+    "text": "networking මූලික අදහස මොකක්ද"
+  },
+  {
+    "topic": "Networking",
+    "view_type": "content",
+    "text": "Network යනු පරිගණක කිහිපයක් සම්බන්ධ කර දත්ත හුවමාරු කරන ක්‍රමයකි. LAN සහ WAN වැනි ජාල වර්ග විවිධ ප්‍රමාණයේ සම්බන්ධතාව සඳහා භාවිතා වේ."
+  },
+  {
+    "topic": "Internet",
+    "view_type": "topic",
+    "text": "Internet"
+  },
+  {
+    "topic": "Internet",
+    "view_type": "keyword",
+    "text": "internet"
+  },
+  {
+    "topic": "Internet",
+    "view_type": "question",
+    "text": "internet කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Internet",
+    "view_type": "content",
+    "text": "Internet යනු ලෝකය පුරා පරිගණක සම්බන්ධ කරන විශාල ජාලයකි."
+  },
+  {
+    "topic": "IP Address",
+    "view_type": "topic",
+    "text": "IP Address"
+  },
+  {
+    "topic": "IP Address",
+    "view_type": "keyword",
+    "text": "IP"
+  },
+  {
+    "topic": "IP Address",
+    "view_type": "question",
+    "text": "IP address කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "IP Address",
+    "view_type": "content",
+    "text": "IP address යනු network එකක device එකක් හඳුනාගැනීමට භාවිතා කරන අංකයකි."
+  },
+  {
+    "topic": "Cyber Security",
+    "view_type": "topic",
+    "text": "Cyber Security"
+  },
+  {
+    "topic": "Cyber Security",
+    "view_type": "keyword",
+    "text": "security"
+  },
+  {
+    "topic": "Cyber Security",
+    "view_type": "keyword",
+    "text": "cyber security"
+  },
+  {
+    "topic": "Cyber Security",
+    "view_type": "keyword",
+    "text": "privacy"
+  },
+  {
+    "topic": "Cyber Security",
+    "view_type": "keyword",
+    "text": "data protection"
+  },
+  {
+    "topic": "Cyber Security",
+    "view_type": "question",
+    "text": "cyber security කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Cyber Security",
+    "view_type": "question",
+    "text": "Cyber security කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Cyber Security",
+    "view_type": "question",
+    "text": "data ආරක්ෂා කරගන්නෙ කොහොමද"
+  },
+  {
+    "topic": "Cyber Security",
+    "view_type": "content",
+    "text": "Cyber security යනු පද්ධති, ජාල සහ දත්ත අනවසර ප්‍රවේශයෙන් ආරක්ෂා කිරීමයි. strong passwords, regular updates සහ two-factor authentication භාවිතා කිරීම මූලික පියවර වේ."
+  },
+  {
+    "topic": "Encryption",
+    "view_type": "topic",
+    "text": "Encryption"
+  },
+  {
+    "topic": "Encryption",
+    "view_type": "keyword",
+    "text": "encryption"
+  },
+  {
+    "topic": "Encryption",
+    "view_type": "question",
+    "text": "encryption කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Encryption",
+    "view_type": "content",
+    "text": "Encryption යනු දත්ත ආරක්ෂා කිරීම සඳහා එය සංකේතගත කිරීමයි."
+  },
+  {
+    "topic": "Cloud Computing",
+    "view_type": "topic",
+    "text": "Cloud Computing"
+  },
+  {
+    "topic": "Cloud Computing",
+    "view_type": "keyword",
+    "text": "cloud"
+  },
+  {
+    "topic": "Cloud Computing",
+    "view_type": "keyword",
+    "text": "cloud computing"
+  },
+  {
+    "topic": "Cloud Computing",
+    "view_type": "keyword",
+    "text": "cloud services"
+  },
+  {
+    "topic": "Cloud Computing",
+    "view_type": "keyword",
+    "text": "internet services"
+  },
+  {
+    "topic": "Cloud Computing",
+    "view_type": "question",
+    "text": "cloud computing කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Cloud Computing",
+    "view_type": "question",
+    "text": "Cloud computing කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Cloud Computing",
+    "view_type": "question",
+    "text": "cloud services මොනවද"
+  },
+  {
+    "topic": "Cloud Computing",
+    "view_type": "content",
+    "text": "Cloud computing යනු internet හරහා servers, storage සහ software සේවා ලබා දීමයි. එය local infrastructure අවශ්‍යතාව අඩු කරයි."
+  },
+  {
+    "topic": "Artificial Intelligence",
+    "view_type": "topic",
+    "text": "Artificial Intelligence"
+  },
+  {
+    "topic": "Artificial Intelligence",
+    "view_type": "keyword",
+    "text": "AI"
+  },
+  {
+    "topic": "Artificial Intelligence",
+    "view_type": "keyword",
+    "text": "artificial intelligence"
+  },
+  {
+    "topic": "Artificial Intelligence",
+    "view_type": "keyword",
+    "text": "intelligent systems"
+  },
+  {
+    "topic": "Artificial Intelligence",
+    "view_type": "question",
+    "text": "AI කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Artificial Intelligence",
+    "view_type": "question",
+    "text": "artificial intelligence කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Artificial Intelligence",
+    "view_type": "content",
+    "text": "AI යනු යන්ත්‍රවලට බුද්ධිමත් හැසිරීම් ලබා දීමයි. එය දත්ත, නියමයන් සහ ආදර්ශන භාවිතා කර තීරණ ගැනීමට උපකාරී වේ."
+  },
+  {
+    "topic": "Machine Learning",
+    "view_type": "topic",
+    "text": "Machine Learning"
+  },
+  {
+    "topic": "Machine Learning",
+    "view_type": "keyword",
+    "text": "ML"
+  },
+  {
+    "topic": "Machine Learning",
+    "view_type": "keyword",
+    "text": "machine learning"
+  },
+  {
+    "topic": "Machine Learning",
+    "view_type": "keyword",
+    "text": "model training"
+  },
+  {
+    "topic": "Machine Learning",
+    "view_type": "keyword",
+    "text": "patterns"
+  },
+  {
+    "topic": "Machine Learning",
+    "view_type": "question",
+    "text": "machine learning කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Machine Learning",
+    "view_type": "question",
+    "text": "Machine learning කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Machine Learning",
+    "view_type": "question",
+    "text": "ML කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Machine Learning",
+    "view_type": "content",
+    "text": "Machine learning යනු දත්ත මත පදනම්ව pattern ඉගෙන ගන්න AI ශාඛාවකි. Explicit rules සියල්ල ලියන්නේ නැතිව model එක දත්තයෙන් ඉගෙන ගනී."
+  },
+  {
+    "topic": "Software Engineering",
+    "view_type": "topic",
+    "text": "Software Engineering"
+  },
+  {
+    "topic": "Software Engineering",
+    "view_type": "keyword",
+    "text": "software engineering"
+  },
+  {
+    "topic": "Software Engineering",
+    "view_type": "keyword",
+    "text": "SDLC"
+  },
+  {
+    "topic": "Software Engineering",
+    "view_type": "keyword",
+    "text": "requirement"
+  },
+  {
+    "topic": "Software Engineering",
+    "view_type": "keyword",
+    "text": "testing"
+  },
+  {
+    "topic": "Software Engineering",
+    "view_type": "keyword",
+    "text": "maintenance"
+  },
+  {
+    "topic": "Software Engineering",
+    "view_type": "question",
+    "text": "software engineering කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Software Engineering",
+    "view_type": "question",
+    "text": "Software engineering කියන්නේ මොකක්ද? ඒකේ ක්‍රියාවලිය පැහැදිලි කරන්න."
+  },
+  {
+    "topic": "Software Engineering",
+    "view_type": "question",
+    "text": "software development lifecycle කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Software Engineering",
+    "view_type": "content",
+    "text": "Software engineering යනු software සංවර්ධනය සඳහා ක්‍රමවත් ක්‍රියාවලියකි. Requirement, Design, Implementation, Testing සහ Maintenance යන අදියර මෙයට ඇතුළත් වේ."
+  },
+  {
+    "topic": "Version Control",
+    "view_type": "topic",
+    "text": "Version Control"
+  },
+  {
+    "topic": "Version Control",
+    "view_type": "keyword",
+    "text": "git"
+  },
+  {
+    "topic": "Version Control",
+    "view_type": "question",
+    "text": "version control කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Version Control",
+    "view_type": "content",
+    "text": "Version control යනු code වෙනස්කම් පාලනය කිරීමේ ක්‍රමයකි."
+  },
+  {
+    "topic": "API",
+    "view_type": "topic",
+    "text": "API"
+  },
+  {
+    "topic": "API",
+    "view_type": "keyword",
+    "text": "API"
+  },
+  {
+    "topic": "API",
+    "view_type": "question",
+    "text": "API කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "API",
+    "view_type": "content",
+    "text": "API යනු software අතර සන්නිවේදනයට භාවිතා වන interface එකකි."
+  },
+  {
+    "topic": "Frontend",
+    "view_type": "topic",
+    "text": "Frontend"
+  },
+  {
+    "topic": "Frontend",
+    "view_type": "keyword",
+    "text": "frontend"
+  },
+  {
+    "topic": "Frontend",
+    "view_type": "question",
+    "text": "frontend කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Frontend",
+    "view_type": "content",
+    "text": "Frontend යනු user interface එක වේ."
+  },
+  {
+    "topic": "Backend",
+    "view_type": "topic",
+    "text": "Backend"
+  },
+  {
+    "topic": "Backend",
+    "view_type": "keyword",
+    "text": "backend"
+  },
+  {
+    "topic": "Backend",
+    "view_type": "question",
+    "text": "backend කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Backend",
+    "view_type": "content",
+    "text": "Backend යනු server side logic සහ database සම්බන්ධ කොටසයි."
+  },
+  {
+    "topic": "Full Stack",
+    "view_type": "topic",
+    "text": "Full Stack"
+  },
+  {
+    "topic": "Full Stack",
+    "view_type": "keyword",
+    "text": "fullstack"
+  },
+  {
+    "topic": "Full Stack",
+    "view_type": "question",
+    "text": "full stack කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Full Stack",
+    "view_type": "content",
+    "text": "Full stack developer යනු frontend සහ backend දෙකම කරයි."
+  },
+  {
+    "topic": "Bug",
+    "view_type": "topic",
+    "text": "Bug"
+  },
+  {
+    "topic": "Bug",
+    "view_type": "keyword",
+    "text": "bug"
+  },
+  {
+    "topic": "Bug",
+    "view_type": "question",
+    "text": "bug කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Bug",
+    "view_type": "content",
+    "text": "Bug යනු software එකක දෝෂයකි."
+  },
+  {
+    "topic": "Debugging",
+    "view_type": "topic",
+    "text": "Debugging"
+  },
+  {
+    "topic": "Debugging",
+    "view_type": "keyword",
+    "text": "debugging"
+  },
+  {
+    "topic": "Debugging",
+    "view_type": "keyword",
+    "text": "bug fixing"
+  },
+  {
+    "topic": "Debugging",
+    "view_type": "keyword",
+    "text": "troubleshooting"
+  },
+  {
+    "topic": "Debugging",
+    "view_type": "question",
+    "text": "debugging කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Debugging",
+    "view_type": "question",
+    "text": "Debugging කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Debugging",
+    "view_type": "question",
+    "text": "bug fix කරන ක්‍රියාවලිය මොකක්ද"
+  },
+  {
+    "topic": "Debugging",
+    "view_type": "content",
+    "text": "Debugging යනු software දෝෂ සොයා නිවැරදි කිරීමේ ක්‍රියාවලියකි. දෝෂය හඳුනාගෙන හේතුව නිවැරදි කිරීමෙන් program එක නිසි ලෙස ක්‍රියාකරවයි."
+  },
+  {
+    "topic": "Open Source",
+    "view_type": "topic",
+    "text": "Open Source"
+  },
+  {
+    "topic": "Open Source",
+    "view_type": "keyword",
+    "text": "open source"
+  },
+  {
+    "topic": "Open Source",
+    "view_type": "question",
+    "text": "open source කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Open Source",
+    "view_type": "content",
+    "text": "Open source යනු code සියල්ලටම ලබාගත හැකි software එකකි."
+  },
+  {
+    "topic": "Compiler",
+    "view_type": "topic",
+    "text": "Compiler"
+  },
+  {
+    "topic": "Compiler",
+    "view_type": "keyword",
+    "text": "compiler"
+  },
+  {
+    "topic": "Compiler",
+    "view_type": "question",
+    "text": "compiler කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Compiler",
+    "view_type": "content",
+    "text": "Compiler යනු code machine language එකට පරිවර්තනය කරන program එකකි."
+  },
+  {
+    "topic": "Interpreter",
+    "view_type": "topic",
+    "text": "Interpreter"
+  },
+  {
+    "topic": "Interpreter",
+    "view_type": "keyword",
+    "text": "interpreter"
+  },
+  {
+    "topic": "Interpreter",
+    "view_type": "question",
+    "text": "interpreter කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Interpreter",
+    "view_type": "content",
+    "text": "Interpreter යනු code line by line ක්‍රියාත්මක කරන program එකකි."
+  },
+  {
+    "topic": "Binary",
+    "view_type": "topic",
+    "text": "Binary"
+  },
+  {
+    "topic": "Binary",
+    "view_type": "keyword",
+    "text": "binary"
+  },
+  {
+    "topic": "Binary",
+    "view_type": "keyword",
+    "text": "0 and 1"
+  },
+  {
+    "topic": "Binary",
+    "view_type": "keyword",
+    "text": "base 2"
+  },
+  {
+    "topic": "Binary",
+    "view_type": "keyword",
+    "text": "බයිනරි"
+  },
+  {
+    "topic": "Binary",
+    "view_type": "question",
+    "text": "binary system කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Binary",
+    "view_type": "question",
+    "text": "Binary system කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Binary",
+    "view_type": "question",
+    "text": "0 සහ 1 පද්ධතිය කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Binary",
+    "view_type": "content",
+    "text": "Binary system යනු 0 සහ 1 භාවිතා කරන සංඛ්‍යා පද්ධතියකි. පරිගණකය අභ්‍යන්තරව දත්ත නිරූපණය කරන්නේ මෙම base-2 ක්‍රමයෙන්ය."
+  },
+  {
+    "topic": "Data Structure",
+    "view_type": "topic",
+    "text": "Data Structure"
+  },
+  {
+    "topic": "Data Structure",
+    "view_type": "keyword",
+    "text": "data structure"
+  },
+  {
+    "topic": "Data Structure",
+    "view_type": "question",
+    "text": "data structure කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Data Structure",
+    "view_type": "content",
+    "text": "Data structure යනු දත්ත සංවිධානය කරන ක්‍රමයකි."
+  },
+  {
+    "topic": "Stack",
+    "view_type": "topic",
+    "text": "Stack"
+  },
+  {
+    "topic": "Stack",
+    "view_type": "keyword",
+    "text": "stack"
+  },
+  {
+    "topic": "Stack",
+    "view_type": "keyword",
+    "text": "LIFO"
+  },
+  {
+    "topic": "Stack",
+    "view_type": "keyword",
+    "text": "stack vs queue"
+  },
+  {
+    "topic": "Stack",
+    "view_type": "keyword",
+    "text": "data structure"
+  },
+  {
+    "topic": "Stack",
+    "view_type": "question",
+    "text": "stack කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Stack",
+    "view_type": "question",
+    "text": "Stack සහ Queue අතර වෙනස මොකක්ද"
+  },
+  {
+    "topic": "Stack",
+    "view_type": "question",
+    "text": "stack vs queue difference"
+  },
+  {
+    "topic": "Stack",
+    "view_type": "content",
+    "text": "Stack = LIFO (අවසානයට දැමූ දෙය මුලින් ඉවත් වේ). Queue = FIFO (මුලින් දැමූ දෙය මුලින් ඉවත් වේ)."
+  },
+  {
+    "topic": "Queue",
+    "view_type": "topic",
+    "text": "Queue"
+  },
+  {
+    "topic": "Queue",
+    "view_type": "keyword",
+    "text": "queue"
+  },
+  {
+    "topic": "Queue",
+    "view_type": "question",
+    "text": "queue කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Queue",
+    "view_type": "content",
+    "text": "Queue යනු FIFO (First In First Out) data structure එකකි."
+  },
+  {
+    "topic": "Operating System Types",
+    "view_type": "topic",
+    "text": "Operating System Types"
+  },
+  {
+    "topic": "Operating System Types",
+    "view_type": "keyword",
+    "text": "os types"
+  },
+  {
+    "topic": "Operating System Types",
+    "view_type": "question",
+    "text": "OS වර්ග මොනවද"
+  },
+  {
+    "topic": "Operating System Types",
+    "view_type": "content",
+    "text": "Batch, time-sharing සහ real-time OS වැනි වර්ග ඇත."
+  },
+  {
+    "topic": "Probability",
+    "view_type": "topic",
+    "text": "Probability"
+  },
+  {
+    "topic": "Probability",
+    "view_type": "keyword",
+    "text": "probability"
+  },
+  {
+    "topic": "Probability",
+    "view_type": "keyword",
+    "text": "සම්භාවිතාව"
+  },
+  {
+    "topic": "Probability",
+    "view_type": "keyword",
+    "text": "chance"
+  },
+  {
+    "topic": "Probability",
+    "view_type": "keyword",
+    "text": "likelihood"
+  },
+  {
+    "topic": "Probability",
+    "view_type": "question",
+    "text": "probability කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Probability",
+    "view_type": "question",
+    "text": "Probability කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Probability",
+    "view_type": "question",
+    "text": "සම්භාවිතාව කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Probability",
+    "view_type": "content",
+    "text": "Probability යනු සිදුවීමක් සිදුවීමේ සම්භාවිතාවයි. එය 0 සිට 1 දක්වා අගයකින් හෝ ප්‍රතිශතයක් ලෙස දක්වයි."
+  },
+  {
+    "topic": "Ratio",
+    "view_type": "topic",
+    "text": "Ratio"
+  },
+  {
+    "topic": "Ratio",
+    "view_type": "keyword",
+    "text": "ratio"
+  },
+  {
+    "topic": "Ratio",
+    "view_type": "keyword",
+    "text": "අනුපාතය"
+  },
+  {
+    "topic": "Ratio",
+    "view_type": "keyword",
+    "text": "proportion"
+  },
+  {
+    "topic": "Ratio",
+    "view_type": "question",
+    "text": "ratio කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Ratio",
+    "view_type": "question",
+    "text": "Ratio කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Ratio",
+    "view_type": "question",
+    "text": "අනුපාතය කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Ratio",
+    "view_type": "content",
+    "text": "Ratio යනු සංඛ්‍යා දෙකක් අතර සම්බන්ධතාවයයි. එය සාමාන්‍යයෙන් a:b ලෙස ලියයි."
+  },
+  {
+    "topic": "Trigonometry",
+    "view_type": "topic",
+    "text": "Trigonometry"
+  },
+  {
+    "topic": "Trigonometry",
+    "view_type": "keyword",
+    "text": "trigonometry"
+  },
+  {
+    "topic": "Trigonometry",
+    "view_type": "keyword",
+    "text": "ත්‍රිකෝණමිතිය"
+  },
+  {
+    "topic": "Trigonometry",
+    "view_type": "keyword",
+    "text": "sin"
+  },
+  {
+    "topic": "Trigonometry",
+    "view_type": "keyword",
+    "text": "cos"
+  },
+  {
+    "topic": "Trigonometry",
+    "view_type": "keyword",
+    "text": "tan"
+  },
+  {
+    "topic": "Trigonometry",
+    "view_type": "question",
+    "text": "trigonometry කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Trigonometry",
+    "view_type": "question",
+    "text": "Trigonometry කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Trigonometry",
+    "view_type": "question",
+    "text": "ත්‍රිකෝණමිතිය කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Trigonometry",
+    "view_type": "content",
+    "text": "Trigonometry යනු කෝණ සහ ත්‍රිකෝණ අතර සම්බන්ධතාවය අධ්‍යයනය කරන ගණිත ශාඛාවකි. sine, cosine සහ tangent එහි මූලික සංකල්ප වේ."
+  },
+  {
+    "topic": "Calculus",
+    "view_type": "topic",
+    "text": "Calculus"
+  },
+  {
+    "topic": "Calculus",
+    "view_type": "keyword",
+    "text": "calculus"
+  },
+  {
+    "topic": "Calculus",
+    "view_type": "keyword",
+    "text": "අන්තරගණිතය"
+  },
+  {
+    "topic": "Calculus",
+    "view_type": "keyword",
+    "text": "differentiation"
+  },
+  {
+    "topic": "Calculus",
+    "view_type": "keyword",
+    "text": "integration"
+  },
+  {
+    "topic": "Calculus",
+    "view_type": "question",
+    "text": "calculus කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Calculus",
+    "view_type": "question",
+    "text": "Calculus කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Calculus",
+    "view_type": "question",
+    "text": "අන්තරගණිතය කියන්නේ මොකක්ද"
+  },
+  {
+    "topic": "Calculus",
+    "view_type": "content",
+    "text": "Calculus යනු වෙනස්වීම් සහ ගතිකතාව අධ්‍යයනය කරන ගණිත ශාඛාවකි. එහි ප්‍රධාන කොටස් දෙක වන්නේ differentiation සහ integration ය."
   }
 ]

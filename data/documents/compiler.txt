@@ -5,3 +5,9 @@ Compiler යනු high-level source code එක machine language හෝ bytecod
 Compilation process එකේදී lexical analysis, syntax analysis සහ code generation වැනි අදියර ඇත. Errors තිබේ නම් compile stage එකේදී දැනුම් දේ.
 
 Compiled languages උදාහරණ ලෙස C/C++ සඳහන් කළ හැක. Compiler optimization මඟින් performance වැඩි executable code ලබාගත හැක.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: Compiler ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.
+- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.
+- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.
+- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක.

@@ -5,3 +5,9 @@ Database යනු දත්ත සංවිධානය කර ගබඩා ක
 Database භාවිතයෙන් data redundancy අඩු කර consistency වැඩි කරයි. Tables, rows, columns වැනි ආකෘතියක් relational databases හි භාවිතා කරයි.
 
 පාසල්, බැංකු, ව්‍යාපාර සහ web systems වැනි බොහෝ ක්ෂේත්‍රවල database වැදගත් වේ. නිවැරදි database design එක performance සහ scalability වැඩි කරයි.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: Database සම්බන්ධ වැඩ වලදී data representation, accuracy, සහ consistency පදනම් කරගෙන සැලසුම් කිරීම වැදගත්ය.
+- ප්‍රායෝගික භාවිතය: sample datasets/queries/examples භාවිතා කර output verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.
+- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ performance tuning.
+- හොඳ පුරුදු: input constraints, edge cases, සහ failure handling කලින් සැලසුම් කිරීමෙන් production issues අඩු වේ.

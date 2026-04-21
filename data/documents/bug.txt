@@ -5,3 +5,9 @@ Bug යනු software එකක දෝෂයක් හෝ අනපේක්ෂ
 Bugs ඇතිවීමට common හේතු ලෙස logic errors, incorrect assumptions, input validation issues සහ integration conflicts සඳහන් කළ හැක. Testing අඩු වීමෙන් bugs production වෙත යා හැක.
 
 Early detection සඳහා unit tests, integration tests සහ code reviews වැදගත් වේ. Bug reports පැහැදිලිව ලිවීම fix process එක ඉක්මන් කරයි.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: Bug ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.
+- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.
+- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.
+- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක.

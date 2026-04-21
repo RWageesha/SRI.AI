@@ -1,0 +1,8 @@
+මාතෘකාව: Calculus
+Calculus යනු වෙනස්වීම් සහ අඛණ්ඩ ප්‍රමාණ අධ්‍යයනය කරන ගණිත ශාඛාවකි. Differentiation මගින් වෙනස්වීමේ වේගය සොයා ගනී, Integration මගින් ප්‍රමාණ එකතු කිරීම සහ වක්‍රයක් යටතේ ඇති ප්‍රදේශය සොයා ගනී.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: Calculus ඉගෙනීමේදී සංකේත (symbols), ඒකක (units), සහ මූලික නිර්වචන පැහැදිලිව වෙන්කර මතක තබා ගන්න.
+- ප්‍රායෝගික භාවිතය: සූත්‍රය පමණක් මතක තබාගැනීම වෙනුවට solved examples + step-by-step reasoning සමඟ ගැටලු විසඳන්න.
+- සම්බන්ධ උපමාතෘකා: formula derivation, graph interpretation, approximation, සහ real-world applications.
+- හොඳ පුරුදු: පිළිතුරේ units සහ reasonableness පරීක්ෂා කිරීම, සහ වැරදුණු පියවර ලකුණු කර correction notebook එකක් තබා ගැනීම.

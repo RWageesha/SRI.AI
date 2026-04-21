@@ -5,3 +5,9 @@ Software Engineering යනු software සංවර්ධනය සඳහා �
 සාමාන්‍ය software lifecycle පියවර ලෙස requirement analysis, design, implementation, testing සහ maintenance සඳහන් කළ හැක. එක් එක් අදියර නිවැරදිව කළ විට project අවදානම් අඩුවේ.
 
 Documentation, code reviews, testing automation සහ collaboration tools භාවිතා කිරීම engineering quality වැඩි කරයි. User needs මත පදනම්ව iterative improvements කිරීමද වැදගත් වේ.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: Software Engineering ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.
+- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.
+- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.
+- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක.

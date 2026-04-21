@@ -5,3 +5,9 @@ Software යනු පරිගණකයට නියෝග ලබා දෙන 
 System software (උදා: OS, drivers) සහ application software (උදා: browser, editor) ලෙස software වර්ග කරයි. එක් එක් software එකකට විශේෂ කාර්යභාරයක් ඇත.
 
 Software update කිරීමෙන් bugs අඩු කර security වැඩි කර performance දියුණු කළ හැක. නිවැරදි software තේරීම user efficiency වැඩි කරයි.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: Software ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.
+- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.
+- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.
+- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක.

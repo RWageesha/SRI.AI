@@ -5,3 +5,9 @@
 තොරතුරු (Information) යනු දත්ත සංවිධානය කර විශ්ලේෂණය කිරීමෙන් ලැබෙන අර්ථවත් ප්‍රතිඵලයයි. ඒ නිසා තීරණ ගැනීමට තොරතුරු වැදගත් වේ.
 
 උදාහරණයක් ලෙස 35, 40, 45 යන සංඛ්‍යා දත්ත වේ. ඒවා සිසුන්ගේ ලකුණු බව දක්වා සාමාන්‍යය ගණනය කළ විට එය තොරතුරක් වේ.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: දත්ත සහ තොරතුරු සම්බන්ධ වැඩ වලදී data representation, accuracy, සහ consistency පදනම් කරගෙන සැලසුම් කිරීම වැදගත්ය.
+- ප්‍රායෝගික භාවිතය: sample datasets/queries/examples භාවිතා කර output verify කිරීමෙන් concept correctness ඉක්මනින් තහවුරු කළ හැක.
+- සම්බන්ධ උපමාතෘකා: indexing/search, data validation, scalability, සහ performance tuning.
+- හොඳ පුරුදු: input constraints, edge cases, සහ failure handling කලින් සැලසුම් කිරීමෙන් production issues අඩු වේ.

@@ -35,6 +35,18 @@ REFUSAL_PATTERNS: tuple[str, ...] = (
     "insufficient information in the context",
 )
 
+PROMPT_LEAK_PATTERNS: tuple[str, ...] = (
+    "user question",
+    "context:",
+    "[json",
+    "[text",
+    "උපරිම අක්ෂර",
+    "පිළිතුර අනිවාර්යයෙන්",
+    "පළමු වාක්‍ය",
+    "දෙවන වාක්‍ය",
+    "සිංහලෙන් පමණක්",
+)
+
 QUERY_NOISE_TOKENS: set[str] = {
     "කියන්නේ",
     "මොකක්ද",
@@ -54,6 +66,15 @@ QUERY_ALIASES: dict[str, str] = {
     "ai": "artificial intelligence",
     "ml": "machine learning",
 }
+
+MODEL_FAMILIES: tuple[str, str, str] = ("gemma", "llama", "mistral")
+
+DIRECT_JSON_SCORE_THRESHOLD = 0.58
+DIRECT_JSON_FOCUS_WEIGHT = 0.05
+DIRECT_JSON_MIN_FOCUS = 1.2
+MIN_BRIEF_SENTENCES = 3
+MAX_BRIEF_SENTENCES = 6
+MAX_BRIEF_CHARS = 1200
 
 
 @st.cache_data(show_spinner=False)
@@ -312,7 +333,86 @@ def build_grounded_backup_answer(result: HybridResult) -> str:
     if not parts:
         return FALLBACK_ANSWER
 
-    return clean_answer_text("\n\n".join(parts))
+    return make_brief_answer(clean_answer_text("\n\n".join(parts)), focused)
+
+
+def _split_sentences(text: str) -> list[str]:
+    """Split Sinhala/English text into simple sentence units."""
+    normalized = re.sub(r"\s+", " ", text.replace("\n", " ")).strip()
+    if not normalized:
+        return []
+
+    # Sinhala output usually ends with . ! ? even when mixed with English terms.
+    sentences = [part.strip() for part in re.split(r"(?<=[.!?])\s+", normalized) if part.strip()]
+    return sentences if sentences else [normalized]
+
+
+def _candidate_explanatory_sentences(result: HybridResult | None) -> list[str]:
+    """Collect candidate explanatory sentences from retrieval evidence."""
+    if result is None:
+        return []
+
+    candidate_blocks: list[str] = []
+    candidate_blocks.extend(hit.content for hit in result.text_hits[:2])
+    candidate_blocks.extend(hit.content for hit in result.json_hits[:2])
+
+    sentences: list[str] = []
+    fingerprints: list[str] = []
+    for block in candidate_blocks:
+        for sentence in _split_sentences(block):
+            key = _fingerprint_text(sentence)
+            if len(key) < 10 or not _is_distinct_piece(key, fingerprints):
+                continue
+            sentences.append(sentence)
+            fingerprints.append(key)
+
+    return sentences
+
+
+def make_brief_answer(answer: str, result: HybridResult | None = None) -> str:
+    """Constrain answers to short, readable responses."""
+    if answer.strip() == FALLBACK_ANSWER:
+        return FALLBACK_ANSWER
+
+    cleaned = clean_answer_text(answer)
+    sentences = _split_sentences(cleaned)
+    if not sentences:
+        return cleaned
+
+    if len(sentences) < MIN_BRIEF_SENTENCES:
+        existing_fingerprints = [_fingerprint_text(sentence) for sentence in sentences if sentence.strip()]
+        for candidate in _candidate_explanatory_sentences(result):
+            key = _fingerprint_text(candidate)
+            if len(key) < 10 or not _is_distinct_piece(key, existing_fingerprints):
+                continue
+            sentences.append(candidate)
+            existing_fingerprints.append(key)
+            if len(sentences) >= MIN_BRIEF_SENTENCES:
+                break
+
+    brief = " ".join(sentences[:MAX_BRIEF_SENTENCES]).strip()
+    if len(brief) <= MAX_BRIEF_CHARS:
+        return brief
+
+    trimmed = brief[:MAX_BRIEF_CHARS].rsplit(" ", 1)[0].strip()
+    if not trimmed:
+        trimmed = brief[:MAX_BRIEF_CHARS].strip()
+    if trimmed and trimmed[-1] not in ".!?":
+        trimmed += "."
+    return trimmed
+
+
+def build_direct_topic_answer(result: HybridResult) -> str | None:
+    """Return concise top-topic answer when JSON retrieval is highly confident."""
+    if not result.json_hits:
+        return None
+
+    top_json = result.json_hits[0]
+    if top_json.score < DIRECT_JSON_SCORE_THRESHOLD:
+        return None
+
+    concise = make_brief_answer(top_json.content, result)
+    return concise if concise else None
 
 
 def _normalize_text_for_match(text: str) -> str:
@@ -329,6 +429,44 @@ def _query_tokens(question: str) -> list[str]:
     normalized = _normalize_text_for_match(question)
     tokens = [token for token in normalized.split() if len(token) >= 2 and token not in QUERY_NOISE_TOKENS]
     return tokens
+
+
+def _query_focus_score(tokens: list[str], evidence_text: str) -> float:
+    """Score how strongly the query focuses on a specific evidence text."""
+    if not tokens:
+        return 0.0
+
+    evidence = _normalize_text_for_match(evidence_text)
+    score = 0.0
+    for token in tokens:
+        if token not in evidence:
+            continue
+        if re.search(r"[a-z]", token):
+            score += 1.4
+        elif len(token) >= 5:
+            score += 1.0
+        else:
+            score += 0.6
+    return score
+
+
+def _rerank_json_hits(question: str, json_hits: list) -> list:
+    """Re-rank JSON hits by retrieval score plus query-focus evidence."""
+    if not json_hits:
+        return []
+
+    tokens = _query_tokens(question)
+    if not tokens or len(json_hits) == 1:
+        return list(json_hits)
+
+    scored_hits: list[tuple[float, object]] = []
+    for rank, hit in enumerate(json_hits):
+        focus = _query_focus_score(tokens, f"{hit.topic} {hit.content}")
+        hybrid_score = hit.score + (focus * DIRECT_JSON_FOCUS_WEIGHT) - (0.01 * rank)
+        scored_hits.append((hybrid_score, hit))
+
+    scored_hits.sort(key=lambda item: item[0], reverse=True)
+    return [hit for _, hit in scored_hits]
 
 
 def _compose_context(json_hits: list, text_hits: list) -> str:
@@ -350,23 +488,57 @@ def _compose_context(json_hits: list, text_hits: list) -> str:
     return "\n".join(context_parts).strip()
 
 
-def narrow_result_to_primary_topic(result: HybridResult) -> HybridResult:
+def narrow_result_to_primary_topic(result: HybridResult, question: str = "") -> HybridResult:
     """Keep only the dominant topic to avoid mixed-topic responses."""
+    json_hits = _rerank_json_hits(question, result.json_hits) if question else list(result.json_hits)
+
     topic_scores: dict[str, float] = {}
-    for hit in result.json_hits:
+    for hit in json_hits:
         topic_scores[hit.topic] = topic_scores.get(hit.topic, 0.0) + hit.score
     for hit in result.text_hits:
         topic_scores[hit.topic] = topic_scores.get(hit.topic, 0.0) + hit.score
 
     if len(topic_scores) <= 1:
+        if question:
+            context = _compose_context(json_hits, result.text_hits)
+            return HybridResult(context=context, json_hits=json_hits, text_hits=result.text_hits)
         return result
 
-    primary_topic = max(topic_scores.items(), key=lambda item: item[1])[0]
-    json_hits = [hit for hit in result.json_hits if hit.topic == primary_topic][:2]
+    if question and json_hits:
+        primary_topic = json_hits[0].topic
+    else:
+        primary_topic = max(topic_scores.items(), key=lambda item: item[1])[0]
+
+    json_hits = [hit for hit in json_hits if hit.topic == primary_topic][:2]
     text_hits = [hit for hit in result.text_hits if hit.topic == primary_topic][:3]
 
     context = _compose_context(json_hits, text_hits)
     return HybridResult(context=context, json_hits=json_hits, text_hits=text_hits)
+
+
+def is_direct_answer_safe(question: str, result: HybridResult) -> bool:
+    """Check whether direct JSON answering is aligned with the user query."""
+    if not result.json_hits:
+        return False
+
+    top_json = result.json_hits[0]
+    if top_json.score < DIRECT_JSON_SCORE_THRESHOLD:
+        return False
+
+    tokens = _query_tokens(question)
+    if not tokens:
+        return top_json.score >= 0.60
+
+    top_focus = _query_focus_score(tokens, f"{top_json.topic} {top_json.content}")
+    if top_focus >= DIRECT_JSON_MIN_FOCUS:
+        return True
+
+    if len(result.json_hits) == 1:
+        return top_json.score >= 0.72
+
+    runner_up = result.json_hits[1]
+    runner_up_focus = _query_focus_score(tokens, f"{runner_up.topic} {runner_up.content}")
+    return top_focus > runner_up_focus and top_json.score >= 0.68
 
 
 def is_retrieval_relevant(question: str, result: HybridResult) -> bool:
@@ -378,12 +550,12 @@ def is_retrieval_relevant(question: str, result: HybridResult) -> bool:
     top_text = result.text_hits[0].score if result.text_hits else 0.0
     top_score = max(top_json, top_text)
 
-    if top_score >= 0.82:
+    if top_score >= 0.72:
         return True
 
     tokens = _query_tokens(question)
     if not tokens:
-        return top_score >= 0.72
+        return top_score >= 0.62
 
     evidence_parts: list[str] = []
     evidence_parts.extend(hit.topic for hit in result.json_hits)
@@ -395,9 +567,9 @@ def is_retrieval_relevant(question: str, result: HybridResult) -> bool:
     match_count = sum(1 for token in tokens if token in evidence)
     coverage = match_count / max(1, len(tokens))
 
-    if coverage >= 0.50 and top_score >= 0.35:
+    if coverage >= 0.42 and top_score >= 0.30:
         return True
-    if coverage >= 0.34 and top_score >= 0.48:
+    if coverage >= 0.30 and top_score >= 0.40:
         return True
     return False
 
@@ -436,6 +608,13 @@ def clean_answer_text(answer: str) -> str:
                 cleaned_lines.append("")
             continue
 
+        # Strip common markdown formatting leaks before de-duplication.
+        line = re.sub(r"^#{1,6}\s*", "", line)
+        line = re.sub(r"^\s*(?:[-*•]+|\d+[.)])\s+", "", line)
+        line = line.replace("**", "").replace("__", "").strip('"“”')
+        if not line:
+            continue
+
         key = _fingerprint_text(line)
         if len(key) >= 10 and not _is_distinct_piece(key, fingerprints):
             continue
@@ -448,6 +627,46 @@ def clean_answer_text(answer: str) -> str:
     return cleaned or answer.strip()
 
 
+def remove_question_echo(answer: str, question: str) -> str:
+    """Drop leading sentences that mostly restate the user question."""
+    # Remove exact question echo prefix if model starts by repeating the query.
+    answer = answer.strip()
+    question = question.strip().strip('"“”')
+    if question:
+        escaped_question = re.escape(question)
+        answer = re.sub(
+            rf'^\s*["“”]?\s*{escaped_question}\s*[?.,:;\-]*\s*',
+            "",
+            answer,
+            count=1,
+            flags=re.IGNORECASE,
+        ).strip()
+
+    sentences = _split_sentences(answer)
+    if not sentences:
+        return answer
+
+    q_tokens = _query_tokens(question)
+    if not q_tokens:
+        return answer
+
+    kept: list[str] = []
+    for sentence in sentences:
+        sentence_norm = _normalize_text_for_match(sentence)
+        if not sentence_norm:
+            continue
+
+        overlap = sum(1 for token in q_tokens if token in sentence_norm)
+        ratio = overlap / max(1, len(q_tokens))
+
+        # Skip sentence if it mostly echoes the question and adds little information.
+        if ratio >= 0.72 and len(sentence_norm.split()) <= max(8, len(q_tokens) + 3):
+            continue
+        kept.append(sentence)
+
+    return " ".join(kept).strip() if kept else answer
+
+
 def is_weak_fallback(answer: str) -> bool:
     """Detect model outputs that effectively collapse to fallback text."""
     normalized = answer.replace('"', "").strip()
@@ -458,7 +677,67 @@ def is_weak_fallback(answer: str) -> bool:
         return True
     if any(pattern in lowered for pattern in REFUSAL_PATTERNS):
         return True
+    if any(pattern in lowered for pattern in PROMPT_LEAK_PATTERNS):
+        return True
+
+    # Reject heavy repetition that often appears in malformed generations.
+    if re.search(r"(\b\S+\b)(?:\s+\1){3,}", lowered):
+        return True
+
+    # Reject answers containing too many instruction-like quotes.
+    if normalized.count('"') >= 2 and len(normalized) < 420:
+        return True
+
     return False
+
+
+def is_low_quality_answer(answer: str, result: HybridResult) -> bool:
+    """Detect malformed or weakly grounded answers that should be replaced."""
+    normalized = _normalize_text_for_match(answer)
+    if len(normalized) < 18:
+        return True
+
+    # Reject markdown-style heading/list formatting in final answer text.
+    if re.search(r"(^|\n)\s*(#{1,6}\s+|[-*]\s+|\d+\.\s+)", answer):
+        return True
+
+    # Reject noisy quoted fragments that usually indicate prompt leakage.
+    quote_count = answer.count('"') + answer.count("“") + answer.count("”")
+    if quote_count >= 4:
+        return True
+
+    # Penalize answers with too much repetition.
+    if re.search(r"(\b\S+\b)(?:\s+\1){3,}", normalized):
+        return True
+
+    sentences = _split_sentences(answer)
+    if len(sentences) < 2 and len(normalized) < 60:
+        return True
+
+    tokens = [token for token in normalized.split() if len(token) >= 2 and token not in QUERY_NOISE_TOKENS]
+    if not tokens:
+        return True
+
+    # Reject low-diversity text where few tokens are repeated excessively.
+    token_counts: dict[str, int] = {}
+    for token in tokens:
+        token_counts[token] = token_counts.get(token, 0) + 1
+    if len(tokens) >= 16:
+        unique_ratio = len(token_counts) / len(tokens)
+        max_token_ratio = max(token_counts.values()) / len(tokens)
+        if unique_ratio < 0.42 or max_token_ratio > 0.20:
+            return True
+
+    evidence_parts: list[str] = []
+    evidence_parts.extend(hit.topic for hit in result.json_hits)
+    evidence_parts.extend(hit.content for hit in result.json_hits[:2])
+    evidence_parts.extend(hit.topic for hit in result.text_hits)
+    evidence_parts.extend(hit.content for hit in result.text_hits[:2])
+    evidence = _normalize_text_for_match(" ".join(evidence_parts))
+
+    overlap = sum(1 for token in tokens if token in evidence)
+    coverage = overlap / max(1, len(tokens))
+    return coverage < 0.23
 
 
 def find_cached_answer(chat_log: list[dict[str, str]], question: str) -> str | None:
@@ -466,6 +745,73 @@ def find_cached_answer(chat_log: list[dict[str, str]], question: str) -> str | N
     _ = chat_log
     _ = question
     return None
+
+
+def build_generation_model_preferences(selected_model: str) -> list[str]:
+    """Build preferred model list with stable default to Gemma."""
+    requested = selected_model.strip()
+    ordered = [requested] if requested else []
+
+    # Keep generation stable by defaulting to Gemma first.
+    if not any(name.lower().startswith("gemma") for name in ordered):
+        ordered.append("gemma")
+
+    deduped: list[str] = []
+    seen: set[str] = set()
+    for name in ordered:
+        key = name.lower().strip()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        deduped.append(name.strip())
+    return deduped
+
+
+def get_installed_models_safe(client: OllamaClient) -> list[str]:
+    """Return installed model names with compatibility fallbacks."""
+    try:
+        list_models = getattr(client, "list_models", None)
+        if callable(list_models):
+            models = list_models()
+            if isinstance(models, list):
+                return [str(model).strip() for model in models if str(model).strip()]
+    except Exception:
+        pass
+
+    try:
+        tags_fn = getattr(client, "_tags", None)
+        if callable(tags_fn):
+            tags = tags_fn() or {}
+            raw = tags.get("models", []) if isinstance(tags, dict) else []
+            models: list[str] = []
+            for item in raw:
+                if isinstance(item, dict) and item.get("name"):
+                    models.append(str(item["name"]).strip())
+            return [model for model in models if model]
+    except Exception:
+        pass
+
+    return []
+
+
+def generate_answer_with_available_client(
+    client: OllamaClient,
+    prompt: str,
+    selected_model: str,
+) -> tuple[str, str, list[str]]:
+    """Generate answer using multi-model API when available, else single-model fallback."""
+    generate_multi = getattr(client, "generate_multi", None)
+    if callable(generate_multi):
+        answer, used_model, tried_models = generate_multi(
+            prompt=prompt,
+            preferred_models=build_generation_model_preferences(selected_model),
+        )
+        return answer, used_model, tried_models
+
+    # Backward compatibility for older OllamaClient implementations.
+    model = selected_model.strip() or "gemma"
+    answer = client.generate(prompt=prompt, model=model)
+    return answer, model, [model]
 
 
 st.set_page_config(
@@ -911,6 +1257,7 @@ st.markdown(
 
 retriever = get_retriever(build_data_signature())
 ollama_client = get_ollama()
+installed_models = get_installed_models_safe(ollama_client)
 
 st.markdown('<div class="sri-header-settings-popover-wrap">', unsafe_allow_html=True)
 with st.popover("⚙", use_container_width=False):
@@ -918,6 +1265,15 @@ with st.popover("⚙", use_container_width=False):
         st.write(f"Ollama Running: {ollama_client.is_available()}")
         st.write(f"JSON Topics: {len(retriever.json_retriever.entries)}")
         st.write(f"Text Chunks: {len(retriever.text_retriever.chunks)}")
+        st.write(f"Installed Models: {', '.join(installed_models) if installed_models else 'none'}")
+        family_status = {
+            family: any(model.lower().startswith(family) for model in installed_models)
+            for family in MODEL_FAMILIES
+        }
+        st.write(
+            "Model Families (gemma/llama/mistral): "
+            + ", ".join(f"{key}={'yes' if value else 'no'}" for key, value in family_status.items())
+        )
         st.text_input("Ollama Model", key="model_name")
 st.markdown("</div>", unsafe_allow_html=True)
 
@@ -963,6 +1319,9 @@ for item in st.session_state.chat_log:
 if user_input := st.chat_input("ඔබේ ප්‍රශ්නය සිංහලෙන් ටයිප් කරන්න..."):
     user_text = user_input.strip()
     cached_answer = find_cached_answer(st.session_state.chat_log, user_text)
+    used_generation_model = ""
+    tried_generation_models: list[str] = []
+    result: HybridResult | None = None
 
     st.session_state.chat_log.append({"role": "user", "content": user_text})
     st.session_state.memory.add("user", user_text)
@@ -972,27 +1331,48 @@ if user_input := st.chat_input("ඔබේ ප්‍රශ්නය සිංහ�
 
     with st.spinner("සෙවීම සහ පිළිතුරු සකසමින්..."):
         if cached_answer is not None:
-            answer = cached_answer
+            answer = make_brief_answer(cached_answer)
         else:
-            result = narrow_result_to_primary_topic(retriever.retrieve(user_text))
+            result = narrow_result_to_primary_topic(retriever.retrieve(user_text), question=user_text)
             if not result.context or not is_retrieval_relevant(user_text, result):
                 answer = FALLBACK_ANSWER
             else:
-                prompt = build_prompt(context=result.context, question=user_text)
-                try:
-                    answer = ollama_client.generate(prompt=prompt, model=st.session_state.model_name.strip() or "gemma")
-                except RuntimeError:
-                    answer = FALLBACK_ANSWER
+                direct_answer = None
+                if is_direct_answer_safe(user_text, result):
+                    direct_answer = build_direct_topic_answer(result)
+
+                if direct_answer:
+                    answer = direct_answer
+                else:
+                    prompt = build_prompt(context=result.context, question=user_text)
+                    try:
+                        answer, used_generation_model, tried_generation_models = generate_answer_with_available_client(
+                            client=ollama_client,
+                            prompt=prompt,
+                            selected_model=st.session_state.model_name,
+                        )
+                    except RuntimeError:
+                        answer = FALLBACK_ANSWER
 
                 if is_weak_fallback(answer):
                     answer = build_grounded_backup_answer(result)
+                elif is_low_quality_answer(answer, result):
+                    answer = build_grounded_backup_answer(result)
 
-            answer = clean_answer_text(answer)
+            answer = remove_question_echo(answer, user_text)
+            answer = make_brief_answer(answer, result)
+            if result is not None and (is_weak_fallback(answer) or is_low_quality_answer(answer, result)):
+                answer = make_brief_answer(build_grounded_backup_answer(result), result)
 
     render_chat_message("assistant", answer)
 
     if cached_answer is None:
         with st.expander("Retrieved Context"):
+            if used_generation_model:
+                st.markdown(f"**Generation Model:** {used_generation_model}")
+            if tried_generation_models:
+                st.markdown(f"**Models Used:** {', '.join(tried_generation_models)}")
+
             if result.json_hits:
                 st.markdown("**JSON Retrieval (Top 2):**")
                 for idx, hit in enumerate(result.json_hits, start=1):

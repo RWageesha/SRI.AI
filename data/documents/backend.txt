@@ -5,3 +5,9 @@ Backend යනු application එකේ server-side logic, database interaction 
 Backend frameworks සහ languages භාවිතා කර APIs, authentication, validation සහ data processing ක්‍රියාත්මක කරයි. Database සමඟ සම්බන්ධ වෙමින් නිවැරදි දත්ත ගනුදෙනු පවත්වා ගනී.
 
 Performance, security සහ scalability backend design එකේ ප්‍රධාන අංග වේ. Logging, monitoring සහ error handling නිවැරදිව තිබීම production reliability වැඩි කරයි.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: Backend ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.
+- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.
+- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.
+- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක.

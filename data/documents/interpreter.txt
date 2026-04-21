@@ -5,3 +5,9 @@ Interpreter යනු source code එක line-by-line ලෙස කියවා 
 Error එකක් තිබේ නම් එය ඇති line එකටම අදාළව ඉක්මනින් දැනගත හැක. එබැවින් learning සහ rapid prototyping සඳහා interpreters ප්‍රයෝජනවත් වේ.
 
 Python සහ JavaScript වැනි භාෂා interpreter-based execution වලට උදාහරණ වේ. Runtime performance compiled code වලට වඩා වෙනස් විය හැක.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: Interpreter ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න.
+- ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ.
+- සම්බන්ධ උපමාතෘකා: code quality, naming conventions, version control, documentation, සහ refactoring.
+- හොඳ පුරුදු: commit discipline, automated tests, සහ code review පුරුදු කර ගත්තොත් errors අඩු කර maintainability වැඩි කරගත හැක.

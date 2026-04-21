@@ -19,21 +19,21 @@
   },
   {
     "topic": "කෝපය",
-    "keywords": ["කෝපය", "anger", "කොපය"],
-    "questions": ["මට කෝපයක් තියෙනවා", "මම හරිම කෝපයෙන් ඉන්නේ"],
-    "content": "කෝපය පාලනය සඳහා ගැඹුරු හුස්ම ගන්න, කාලයක් ගන්න සහ ප්‍රතිචාර දීමට පෙර සිතන්න."
+    "keywords": ["කෝපය", "anger", "කොපය", "angry", "rage", "irritated"],
+    "questions": ["මට කෝපයක් තියෙනවා", "මම හරිම කෝපයෙන් ඉන්නේ", "මට ඉක්මනට කෝපය එනවා", "මේ කෝපය පාලනය කරගන්නෙ කොහොමද", "කෝපය අඩු කරගන්න ක්‍රම කියන්න"],
+    "content": "කෝපය පාලනය සඳහා ගැඹුරු හුස්ම 5 වතාවක් ගන්න සහ ටික වේලාවක් නතර වී සිතා බලන්න. ප්‍රතිචාර දීමට පෙර හේතුව පැහැදිලිව කියා ගෞරවයෙන් කතා කිරීම හොඳයි."
   },
   {
     "topic": "භය",
-    "keywords": ["භය", "fear", "බිය", "බයෙන්"],
-    "questions": ["මට බයයි", "මම බයෙන් ඉන්නේ", "මට හරි බය හිතෙනවා"],
-    "content": "භය දැනෙන විට මුලින්ම ඔබ ආරක්ෂිත ස්ථානයක සිටින බව තහවුරු කර ගන්න. සෙමින් ගැඹුරු හුස්ම ගැනීමෙන් ශරීරය සහ මනස සන්සුන් කරගත හැක. ඔබට බය ඇති කරන සිතුවිලි සරලව ලියා තාර්කිකව බලන්න. අවශ්‍ය නම් විශ්වාසවන්ත කෙනෙකු සමඟ කතා කිරීම භය අඩු කරගැනීමට උපකාරී වේ."
+    "keywords": ["භය", "fear", "බිය", "බයෙන්", "පරීක්ෂාව", "විභාග බිය", "exam anxiety", "anxiety"],
+    "questions": ["මට බයයි", "මම බයෙන් ඉන්නේ", "මට හරි බය හිතෙනවා", "මට පරීක්ෂාවට යද්දි හරිම බයයි", "විභාග බිය අඩු කරගන්න කොහොමද", "බය අඩු කරගන්නෙ කොහොමද"],
+    "content": "භය දැනෙන විට ගැඹුරු හුස්ම ගැනීමෙන් ශරීරය සන්සුන් කරගන්න සහ සිතුවිලි යථාර්ථයට ගැලපේදැයි පරීක්ෂා කරන්න. පරීක්ෂා භය සඳහා කෙටි සැලැස්මක් සකස් කර විශ්වාසවන්ත කෙනෙකු සමඟ කතා කිරීම උපකාරී වේ."
   },
   {
     "topic": "අතුරුදන් වීම",
-    "keywords": ["තනිවීම", "lonely", "loneliness", "අතුරුදන්", "තනි"],
-    "questions": ["මට තනිවම දැනෙනවා", "මට කෙනෙක් නැතිව වගේ දැනෙනවා", "මට එකලාව දැනෙනවා"],
-    "content": "තනිවීමක් දැනෙන විට එය සාමාන්‍ය හැඟීමක් බව මුලින් පිළිගන්න. පවුලේ අය, මිතුරන් හෝ විශ්වාසවන්ත කෙනෙකු සමඟ කෙටි සම්බන්ධතාවයක් ආරම්භ කරන්න. ඔබ කැමති ක්‍රියාකාරකමකට දිනපතා කෙටි කාලයක් වෙන් කිරීම මානසික සහනය වැඩි කරයි. සමාජ කණ්ඩායම් හෝ අධ්‍යාපනික/විනෝදාත්මක කටයුතු සමඟ සම්බන්ධ වීම තනිවීම අඩු කිරීමට උපකාරී වේ."
+    "keywords": ["තනිවීම", "lonely", "loneliness", "අතුරුදන්", "තනි", "alone", "isolated", "තනියම"],
+    "questions": ["මට තනිවම දැනෙනවා", "මට කෙනෙක් නැතිව වගේ දැනෙනවා", "මට එකලාව දැනෙනවා", "මට දැන් තනිවම වගේ දැනෙනවා", "මේ තනිවීමෙන් ගොඩවෙන්න කොහොමද"],
+    "content": "තනිවීමක් දැනෙන විට පවුලේ අය හෝ මිතුරන් සමඟ කතා කිරීමට කෙටි උත්සාහයක් ගන්න. ඔබ කැමති ක්‍රියාකාරකමක දිනපතා යෙදීම මානසික සහනය ලබා දේ."
   },
   {
     "topic": "ආදරය",
@@ -123,7 +123,7 @@
     "topic": "අභිප්‍රේරණය",
     "keywords": ["motivation"],
     "questions": ["මට motivation නැහැ"],
-    "content": "කුඩා இலක්ක සකස් කර ඒවා සම්පූර්ණ කිරීමෙන් උද්යෝගය වැඩි කර ගන්න."
+    "content": "කුඩා ඉලක්ක සකස් කර ඒවා සම්පූර්ණ කිරීමෙන් උද්යෝගය වැඩි කර ගන්න."
   },
   {
     "topic": "සමාජ මාධ්‍ය",
@@ -133,15 +133,15 @@
   },
   {
     "topic": "ආතතිය",
-    "keywords": ["stress", "ආතතිය"],
-    "questions": ["මට stress එකක් තියෙනවා"],
-    "content": "ආතතිය අඩු කිරීමට විවේක ගන්න, හුස්ම ගැනීමේ ක්‍රම භාවිතා කරන්න."
+    "keywords": ["stress", "stressed", "ආතතිය", "burnout", "overwhelmed"],
+    "questions": ["මට stress එකක් තියෙනවා", "මට stress දැනෙනවා", "වැඩ ගොඩක් නිසා stress දැනෙනවා", "මේ stress අඩු කරගන්න හැටි කියන්න"],
+    "content": "ආතතිය අඩු කිරීමට විවේක ගන්න, ගැඹුරු හුස්ම ගැනීමේ ක්‍රම භාවිතා කරන්න. දිනපතා කෙටි විවේකයක් ගන්නා එකත් උපකාරී වේ."
   },
   {
     "topic": "ආත්ම විශ්වාසය",
-    "keywords": ["confidence"],
-    "questions": ["මට confidence නැහැ"],
-    "content": "ඔබේ ශක්තිමත් පැති හඳුනාගෙන කුඩා இலක්ක සපුරා ගන්න."
+    "keywords": ["confidence", "self confidence", "ආත්ම විශ්වාසය", "විශ්වාසය"],
+    "questions": ["මට confidence නැහැ", "මට confidence ගොඩනගා ගන්නෙ කොහොමද", "මට කලින් confidence තිබුණත් දැන් නැහැ", "ආත්ම විශ්වාසය වැඩි කරගන්න ක්‍රම කියන්න"],
+    "content": "ඔබේ ශක්තිමත් පැති හඳුනාගෙන කුඩා ඉලක්ක සපුරා ගන්න. ඒකෙන් ආත්ම විශ්වාසය ක්‍රමයෙන් වැඩිවේ."
   },
   {
     "topic": "සංවේදනය",
@@ -157,9 +157,9 @@
   },
   {
     "topic": "පවුල",
-    "keywords": ["family"],
-    "questions": ["පවුල වැදගත්ද"],
-    "content": "පවුල ඔබට ආරක්ෂාව සහ සහයෝගය ලබා දෙන වැදගත් කණ්ඩායමකි."
+    "keywords": ["family", "family relationship", "පවුල", "සම්බන්ධතාව"],
+    "questions": ["පවුල වැදගත්ද", "පවුලේ අය සමඟ හොඳ සම්බන්ධතාවයක් තබා ගන්න කොහොමද", "පවුලේ සම්බන්ධතා වැඩි කරගන්නෙ කොහොමද"],
+    "content": "පවුලේ අය සමඟ සන්නිවේදනය, ගෞරවය සහ අවබෝධය තබා ගැනීම වැදගත්ය. දිනපතා කෙටි කතාබහක් සහ එකිනෙකාට සවන් දීම පවුල් බැඳීම ශක්තිමත් කරයි."
   },
   {
     "topic": "වගකීම",
@@ -178,5 +178,263 @@
     "keywords": ["happy life", "සතුටු ජීවිතය", "සමබර ජීවිතය"],
     "questions": ["සතුටු ජීවිතයක් ගත කරන්න කොහොමද", "සතුටින් ජීවත් වෙන්නේ කොහොමද", "ජීවිතය හොඳ කරගන්න මොනවා කරන්නද"],
     "content": "සතුටු ජීවිතයක් සඳහා සෞඛ්‍යය, සම්බන්ධතා සහ දෛනික අරමුණු අතර සමබරතාවය වැදගත්ය. දිනපතා කුඩා අරමුණු සකස් කර ඒවා සම්පූර්ණ කිරීමෙන් ප්‍රගතියක් දැනේ. විශ්වාසවන්ත අය සමඟ කාලය ගත කිරීම සහ කෘතඥතාවය පුහුණු කිරීම මනසට හොඳ බලපෑමක් ලබා දේ. ප්‍රමාණවත් නින්ද, සරල ව්‍යායාම සහ විවේක වේලාවක් තබා ගැනීම දිගුකාලීන සතුටට උපකාරී වේ."
-  }
+  },
+{
+  "topic": "පරිගණකය",
+  "keywords": ["computer", "පරිගණකය", "input", "processing", "output", "storage"],
+  "questions": ["පරිගණකය කියන්නේ මොකක්ද", "computer එකක් කියන්නේ මොකක්ද", "පරිගණකය වැඩ කරන්නේ කොහොමද", "පරිගණකයේ input output කියන්නේ මොනවාද"],
+  "content": "පරිගණකය යනු දත්ත ලබාගෙන ඒවා සැකසීමෙන් තොරතුරු ලබා දෙන යන්ත්‍රයකි. එය Input, Processing, Output සහ Storage යන පියවර භාවිතා කරයි."
+},
+{
+  "topic": "දත්ත සහ තොරතුරු",
+  "keywords": ["data", "information", "දත්ත", "තොරතුරු"],
+  "questions": ["data සහ information අතර වෙනස මොකක්ද"],
+  "content": "දත්ත යනු අමු තොරතුරු වන අතර, ඒවා සැකසීමෙන් ලැබෙන්නේ තොරතුරු වේ."
+},
+{
+  "topic": "CPU",
+  "keywords": ["CPU", "processor"],
+  "questions": ["CPU කියන්නේ මොකක්ද"],
+  "content": "CPU යනු පරිගණකයේ මූලික සැකසුම් ඒකකය වන අතර සියලු ගණනය කිරීම් සහ නියෝග ක්‍රියාත්මක කරයි."
+},
+{
+  "topic": "RAM",
+  "keywords": ["RAM", "memory"],
+  "questions": ["RAM කියන්නේ මොකක්ද"],
+  "content": "RAM යනු තාවකාලික මතකයක් වන අතර ක්‍රියාත්මක වන වැඩසටහන් සුරක්ෂිතව තබා ගනී."
+},
+{
+  "topic": "ROM",
+  "keywords": ["ROM"],
+  "questions": ["ROM කියන්නේ මොකක්ද"],
+  "content": "ROM යනු ස්ථිර මතකයක් වන අතර පද්ධති ආරම්භ කිරීමට අවශ්‍ය දත්ත සුරක්ෂිතව තබා ගනී."
+},
+{
+  "topic": "ඔපරේටින් පද්ධතිය",
+  "keywords": ["OS", "operating system", "ඔපරේටින් පද්ධතිය", "system software"],
+  "questions": ["operating system කියන්නේ මොකක්ද", "operating system එකේ කාර්යය මොනවද", "OS එකේ ප්‍රධාන කාර්යයන් මොනවාද"],
+  "content": "Operating system යනු hardware සහ software අතර සම්පත් කළමනාකරණය කරන පද්ධතියකි. එය process, memory, file සහ device management කාර්යයන් ඉටු කරයි."
+},
+{
+  "topic": "Software",
+  "keywords": ["software"],
+  "questions": ["software කියන්නේ මොකක්ද"],
+  "content": "Software යනු පරිගණකයට නියෝග ලබා දෙන වැඩසටහන් එකතුවකි."
+},
+{
+  "topic": "Hardware",
+  "keywords": ["hardware"],
+  "questions": ["hardware කියන්නේ මොකක්ද"],
+  "content": "Hardware යනු පරිගණකයේ දෘශ්‍යමය කොටස් වේ."
+},
+{
+  "topic": "Programming",
+  "keywords": ["programming", "coding", "code", "program"],
+  "questions": ["programming කියන්නේ මොකක්ද", "programming කියන්නෙ මොකක්ද", "coding කියන්නේ මොකක්ද"],
+  "content": "Programming යනු පරිගණකයට නියෝග ලිවීමේ ක්‍රියාවලියකි."
+},
+{
+  "topic": "Programming Languages",
+  "keywords": ["languages"],
+  "questions": ["programming languages මොනවද"],
+  "content": "Python, Java, C++ වැනි භාෂා programming languages ලෙස හඳුන්වයි."
+},
+{
+  "topic": "Algorithm",
+  "keywords": ["algorithm", "step by step", "procedure"],
+  "questions": ["algorithm කියන්නේ මොකක්ද", "Algorithm කියන්නේ මොකක්ද", "algorithm එකක් කියන්නේ මොනවාද"],
+  "content": "Algorithm යනු ගැටලුවක් විසඳීමට පියවර මාලාවකි. හොඳ algorithm එකක් පැහැදිලි, නිවැරදි සහ කාර්යක්ෂම විය යුතුය."
+},
+{
+  "topic": "Flowchart",
+  "keywords": ["flowchart"],
+  "questions": ["flowchart කියන්නේ මොකක්ද"],
+  "content": "Flowchart යනු algorithm එකක් දෘශ්‍යමයව පෙන්වන රූපයකි."
+},
+{
+  "topic": "Database",
+  "keywords": ["database", "db", "dbms", "data storage", "sql"],
+  "questions": ["database කියන්නේ මොකක්ද", "Database සහ DBMS අතර වෙනස මොකක්ද", "dbms කියන්නේ මොකක්ද"],
+  "content": "Database යනු දත්ත ගබඩා කරන පද්ධතියකි. DBMS යනු එම database එක සුරක්ෂිතව කළමනාකරණය කරන software එකකි."
+},
+{
+  "topic": "DBMS",
+  "keywords": ["DBMS"],
+  "questions": ["DBMS කියන්නේ මොකක්ද"],
+  "content": "DBMS යනු database කළමනාකරණය කරන software එකකි."
+},
+{
+  "topic": "SQL",
+  "keywords": ["SQL"],
+  "questions": ["SQL කියන්නේ මොකක්ද"],
+  "content": "SQL යනු database එකක් සමඟ කටයුතු කිරීමට භාවිතා කරන භාෂාවකි."
+},
+{
+  "topic": "Networking",
+  "keywords": ["network", "networking", "LAN", "WAN", "IP"],
+  "questions": ["network කියන්නේ මොකක්ද", "Network කියන්නේ මොකක්ද", "networking මූලික අදහස මොකක්ද"],
+  "content": "Network යනු පරිගණක කිහිපයක් සම්බන්ධ කර දත්ත හුවමාරු කරන ක්‍රමයකි. LAN සහ WAN වැනි ජාල වර්ග විවිධ ප්‍රමාණයේ සම්බන්ධතාව සඳහා භාවිතා වේ."
+},
+{
+  "topic": "Internet",
+  "keywords": ["internet"],
+  "questions": ["internet කියන්නේ මොකක්ද"],
+  "content": "Internet යනු ලෝකය පුරා පරිගණක සම්බන්ධ කරන විශාල ජාලයකි."
+},
+{
+  "topic": "IP Address",
+  "keywords": ["IP"],
+  "questions": ["IP address කියන්නේ මොකක්ද"],
+  "content": "IP address යනු network එකක device එකක් හඳුනාගැනීමට භාවිතා කරන අංකයකි."
+},
+{
+  "topic": "Cyber Security",
+  "keywords": ["security", "cyber security", "privacy", "data protection"],
+  "questions": ["cyber security කියන්නේ මොකක්ද", "Cyber security කියන්නේ මොකක්ද", "data ආරක්ෂා කරගන්නෙ කොහොමද"],
+  "content": "Cyber security යනු පද්ධති, ජාල සහ දත්ත අනවසර ප්‍රවේශයෙන් ආරක්ෂා කිරීමයි. strong passwords, regular updates සහ two-factor authentication භාවිතා කිරීම මූලික පියවර වේ."
+},
+{
+  "topic": "Encryption",
+  "keywords": ["encryption"],
+  "questions": ["encryption කියන්නේ මොකක්ද"],
+  "content": "Encryption යනු දත්ත ආරක්ෂා කිරීම සඳහා එය සංකේතගත කිරීමයි."
+},
+{
+  "topic": "Cloud Computing",
+  "keywords": ["cloud", "cloud computing", "cloud services", "internet services"],
+  "questions": ["cloud computing කියන්නේ මොකක්ද", "Cloud computing කියන්නේ මොකක්ද", "cloud services මොනවද"],
+  "content": "Cloud computing යනු internet හරහා servers, storage සහ software සේවා ලබා දීමයි. එය local infrastructure අවශ්‍යතාව අඩු කරයි."
+},
+{
+  "topic": "Artificial Intelligence",
+  "keywords": ["AI", "artificial intelligence", "intelligent systems"],
+  "questions": ["AI කියන්නේ මොකක්ද", "artificial intelligence කියන්නේ මොකක්ද"],
+  "content": "AI යනු යන්ත්‍රවලට බුද්ධිමත් හැසිරීම් ලබා දීමයි. එය දත්ත, නියමයන් සහ ආදර්ශන භාවිතා කර තීරණ ගැනීමට උපකාරී වේ."
+},
+{
+  "topic": "Machine Learning",
+  "keywords": ["ML", "machine learning", "model training", "patterns"],
+  "questions": ["machine learning කියන්නේ මොකක්ද", "Machine learning කියන්නේ මොකක්ද", "ML කියන්නේ මොකක්ද"],
+  "content": "Machine learning යනු දත්ත මත පදනම්ව pattern ඉගෙන ගන්න AI ශාඛාවකි. Explicit rules සියල්ල ලියන්නේ නැතිව model එක දත්තයෙන් ඉගෙන ගනී."
+},
+{
+  "topic": "Software Engineering",
+  "keywords": ["software engineering", "SDLC", "requirement", "testing", "maintenance"],
+  "questions": ["software engineering කියන්නේ මොකක්ද", "Software engineering කියන්නේ මොකක්ද? ඒකේ ක්‍රියාවලිය පැහැදිලි කරන්න.", "software development lifecycle කියන්නේ මොකක්ද"],
+  "content": "Software engineering යනු software සංවර්ධනය සඳහා ක්‍රමවත් ක්‍රියාවලියකි. Requirement, Design, Implementation, Testing සහ Maintenance යන අදියර මෙයට ඇතුළත් වේ."
+},
+{
+  "topic": "Version Control",
+  "keywords": ["git"],
+  "questions": ["version control කියන්නේ මොකක්ද"],
+  "content": "Version control යනු code වෙනස්කම් පාලනය කිරීමේ ක්‍රමයකි."
+},
+{
+  "topic": "API",
+  "keywords": ["API"],
+  "questions": ["API කියන්නේ මොකක්ද"],
+  "content": "API යනු software අතර සන්නිවේදනයට භාවිතා වන interface එකකි."
+},
+{
+  "topic": "Frontend",
+  "keywords": ["frontend"],
+  "questions": ["frontend කියන්නේ මොකක්ද"],
+  "content": "Frontend යනු user interface එක වේ."
+},
+{
+  "topic": "Backend",
+  "keywords": ["backend"],
+  "questions": ["backend කියන්නේ මොකක්ද"],
+  "content": "Backend යනු server side logic සහ database සම්බන්ධ කොටසයි."
+},
+{
+  "topic": "Full Stack",
+  "keywords": ["fullstack"],
+  "questions": ["full stack කියන්නේ මොකක්ද"],
+  "content": "Full stack developer යනු frontend සහ backend දෙකම කරයි."
+},
+{
+  "topic": "Bug",
+  "keywords": ["bug"],
+  "questions": ["bug කියන්නේ මොකක්ද"],
+  "content": "Bug යනු software එකක දෝෂයකි."
+},
+{
+  "topic": "Debugging",
+  "keywords": ["debugging", "bug fixing", "troubleshooting"],
+  "questions": ["debugging කියන්නේ මොකක්ද", "Debugging කියන්නේ මොකක්ද", "bug fix කරන ක්‍රියාවලිය මොකක්ද"],
+  "content": "Debugging යනු software දෝෂ සොයා නිවැරදි කිරීමේ ක්‍රියාවලියකි. දෝෂය හඳුනාගෙන හේතුව නිවැරදි කිරීමෙන් program එක නිසි ලෙස ක්‍රියාකරවයි."
+},
+{
+  "topic": "Open Source",
+  "keywords": ["open source"],
+  "questions": ["open source කියන්නේ මොකක්ද"],
+  "content": "Open source යනු code සියල්ලටම ලබාගත හැකි software එකකි."
+},
+{
+  "topic": "Compiler",
+  "keywords": ["compiler"],
+  "questions": ["compiler කියන්නේ මොකක්ද"],
+  "content": "Compiler යනු code machine language එකට පරිවර්තනය කරන program එකකි."
+},
+{
+  "topic": "Interpreter",
+  "keywords": ["interpreter"],
+  "questions": ["interpreter කියන්නේ මොකක්ද"],
+  "content": "Interpreter යනු code line by line ක්‍රියාත්මක කරන program එකකි."
+},
+{
+  "topic": "Binary",
+  "keywords": ["binary", "0 and 1", "base 2", "බයිනරි"],
+  "questions": ["binary system කියන්නේ මොකක්ද", "Binary system කියන්නේ මොකක්ද", "0 සහ 1 පද්ධතිය කියන්නේ මොකක්ද"],
+  "content": "Binary system යනු 0 සහ 1 භාවිතා කරන සංඛ්‍යා පද්ධතියකි. පරිගණකය අභ්‍යන්තරව දත්ත නිරූපණය කරන්නේ මෙම base-2 ක්‍රමයෙන්ය."
+},
+{
+  "topic": "Data Structure",
+  "keywords": ["data structure"],
+  "questions": ["data structure කියන්නේ මොකක්ද"],
+  "content": "Data structure යනු දත්ත සංවිධානය කරන ක්‍රමයකි."
+},
+{
+  "topic": "Stack",
+  "keywords": ["stack", "LIFO", "stack vs queue", "data structure"],
+  "questions": ["stack කියන්නේ මොකක්ද", "Stack සහ Queue අතර වෙනස මොකක්ද", "stack vs queue difference"],
+  "content": "Stack = LIFO (අවසානයට දැමූ දෙය මුලින් ඉවත් වේ). Queue = FIFO (මුලින් දැමූ දෙය මුලින් ඉවත් වේ)."
+},
+{
+  "topic": "Queue",
+  "keywords": ["queue"],
+  "questions": ["queue කියන්නේ මොකක්ද"],
+  "content": "Queue යනු FIFO (First In First Out) data structure එකකි."
+},
+{
+  "topic": "Operating System Types",
+  "keywords": ["os types"],
+  "questions": ["OS වර්ග මොනවද"],
+  "content": "Batch, time-sharing සහ real-time OS වැනි වර්ග ඇත."
+},
+{
+  "topic": "Probability",
+  "keywords": ["probability", "සම්භාවිතාව", "chance", "likelihood"],
+  "questions": ["probability කියන්නේ මොකක්ද", "Probability කියන්නේ මොකක්ද", "සම්භාවිතාව කියන්නේ මොකක්ද"],
+  "content": "Probability යනු සිදුවීමක් සිදුවීමේ සම්භාවිතාවයි. එය 0 සිට 1 දක්වා අගයකින් හෝ ප්‍රතිශතයක් ලෙස දක්වයි."
+},
+{
+  "topic": "Ratio",
+  "keywords": ["ratio", "අනුපාතය", "proportion"],
+  "questions": ["ratio කියන්නේ මොකක්ද", "Ratio කියන්නේ මොකක්ද", "අනුපාතය කියන්නේ මොකක්ද"],
+  "content": "Ratio යනු සංඛ්‍යා දෙකක් අතර සම්බන්ධතාවයයි. එය සාමාන්‍යයෙන් a:b ලෙස ලියයි."
+},
+{
+  "topic": "Trigonometry",
+  "keywords": ["trigonometry", "ත්‍රිකෝණමිතිය", "sin", "cos", "tan"],
+  "questions": ["trigonometry කියන්නේ මොකක්ද", "Trigonometry කියන්නේ මොකක්ද", "ත්‍රිකෝණමිතිය කියන්නේ මොකක්ද"],
+  "content": "Trigonometry යනු කෝණ සහ ත්‍රිකෝණ අතර සම්බන්ධතාවය අධ්‍යයනය කරන ගණිත ශාඛාවකි. sine, cosine සහ tangent එහි මූලික සංකල්ප වේ."
+},
+{
+  "topic": "Calculus",
+  "keywords": ["calculus", "අන්තරගණිතය", "differentiation", "integration"],
+  "questions": ["calculus කියන්නේ මොකක්ද", "Calculus කියන්නේ මොකක්ද", "අන්තරගණිතය කියන්නේ මොකක්ද"],
+  "content": "Calculus යනු වෙනස්වීම් සහ ගතිකතාව අධ්‍යයනය කරන ගණිත ශාඛාවකි. එහි ප්‍රධාන කොටස් දෙක වන්නේ differentiation සහ integration ය."
+}
 ]

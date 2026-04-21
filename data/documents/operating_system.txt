@@ -5,3 +5,9 @@
 OS කාර්යයන් ලෙස process management, memory management, file management සහ device control ඇතුළත් වේ. User commands සහ applications hardware වෙත යොමු කිරීම OS මඟින් සිදු වේ.
 
 Windows, Linux, macOS වැනි පද්ධති OS උදාහරණ වේ. හොඳ OS එකක් භාවිතා කිරීමෙන් performance සහ security දෙකම වැඩි වේ.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: ඔපරේටින් පද්ධතිය සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.
+- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.
+- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.
+- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම.

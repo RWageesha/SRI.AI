@@ -5,3 +5,9 @@ Hardware යනු පරිගණකයේ දෘශ්‍යමය සහ ස�
 Input devices (keyboard, mouse), output devices (monitor, printer), සහ storage devices (HDD, SSD) ලෙස hardware වර්ග කළ හැක. සෑම කොටසක්ම පද්ධතියේ ක්‍රියාකාරීත්වයට දායක වේ.
 
 Hardware හොඳ තත්ත්වයේ පවත්වා ගැනීමෙන් system stability සහ lifespan වැඩි කළ හැක. Dust control සහ proper cooling වැනි පුරුදු වැදගත් වේ.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: Hardware සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.
+- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.
+- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.
+- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම.

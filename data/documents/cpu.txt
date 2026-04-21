@@ -5,3 +5,9 @@ CPU (Central Processing Unit) යනු පරිගණකයේ මූලික
 ALU (Arithmetic Logic Unit) කොටස ගණිත හා තර්ක ක්‍රියා සිදු කරයි. Control Unit කොටස නියෝග පාලනය කර අනෙකුත් කොටස් සම්බන්ධීකරණය කරයි.
 
 Registers යනු ඉතා කෙටි කාලයක් සඳහා තාවකාලික දත්ත තබා ගන්නා වේගවත් මතක කොටස් වේ. CPU වේගය වැඩි වීමෙන් processing කාර්යක්ෂමතාව වැඩි වේ.
+
+අමතර විස්තර (විස්තීරණය):
+- ප්‍රධාන කරුණු: CPU සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ.
+- ප්‍රායෝගික භාවිතය: setup -> monitor -> backup -> recovery යන workflow එකක් අනුගමනය කිරීමෙන් stable operations පවත්වා ගත හැක.
+- සම්බන්ධ උපමාතෘකා: configuration management, observability, access control, සහ patch/update strategy.
+- හොඳ පුරුදු: documentation update, periodic health checks, සහ security hardening steps ක්‍රමානුකූලව යෙදීම.
