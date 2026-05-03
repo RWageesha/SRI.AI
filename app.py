@@ -72,9 +72,9 @@ MODEL_FAMILIES: tuple[str, str, str] = ("gemma", "llama", "mistral")
 DIRECT_JSON_SCORE_THRESHOLD = 0.58
 DIRECT_JSON_FOCUS_WEIGHT = 0.05
 DIRECT_JSON_MIN_FOCUS = 1.2
-MIN_BRIEF_SENTENCES = 3
-MAX_BRIEF_SENTENCES = 6
-MAX_BRIEF_CHARS = 1200
+MIN_BRIEF_SENTENCES = 4
+MAX_BRIEF_SENTENCES = 8
+MAX_BRIEF_CHARS = 1600
 
 
 @st.cache_data(show_spinner=False)
@@ -580,6 +580,24 @@ def _fingerprint_text(text: str) -> str:
     return re.sub(r"\s+", "", normalized)
 
 
+def _single_char_token_ratio(text: str) -> float:
+    """Return ratio of single-character tokens in a response."""
+    tokens = re.findall(r"\S+", text)
+    if not tokens:
+        return 0.0
+    single_chars = sum(1 for token in tokens if len(token) == 1)
+    return single_chars / len(tokens)
+
+
+def _sinhala_char_ratio(text: str) -> float:
+    """Estimate Sinhala character ratio among letters to detect garbling."""
+    letters = re.findall(r"[A-Za-z\u0D80-\u0DFF]", text)
+    if not letters:
+        return 0.0
+    sinhala_letters = sum(1 for ch in letters if "\u0D80" <= ch <= "\u0DFF")
+    return sinhala_letters / len(letters)
+
+
 def _is_distinct_piece(candidate: str, existing: list[str]) -> bool:
     """Check whether candidate text is sufficiently different from existing pieces."""
     if not candidate:
@@ -704,6 +722,14 @@ def is_low_quality_answer(answer: str, result: HybridResult) -> bool:
     # Reject noisy quoted fragments that usually indicate prompt leakage.
     quote_count = answer.count('"') + answer.count("“") + answer.count("”")
     if quote_count >= 4:
+        return True
+
+    # Reject tokenized/gibberish outputs with too many single-character tokens.
+    if len(answer) >= 80 and _single_char_token_ratio(answer) >= 0.22:
+        return True
+
+    # Prefer Sinhala-heavy responses; treat low Sinhala ratio as malformed.
+    if len(answer) >= 120 and _sinhala_char_ratio(answer) < 0.28:
         return True
 
     # Penalize answers with too much repetition.
@@ -1337,27 +1363,26 @@ if user_input := st.chat_input("ඔබේ ප්‍රශ්නය සිංහ�
             if not result.context or not is_retrieval_relevant(user_text, result):
                 answer = FALLBACK_ANSWER
             else:
-                direct_answer = None
-                if is_direct_answer_safe(user_text, result):
-                    direct_answer = build_direct_topic_answer(result)
-
-                if direct_answer:
-                    answer = direct_answer
-                else:
-                    prompt = build_prompt(context=result.context, question=user_text)
-                    try:
-                        answer, used_generation_model, tried_generation_models = generate_answer_with_available_client(
-                            client=ollama_client,
-                            prompt=prompt,
-                            selected_model=st.session_state.model_name,
-                        )
-                    except RuntimeError:
-                        answer = FALLBACK_ANSWER
+                prompt = build_prompt(context=result.context, question=user_text)
+                try:
+                    answer, used_generation_model, tried_generation_models = generate_answer_with_available_client(
+                        client=ollama_client,
+                        prompt=prompt,
+                        selected_model=st.session_state.model_name,
+                    )
+                except RuntimeError:
+                    answer = FALLBACK_ANSWER
 
                 if is_weak_fallback(answer):
-                    answer = build_grounded_backup_answer(result)
+                    if is_direct_answer_safe(user_text, result):
+                        answer = build_direct_topic_answer(result) or build_grounded_backup_answer(result)
+                    else:
+                        answer = build_grounded_backup_answer(result)
                 elif is_low_quality_answer(answer, result):
-                    answer = build_grounded_backup_answer(result)
+                    if is_direct_answer_safe(user_text, result):
+                        answer = build_direct_topic_answer(result) or build_grounded_backup_answer(result)
+                    else:
+                        answer = build_grounded_backup_answer(result)
 
             answer = remove_question_echo(answer, user_text)
             answer = make_brief_answer(answer, result)

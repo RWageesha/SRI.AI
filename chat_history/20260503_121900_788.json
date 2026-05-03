@@ -1,0 +1,102 @@
+{
+  "session_id": "20260503_121900_788",
+  "updated_at": "2026-05-03T12:24:33",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Algorithm කියන්නේ මොකක්ද?"
+    },
+    {
+      "role": "assistant",
+      "content": "Algorithm යනු ගැටලුවක් විසඳීමට ඇතුරදි සහ කාර්යක්ෂම විය යුතුය. Algorithm යනු ගැටලුවක් විසඳීම සඳහා සකස් කරන ලද පියවර මාලාවකි. එය තාර්කිකව, අනුපිළිවෙලින් සහ නිශ්චිතව ලියා තිබිය යුතුය. හොඳ algorithm එකකට clarity, correctness සහ efficiency වැදගත් වේ."
+    },
+    {
+      "role": "user",
+      "content": "Cyber security කියන්නේ මොකක්ද?"
+    },
+    {
+      "role": "assistant",
+      "content": "Cyber security කියන්නේ cyber security යනු ජාල සහ දත්ත අනවසර ප්‍රවේශයෙන් ආරක්ෂා කිරීමයි. strong passwords, regular updates සහ two-factor authentication භාවිතා කිරීම මූලික පියවර වේ. Cyber Security යනු පද්ධති, ජාල සහ දත්ත අනවසර ප්‍රවේශයෙන්, ප්‍රහාරවලින් සහ දූෂණයෙන් ආරක්ෂා කිරීමයි. Digital systems භාවිතා කරන සෑම සංවිධානයකටම මෙය අත්‍යවශ්‍ය වේ."
+    },
+    {
+      "role": "user",
+      "content": "Database සහ DBMS අතර වෙනස මොකක්ද?"
+    },
+    {
+      "role": "assistant",
+      "content": "Database යනු දත්ත ගබඩා කරන පද්ධතියකි. DBMS යනු එම database එක සුරක්ෂිතව කළමනාකරණය කරන software එකකි. Database යනු දත්ත සංවිධානය කර ගබඩා කරන පද්ධතියකි. එය structured ලෙස data තබා ගැනීමට සහ ඉක්මනින් ලබා ගැනීමට උපකාරී වේ."
+    },
+    {
+      "role": "user",
+      "content": "Binary system කියන්නේ මොකක්ද?"
+    },
+    {
+      "role": "assistant",
+      "content": "Binary system යනු 0 සහ 1 භාවිතා කරන ගණිත පද්ධතියකි. Binary system හි binary data ගණිත බවට පරිවර්තනය කිරීම computation වලදී වැදගත් වේ. Binary system යනු 0 සහ 1 යන අංක දෙක පමණක් භාවිතා කරන ගණිත පද්ධතියකි. පරිගණක hardware logic states (on/off) සමඟ ගැලපෙන නිසා binary මූලික වේ."
+    },
+    {
+      "role": "user",
+      "content": "Debugging කියන්නේ මොකක්ද?"
+    },
+    {
+      "role": "assistant",
+      "content": "Debugging යනු software debugging software යාගෙනීම එක උපරිම කරුණු ඇතුවා ගැටලුවක් ඇරදීම හාරාගෙන තවා ගැටලුවක් ඇරදීම හැක. එමඟින් එක ගැටලුවක් විසඳන විට වෙනත් feature එකක් බිඳ වැටීම වැළැක්විය හැක. අමතර විස්තර (විස්තීරණය): - ප්‍රධාන කරුණු: Debugging ඉගෙනීමට concept -> pseudocode/plan -> implementation -> testing යන පියවර අනුගමනය කරන්න. - ප්‍රායෝගික භාවිතය: කුඩා mini-project එකක් හරහා feature-by-feature build කිරීමෙන් theory දැනුම ක්‍රියාකාරී කුසලතාව බවට පත් වේ."
+    },
+    {
+      "role": "user",
+      "content": "Cloud computing කියන්නේ මොකක්ද?"
+    },
+    {
+      "role": "assistant",
+      "content": "Cloud computing යනු internet හරහා servers, storage සහ software සේවා ලබා දීමයි. එය local infrastructure අවශ්‍යතාව අඩු කරයි. Data security, backup සහ access control නිවැරදිව සැලසුම් කිරීම cloud භාවිතයේදී වැදගත් වේ. අමතර විස්තර (විස්තීරණය): - ප්‍රධාන කරුණු: Cloud Computing සඳහා architecture components, data flow, සහ reliability considerations එකට බලන විට system understanding වැඩි වේ."
+    },
+    {
+      "role": "user",
+      "content": "Machine learning කියන්නේ මොකක්ද?"
+    },
+    {
+      "role": "assistant",
+      "content": "Explicit rules සියල්ල ලියන්නේ explicit rules එක දත්තයෙන් ඉගෙන ගනී. Machine Learning (ML) යනු දත්ත මත පදනම්ව patterns ඉගෙනගෙන පුරෝකථන හෝ තීරණ ලබා දෙන AI ශාඛාවකි. Explicit rules සියල්ල ලියන්නේ නැතිව model එක දත්තෙන් ඉගෙන ගනී. Supervised, unsupervised සහ reinforcement learning වැනි ප්‍රධාන ක්‍රම ඇත."
+    },
+    {
+      "role": "user",
+      "content": "Probability කියන්නේ මොකක්ද?"
+    },
+    {
+      "role": "assistant",
+      "content": "එය 0 සිට 1 දක්වා අගයකින් හෝ ප්‍රතිශතයක් ලෙස දක්වයි. Probability යනු සිදුවීමක් සිදුවීමේ සම්භාවිතාව මැනීමට භාවිතා කරන සංකල්පයකි. සම්භාවිතාව සාමාන්‍යයෙන් 0 සිට 1 දක්වා අගයකින් හෝ ප්‍රතිශතයක් ලෙස පෙන්වයි. 0 යනු කිසිසේත් සිදු නොවීමත්, 1 යනු නිසැකව සිදුවීමත් අදහස් කරයි."
+    },
+    {
+      "role": "user",
+      "content": "Ratio කියන්නේ මොකක්ද?"
+    },
+    {
+      "role": "assistant",
+      "content": "එය සාමාන්‍යයෙන් a:b ලෙස ලියයි. Ratio යනු සංඛ්‍යා දෙකක් අතර සම්බන්ධතාවය පෙන්වන ක්‍රමයකි. උදාහරණයක් ලෙස 2:3 යන්නෙන් පළමු සංඛ්‍යාව දෙවන සංඛ්‍යාවට සම්බන්ධව දක්වයි. අනුපාතය සංසන්දනය, ප්‍රමාණ සහ බෙදාහැරීම් ගැටලු වලදී වැදගත් වේ."
+    },
+    {
+      "role": "user",
+      "content": "Trigonometry කියන්නේ මොකක්ද?"
+    },
+    {
+      "role": "assistant",
+      "content": "එහි sine, cosine සහ tangent එහි මූලික සංකල්ප වේ. Trigonometry යනු කෝණ සහ ත්‍රිකෝණ අතර සම්බන්ධතා අධ්‍යයනය කරන ගණිත ශාඛාවකි. සයින් (sine), කොසයින් (cosine), ටැන්ජන්ට් (tangent) වැනි සම්බන්ධතා භාවිතා කර දුර, උස සහ කෝණ ගණනය කරයි. අමතර විස්තර (විස්තීරණය): - ප්‍රධාන කරුණු: Trigonometry ඉගෙනීමේදී සංකේත (symbols), ඒකක (units), සහ මූලික නිර්වචන පැහැදිලිව වෙන්කර මතක තබා ගන්න."
+    },
+    {
+      "role": "user",
+      "content": "Calculus කියන්නේ මොකක්ද?"
+    },
+    {
+      "role": "assistant",
+      "content": "differentiation සහ integration ය. Calculus යනු වෙනස්වීම් සහ අඛණ්ඩ ප්‍රමාණ අධ්‍යයනය කරන ගණිත ශාඛාවකි. Differentiation මගින් වෙනස්වීමේ වේගය සොයා ගනී, Integration මගින් ප්‍රමාණ එකතු කිරීම සහ වක්‍රයක් යටතේ ඇති ප්‍රදේශය සොයා ගනී. අමතර විස්තර (විස්තීරණය): - ප්‍රධාන කරුණු: Calculus ඉගෙනීමේදී සංකේත (symbols), ඒකක (units), සහ මූලික නිර්වචන පැහැදිලිව වෙන්කර මතක තබා ගන්න."
+    },
+    {
+      "role": "user",
+      "content": "වැඩ ගොඩක් තියෙන නිසා ඔලුවට බරක් දැනෙනවා. ඒක නිසා stress දැනෙනවා. ඉතින් මම ගොඩක් අවුල් වෙලා ඉන්නෙ. මේ stress අඩු කරගන්න හැටි කියන්න."
+    },
+    {
+      "role": "assistant",
+      "content": "ආතතිය අඩු කිරීමට විවේක ගන්න, ගැඹුරු හුස්ම ගැනීමේ ක්‍රම භාවිතා කරන්න. දිනපතා කෙටි විවේකයක් ගන්නා එකත් උපකාරී වේ. සික බර අඩුවිය හැක. අමතර විස්තර (විස්තීරණය): - ප්‍රධාන කරුණු: ආතතිය සඳහා trigger factors, සිතුවිලි සහ ශාරීරික ලක්ෂණ වෙන්ව සටහන් කිරීමෙන් හේතු පැහැදිලි වේ."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "session_id": "20260503_121106_529",
+  "updated_at": "2026-05-03T12:15:29",
+  "messages": [
+    {
+      "role": "user",
+      "content": "පරිගණකය කියන්නේ මොකක්ද? ඒක වැඩ කරන්නේ කොහොමද?"
+    },
+    {
+      "role": "assistant",
+      "content": "මෙය තවා හැරිකම, එක පරිගණකය කියන්නේ ඇතුවා තොරතුරු ලබා දෙන යන්ත්‍රයකි. පරිගණකය යනු දත්ත ලබාගෙන ඒවා සැකසීමෙන් තොරතුරු නිපදවන ඉලෙක්ට්‍රොනික යන්ත්‍රයකි. පරිගණකයක මූලික කාර්යයන් ලෙස input, processing, output සහ storage සලකයි. Input යනු යතුරුපුවරුව, mouse, scanner වැනි උපකරණ හරහා දත්ත ලබා දීමයි."
+    },
+    {
+      "role": "user",
+      "content": "Software engineering කියන්නේ මොකක්ද? ඒකේ ක්‍රියාවලිය පැහැදිලි කරන්න."
+    },
+    {
+      "role": "assistant",
+      "content": "Software engineering කියන්නේ යනු software සංවර්ධනය සඳහා ක්‍රමවත් ක්‍රියාවලියකි. requirement, design, implementation, testing සහ maintenance යන අදියර මෙයට ඇතුළත් වේ. Software Engineering යනු software සංවර්ධනය සඳහා ක්‍රමවත්, සැලසුම්ගත සහ පරීක්ෂාකාරී ක්‍රියාවලියකි. Quality, maintainability සහ reliability ලබා ගැනීම එහි අරමුණ වේ."
+    },
+    {
+      "role": "user",
+      "content": "Stack සහ Queue අතර වෙනස මොකක්ද?"
+    },
+    {
+      "role": "assistant",
+      "content": "Stack = LIFO (අවසානයට දැමූ දෙය මුලින් ඉවත් වේ). Queue = FIFO (මුලින් දැමූ දෙය මුලින් ඉවත් වේ). Stack යනු LIFO (Last In First Out) ආකෘතියෙන් ක්‍රියා කරන data structure එකකි. අවසානයේ ඇතුල් කළ අයිතමය මුලින්ම ඉවත් වේ."
+    },
+    {
+      "role": "user",
+      "content": "Operating system එකේ කාර්යය මොනවද?"
+    },
+    {
+      "role": "assistant",
+      "content": "Operating system යනු hardware සහ software අතර සම්පත් කළමනාකරණය කරන පද්ධතියකි. එය process, memory, file සහ device management කාර්යයන් ඉටු කරයි. ඔපරේටින් පද්ධතිය (Operating System) යනු hardware සහ software අතර සම්බන්ධතාවය කළමනාකරණය කරන මූලික පද්ධතියකි. එය computer resources නිවැරදිව බෙදා දෙයි."
+    },
+    {
+      "role": "user",
+      "content": "Programming කියන්නේ මොකක්ද?"
+    },
+    {
+      "role": "assistant",
+      "content": "Programming යනු පරිගණකයට කාර්යයන් ඉටු කිරීමට නියෝග ලිවීමේ ක්‍රියාවලියකි. එය problem solving කුසලතා සමඟ බැඳී ඇත. Programming කිරීමේදී variables, conditions, loops, functions වැනි මූලික සංකල්ප භාවිතා කරයි. code logic නිවැරදි වීම ප්‍රතිඵලයේ ගුණාත්මකතාවයට බලපායි."
+    },
+    {
+      "role": "user",
+      "content": "Network කියන්නේ මොකක්ද?"
+    },
+    {
+      "role": "assistant",
+      "content": "LAN සහ WAN වැනි ජාල වර්ග විවිධ ප්‍රමාණයේ සම්බන්ධතාව සඳහා භාවිතා වේ. Networking යනු පරිගණක හා උපකරණ එකිනෙකට සම්බන්ධ කර දත්ත හුවමාරු කිරීමයි. එය resource sharing සහ communication සඳහා මූලික තාක්ෂණයකි. LAN (Local Area Network) කුඩා භූගෝලීය ප්‍රදේශයක භාවිතා වන අතර WAN (Wide Area Network) විශාල ප්‍රදේශ ආවරණය කරයි."
+    }
+  ]
+}
